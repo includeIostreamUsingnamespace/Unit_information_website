@@ -1,0 +1,329 @@
+
+    /* 全局样式 */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #1e1e1e;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* 导航条上方样式 */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #f6f7ff;
+        grid-area: header;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+    input[type="text"] {
+    outline: none;
+    }
+
+    .search-box {
+        display: flex;
+    }
+
+    .search-box input {
+        padding: 5px 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px 0 0 5px;
+        border-right: none;
+    }
+    button{
+         background-color: #ffffff;
+         border:1px solid #cccccc;
+         border-radius: 0 5px 5px 0;
+         border-left: none;
+
+    }
+    .icon {
+        stroke: #ffffff;/* 改变 SVG 图标的填充颜色为红色，假设 SVG 内部图形使用了 fill 属性来定义颜色 */
+        width: 20px; /* 改变图标宽度 */
+        height: 25px; /* 改变图标高度 */
+    }
+
+    /* 导航条样式 */
+    .navbar {
+        background-color: #0a5cad;
+        grid-area: navbar;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar ul li {
+        padding: 10px 0;
+    }
+
+    .navbar ul li a {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .navbar ul li a:hover {
+        color: #0068b7;
+    }
+
+    /* Banner图片样式 */
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 首页主体内容样式 */
+    .main-content {
+        padding: 20px;
+    }
+
+    /*轮播图样式*/
+    .carousel {
+        grid-area: carousel;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    /*新闻板块样式*/
+    .news-section {
+        grid-area: news-section;
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+    }
+
+    .news-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .news-content {
+        margin-left: 10px;
+    }
+
+    .news-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .news-description {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .news-time {
+        font-size: 12px;
+        color: #999;
+        margin-top: 5px;
+    }
+
+    .news-source {
+        font-size: 12px;
+        color: #999;
+    }
+
+    /*最新信息公开/通知公告专栏/信息公开报告区域 */
+    .latest-info-section {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        grid-area: latest-info-section;
+    }
+
+    .icon {
+        margin-right: 10px;
+    }
+
+    .latest-info-icon {
+        color: green;
+    }
+
+    .notice-icon {
+        color: orange;
+    }
+
+    .report-icon {
+        color: blue;
+    }
+
+    /* 发布日期、来源等额外信息样式 */
+    .extra-info {
+        font-size: 12px;
+        color: #999;
+        margin-left: 10px;
+    }
+
+    /*重点领域信息公开*/
+    /* 重点领域信息公开板块整体样式 */
+    .key-areas-section {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        grid-area: key-areas-section;
+    }
+
+    /* 分类图标样式，这里简单用字体图标示例，实际可替换为对应图片图标 */
+    .icon {
+        margin-right: 10px;
+        font-size: 20px;
+        color: #0099cc;
+        align-self: flex-start;
+    }
+
+    .graduate-icon {
+        color: green;
+    }
+
+    .employment-icon {
+        color: orange;
+    }
+
+    /* 信息发布单位样式 */
+    .publisher {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+
+    /* 更新时间样式 */
+    .update-time {
+        font-size: 12px;
+        color: #999;
+    }
+
+    /* 简要描述样式 */
+    p {
+        font-size: 14px;
+        color: #333;
+        margin-top: 5px;
+        line-height: 1.5;
+    }
+
+    .news-section h2,
+    .info-section h2,
+    .updates-section h2,
+    .key-areas-section h2 {
+        margin-top: 0;
+        border-bottom: 2px solid #0a5cad;
+        padding-bottom: 5px;
+    }
+
+    .news-list li,
+    .info-list li,
+    .update-list li,
+    .notice-list li,
+    .report-list li,
+    .key-areas-list li {
+        margin-bottom: 5px;
+    }
+
+    .news-list li img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        object-fit: cover;
+    }
+
+    .info-list li:before {
+        content: "•";
+        color: #0a5cad;
+        margin-right: 5px;
+    }
+
+    .info-directory {
+        grid-area: info-directory;
+    }
+
+    /*footer样式*/
+    /* 底部版权等信息样式 */
+    footer {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+        grid-area: footer;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .address p{
+        text-align: right;
+        color:white;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+    "header header header header header header header header header header header header"
+    "navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
+    "carousel carousel carousel carousel carousel carousel carousel carousel carousel carousel carousel carousel"
+    "news-section news-section news-section news-section news-section news-section news-section news-section news-section news-section news-section news-section"
+    "info-directory info-directory info-directory info-directory latest-info-section latest-info-section latest-info-section latest-info-section key-areas-section key-areas-section key-areas-section key-areas-section"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+
+    /* 内容页样式 */
+    .page-header {
+        background-color: #f6f7ff;
+        padding: 10px;
+    }
+    .breadcrumb-nav {
+        padding: 5px 10px;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .breadcrumb-nav ul {
+        display: flex;
+    }
+
+    .breadcrumb-nav ul li:after {
+        content: " > ";
+        margin: 0 5px;
+    }
+
+    .breadcrumb-nav ul li:last-child

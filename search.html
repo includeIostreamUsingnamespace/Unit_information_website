@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>单位信息公开网 - 搜索结果页</title>
+</head>
+
+<body>
+  <!-- 导航条上方 -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="单位logo">
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="请输入关键字">
+      <button id="search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+        <circle cx="11" cy="11" r="8" stroke="black"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="black"></line>
+    </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- 导航条 -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">网站首页</a></li>
+      <li><a href="#">信息公开制度</a></li>
+      <li><a href="#">信息公开指南</a></li>
+      <li><a href="list.html">信息公开目录</a></li>
+      <li><a href="#">信息公开报告</a></li>
+      <li><a href="#">信息公开申请</a></li>
+      <li><a href="#">意见建议</a></li>
+    </ul>
+  </nav>
+  <!-- 轮播图区域 -->
+    <div class="carousel">
+      <img src="111.jpg" alt="轮播图">
+    </div>
+
+  <!-- 搜索结果页主体内容 -->
+  <main class="main-content">
+    <h2>搜索结果</h2>
+    <p>关键词：[搜索关键词]</p>
+    <p>共找到[X]条结果</p>
+    <ul class="search-result-list">
+      <li><a href="#">结果1标题</a></li>
+      <li><a href="#">结果2标题</a></li>
+      <li><a href="#">结果3标题</a></li>
+      <!-- 更多搜索结果条目 -->
+    </ul>
+  </main>
+
+  <!-- 底部footer -->
+    <footer>
+    <div class="footer-content">
+      <div class="logo">
+        <img src="xiantong_logo.png" alt="Xi'an Jiaotong University Logo">
+        <span>西安交通大学 信息公开网</span>
+      </div>
+      <div class="address">
+        <p>地址：陕西省西安市咸宁西路28号 邮编：710049</p>
+        <p>版权所有：西安交通大学 站点建设与维护：网络信息中心 陕ICP备06008037号</p>
+      </div>
+    </div>
+  </footer>
+</html>
+<script>
+  const jumpButton = document.getElementById('search');
+jumpButton.addEventListener('click', function () {
+    window.location.href = 'search.html';
+});
+</script>

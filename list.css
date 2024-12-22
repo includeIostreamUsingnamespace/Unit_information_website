@@ -1,0 +1,175 @@
+
+    /* 全局样式 */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #1e1e1e;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+      /* 导航条上方样式 */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #f6f7ff;
+        grid-area: header;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+    input[type="text"] {
+    outline: none;
+    }
+    .search-box {
+        display: flex;
+    }
+    .search-box input {
+        padding: 5px 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px 0 0 5px;
+        border-right: none;
+    }
+    button{
+         background-color: #ffffff;
+         border:1px solid #cccccc;
+         border-radius: 0 5px 5px 0;
+         border-left: none;
+
+    }
+    .icon {
+        stroke: #ffffff;/* 改变 SVG 图标的填充颜色为红色，假设 SVG 内部图形使用了 fill 属性来定义颜色 */
+        width: 20px; /* 改变图标宽度 */
+        height: 25px; /* 改变图标高度 */
+    }
+    /* 导航条样式 */
+    .navbar {
+        background-color: #0a5cad;
+        grid-area: navbar;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar ul li {
+        padding: 10px 0;
+    }
+
+    .navbar ul li a {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .navbar ul li a:hover {
+        color: #0068b7;
+    }
+
+    /* Banner图片样式 */
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+     /*footer样式*/
+    /* 底部版权等信息样式 */
+    footer {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+        grid-area: footer;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .address {
+        text-align: right;
+    }
+     /* 列表页样式 */
+    .sidebar {
+        width: 200px;
+        float: left;
+        background-color: #f6f7ff;
+        padding: 10px;
+    }
+    /*树型菜单*/
+    .tree-menu li a::after{
+       content: '>';
+        display: inline-block;
+        transform: rotate(90deg);
+        margin-left: 5px;
+        font-size: 23px;
+    }
+    .tree-menu li ul {
+        display: none;
+        padding-left: 20px;
+    }
+    .tree-menu li.expanded ul {
+        display: block;
+        padding-left: 20px;
+    }
+    .tree-menu li.expanded > ul li a::after {
+        display: none; /* 当父级li有expanded类，即菜单展开时，隐藏其子菜单li元素后的小圆点 */
+    }
+
+    .tree-menu li {
+        margin-bottom: 5px;
+    }
+
+    .tree-menu li a:hover {
+        color: #0068b7;
+    }
+
+    .content-area {
+        margin-left: 220px;
+    }
+
+    .content-list li:before {
+        content: "•";
+        color: #0a5cad;
+        margin-right: 5px;
+    }
+    .header.school-img {
+        float: right;
+        margin-right: 20px;
+    }
+    .header.school-img img {
+        width: 200px;
+        height: auto;
+    }
+    #content-details {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    footer{
+        clear:both;
+    }
