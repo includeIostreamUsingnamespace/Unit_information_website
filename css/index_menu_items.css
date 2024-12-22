@@ -1,0 +1,74 @@
+/* 树状结构 */
+#index_menu_items-content_core-Disclosure_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 标题 */
+#index_menu_items .index_menu_items-menu-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* 树状结构 */
+#index_menu_items .index_menu_items-tree {
+    list-style: none;
+    padding-left: 20px;
+}
+
+/* 树状项 */
+#index_menu_items .index_menu_items-tree-item {
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* 树状项文本 */
+#index_menu_items .index_menu_items-tree-item span {
+    font-weight: bold;
+}
+
+/* 子菜单 */
+#index_menu_items .index_menu_items-submenu {
+    list-style: none;
+    padding-left: 20px;
+    display: none;  /* 默认隐藏 */
+    margin-top: 8px;
+}
+
+/* 展开状态 */
+#index_menu_items .index_menu_items-tree-item.active > .index_menu_items-submenu {
+    display: block;  /* 展开子菜单 */
+}
+
+/* 子菜单项 */
+#index_menu_items .index_menu_items-submenu li {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+/* 子菜单项的悬浮效果 */
+#index_menu_items .index_menu_items-submenu li:hover {
+    background-color: #f0f8ff;
+    color: #007bff;
+}
+
+/* 点击项时高亮 */
+#index_menu_items .index_menu_items-tree-item.active > span {
+    color: #007bff;
+    font-weight: bold;
+}

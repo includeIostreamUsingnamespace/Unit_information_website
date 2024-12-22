@@ -1,0 +1,16 @@
+/* 父容器样式 */
+#content_single_part-parent-container {
+    display: flex;             /* 使用flex布局 */
+    width: 100%;                /* 父容器宽度100% */
+    justify-content: center;   /* 将子元素水平居中对齐 */
+    margin-bottom: 20px;        /* 每个选择题之间留有间隔 */
+}
+
+/* 子元素样式 */
+#content_single_part-child-element {
+    width: 80%;                 /* 子元素占父容器宽度的80% */
+    padding: 10px;              /* 内边距 */
+
+
+
+}

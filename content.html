@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/Carousel_map.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="reuse/Head_navigation_bar/Head_navigation_bar.css">
+  <link rel="stylesheet" href="reuse/Left_navigation_bar/Left_navigation_bar.css">
+  <link rel="stylesheet" href="css/content_Two_parts.css">
+
+  <script src="js/Carousel_map.js" defer></script>
+  <script src="js/content.js" defer></script>
+  <script src="reuse/Left_navigation_bar/Left_navigation_bar.js"></script>
+  <title>单位信息公开网 - 内容页</title>
+
+</head>
+
+<body>
+  <!-- 导航条上方 -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="单位logo">
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="请输入关键字">
+      <button id="search">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+        <circle cx="11" cy="11" r="8" stroke="black"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="black"></line>
+    </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- 导航条 -->
+<!--  <nav class="navbar">-->
+<!--    <ul>-->
+<!--      <li><a href="index.html">网站首页</a></li>-->
+<!--      <li><a href="#">信息公开制度</a></li>-->
+<!--      <li><a href="#">信息公开指南</a></li>-->
+<!--      <li><a href="list.html">信息公开目录</a></li>-->
+<!--      <li><a href="#">信息公开报告</a></li>-->
+<!--      <li><a href="#">信息公开申请</a></li>-->
+<!--      <li><a href="#">意见建议</a></li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+  <!-- 导航条 -->
+  <!--<nav class="navbar">-->
+  <!--  <ul>-->
+  <!--    <li><a href="index.html">网站首页</a></li>-->
+  <!--    <li><a href="#">信息公开制度</a></li>-->
+  <!--    <li><a href="#">信息公开指南</a></li>-->
+  <!--    <li><a href="content.html">信息公开目录</a></li>-->
+  <!--    <li><a href="#">信息公开报告</a></li>-->
+  <!--    <li><a href="#">信息公开申请</a></li>-->
+  <!--    <li><a href="#">意见建议</a></li>-->
+  <!--  </ul>-->
+  <!--</nav>-->
+  <div id="Head_navigation_bar-navbar">
+    <div class="Head_navigation_bar-navbar-item">
+      首页
+      <div class="Head_navigation_bar-submenu">
+        <div class="Head_navigation_bar-submenu-item">1.学校概况</div>
+        <div class="Head_navigation_bar-submenu-item">2.学校章程</div>
+        <div class="Head_navigation_bar-submenu-item">3.规章制度</div>
+        <div class="Head_navigation_bar-submenu-item">4.发展规划年度计划</div>
+        <div class="Head_navigation_bar-submenu-item">5.教职工代表大会</div>
+        <div class="Head_navigation_bar-submenu-item">6.学术委员会</div>
+      </div>
+    </div>
+    <div class="Head_navigation_bar-navbar-item">
+      信息公开制度
+      <div class="Head_navigation_bar-submenu">
+        <div class="Head_navigation_bar-submenu-item">1.本科生招生章程</div>
+        <div class="Head_navigation_bar-submenu-item">2.特殊类型招生</div>
+        <div class="Head_navigation_bar-submenu-item">3.录取信息查询</div>
+        <div class="Head_navigation_bar-submenu-item">4.本科生招生咨询及申诉</div>
+        <div class="Head_navigation_bar-submenu-item">5.研究生招生简章</div>
+        <div class="Head_navigation_bar-submenu-item">6.研究生复试</div>
+        <div class="Head_navigation_bar-submenu-item">7.拟录取研究生名单</div>
+        <div class="Head_navigation_bar-submenu-item">8.研究生招生咨询及申诉</div>
+      </div>
+    </div>
+    <div class="Head_navigation_bar-navbar-item">
+      信息公开指南
+      <div class="Head_navigation_bar-submenu">
+        <div class="Head_navigation_bar-submenu-item">1.财务资产管理制度</div>
+        <div class="Head_navigation_bar-submenu-item">2.受捐赠资产管理</div>
+        <div class="Head_navigation_bar-submenu-item">3.校办企业资产管理</div>
+        <div class="Head_navigation_bar-submenu-item">4.招投标情况</div>
+        <div class="Head_navigation_bar-submenu-item">5.收支预算</div>
+        <div class="Head_navigation_bar-submenu-item">6.收支决算</div>
+        <div class="Head_navigation_bar-submenu-item">7.收费管理</div>
+      </div>
+    </div>
+    <div class="Head_navigation_bar-navbar-item">
+      信息公开目录
+      <div class="Head_navigation_bar-submenu">
+        <!--          <div class="Head_navigation_bar-submenu-item">1.校级领导社会兼职</div>-->
+        <!--          <div class="Head_navigation_bar-submenu-item">2.校级领导因公出国（境）</div>-->
+        <!--          <div class="Head_navigation_bar-submenu-item">3.岗位设置管理</div>-->
+        <!--          <div class="Head_navigation_bar-submenu-item">4.干部任免与人员招聘</div>-->
+        <!--          <div class="Head_navigation_bar-submenu-item">5.教职工争议处理</div>-->
+        <div class="Head_navigation_bar-submenu-item">基本信息</div>
+        <div class="Head_navigation_bar-submenu-item">招生考试信息</div>
+        <div class="Head_navigation_bar-submenu-item">财务资产及收费信息</div>
+        <div class="Head_navigation_bar-submenu-item">人事师资信息</div>
+        <div class="Head_navigation_bar-submenu-item">教学质量信息</div>
+        <div class="Head_navigation_bar-submenu-item">学生管理服务信息</div>
+        <div class="Head_navigation_bar-submenu-item">学风建设信息</div>
+        <div class="Head_navigation_bar-submenu-item">学位学科信息</div>
+        <div class="Head_navigation_bar-submenu-item">对外交流合作信息</div>
+        <div class="Head_navigation_bar-submenu-item">其他</div>
+
+      </div>
+    </div>
+    <div class="Head_navigation_bar-navbar-item">
+      信息公开报告
+      <div class="Head_navigation_bar-submenu">
+        <div class="Head_navigation_bar-submenu-item">1.师生结构</div>
+        <div class="Head_navigation_bar-submenu-item">2.专业设置</div>
+        <div class="Head_navigation_bar-submenu-item">3.课程设置</div>
+        <div class="Head_navigation_bar-submenu-item">4.就业指导政策</div>
+        <div class="Head_navigation_bar-submenu-item">5.就业质量报告</div>
+        <div class="Head_navigation_bar-submenu-item">6.本科教学质量报告</div>
+        <div class="Head_navigation_bar-submenu-item">7.艺术教育发展报告</div>
+      </div>
+    </div>
+    <div class="Head_navigation_bar-navbar-item">
+      信息公开申请
+      <div class="Head_navigation_bar-submenu">
+        <div class="Head_navigation_bar-submenu-item">1.学籍管理</div>
+        <div class="Head_navigation_bar-submenu-item">2.学生资助</div>
+        <div class="Head_navigation_bar-submenu-item">3.学生奖惩处罚</div>
+        <div class="Head_navigation_bar-submenu-item">4.学生申诉办法</div>
+      </div>
+    </div>
+    <div class="Head_navigation_bar-navbar-item">
+      意见建议
+      <div class="Head_navigation_bar-submenu">
+        <div class="Head_navigation_bar-submenu-item">1.学风建设机构</div>
+        <div class="Head_navigation_bar-submenu-item">2.学术规范制度</div>
+        <div class="Head_navigation_bar-submenu-item">3.学术不端行为查处机制</div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- 轮播图区域 -->
+  <div id="carouselContainer">
+    <div id="carouselTrack">
+      <div class="carousel-slide">
+        <img src="https://placehold.co/1920x400/28a745/ffffff?text=Urban+Landscape" alt="Urban cityscape featuring a modern cultural center or community building with distinctive architectural elements">
+      </div>
+      <div class="carousel-slide">
+        <img src="https://placehold.co/1920x400/007bff/ffffff?text=Modern+Architecture+2" alt="Placeholder for another modern architecture image">
+      </div>
+      <div class="carousel-slide">
+        <img src="https://placehold.co/1920x400/28a745/ffffff?text=Urban+Landscape" alt="Placeholder for an urban landscape image">
+      </div>
+    </div>
+    <button id="prevBtn" class="carousel-btn">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button id="nextBtn" class="carousel-btn">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+
+
+
+
+
+
+  <!--左右两部分。 -->
+
+  <div id="Two_parts-parent-container">
+    <div id="Two_parts-left-section">
+
+      <!--    &lt;!&ndash;左面的那个导航栏。 &ndash;&gt;-->
+      <!--    <div class="Three_modules_in_the_middlecontainer">-->
+      <!--      <div class="Three_modules_in_the_middlecontainer_item left">-->
+
+      <!-- 信息公开清单 -->
+      <div id="Left_navigation_bar_container">
+        <ul id="Left_navigation_bar_menu">
+          <li>
+            <div>一、基本信息 <span>&#9662;</span></div>
+            <ul>
+              <li>1. 学校概况</li>
+              <li>2. 学校章程</li>
+              <li>3. 规章制度</li>
+              <li>4. 发展规划年度计划</li>
+              <li>5. 教职工代表大会</li>
+              <li>6. 学术委员会</li>
+            </ul>
+          </li>
+          <li>
+            <div>二、招生考试信息 <span>&#9662;</span></div>
+            <ul>
+              <li>1. 本科生招生章程</li>
+              <li>2. 特殊类型招生</li>
+              <li>3. 录取信息查询</li>
+              <li>4. 本科生招生咨询及申诉</li>
+              <li>5. 研究生招生简章</li>
+              <li>6. 研究生复试</li>
+              <li>7. 拟录取研究生名单</li>
+              <li>8. 研究生招生咨询及申诉</li>
+            </ul>
+          </li>
+          <li>
+            <div>三、财务资产及收费信息 <span>&#9662;</span></div>
+            <ul>
+              <li>1. 财务资产管理制度</li>
+              <li>2. 受捐赠资产管理</li>
+              <li>3. 校办企业资产管理</li>
+              <li>4. 招投标情况</li>
+              <li>5. 收支预算</li>
+              <li>6. 收支决算</li>
+              <li>7. 收费管理</li>
+            </ul>
+          </li>
+          <li>
+            <div>四、人事师资信息 <span>&#9662;</span></div>
+            <ul>
+              <li>1. 校级领导社会兼职</li>
+              <li>2. 校级领导因公出国（境）</li>
+              <li>3. 岗位设置管理</li>
+              <li>4. 干部任免与人员招聘</li>
+              <li>5. 教职工争议处理</li>
+            </ul>
+          </li>
+          <li>
+            <div>五、教学质量信息 <span>&#9662;</span></div>
+            <ul>
+              <li>1. 师生结构</li>
+              <li>2. 专业设置</li>
+              <li>3. 课程设置</li>
+              <li>4. 就业指导政策</li>
+              <li>5. 就业质量报告</li>
+              <li>6. 本科教学质量报告</li>
+              <li>7. 艺术教育发展报告</li>
+            </ul>
+          </li>
+          <li>
+            <div>六、学生管理服务信息 <span>&#9662;</span></div>
+            <ul>
+              <li>1. 学籍管理</li>
+              <li>2. 学生资助</li>
+              <li>3. 学生奖惩处罚</li>
+              <li>4. 学生申诉办法</li>
+            </ul>
+          </li>
+          <li>
+            <div>七、学风建设信息 <span>&#9662;</span></div>
+            <ul>
+              <li>1. 学风建设机构</li>
+              <li>2. 学术规范制度</li>
+              <li>3. 学术不端行为查处机制</li>
+            </ul>
+          </li>
+          <li>
+            <div>八、学位学科信息 <span>&#9662;</span></div>
+            <ul>
+              <li>1. 学位授予要求</li>
+              <li>2. 同等学力学位授予</li>
+              <li>3. 新增授权点审核</li>
+              <li>4. 拟增授权点申报</li>
+            </ul>
+          </li>
+          <li>
+            <div>九、对外交流合作信息 <span>&#9662;</span></div>
+            <ul>
+              <li>1. 中外合作办学</li>
+              <li>2. 国际学生管理</li>
+            </ul>
+          </li>
+          <li>
+            <div>十、其他 <span>&#9662;</span></div>
+            <ul>
+              <li>1. 巡视组反馈意见及整改</li>
+              <li>2. 突发重大事件</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--    </div>-->
+    <!--  </div>-->
+
+
+    <div id="Two_parts-right-section">
+
+
+      <!-- 右侧内容条目 -->
+      <div class="content-area">
+        <div id="content-details">
+          <h2 id="title">标题</h2>
+          <div id="meta-info">
+            <p>发布日期：<span id="publish-date">2024-12-21</span></p>
+            <p>浏览量：<span id="views">10000</span></p>
+          </div>
+          <div id="additional-info">
+            <p>文号：<span id="doc-number">文号12345</span></p>
+            <p>发布单位：<span id="publisher">长安大学</span></p>
+          </div>
+          <div id="article-content">
+            <p>新的标创建网站的基本过程
+              利用博达网站群创建网站的流程分为4个步骤：模版页面制作、栏目建立、资料源建立、资料来源设置
+
+              模版页面制作
+              1.在本地的编辑器中制作模版页面（html+css+js+bootsrap等做的静态页面），制作过程中使用分块来做，尽量每一个功能一个块区，都使用一个大的div来装着，给这个大div设置padding大一点，方便后面添加组件的时候能够选中全部的内容；最少制作3个页面，分别是首页、列表页、内容页
+              2上传到博达网站群中：在网页建设页面， 文件|模版上，点击根目录->新建模版->选用本地html文件->填写相应的名称标题->确认（最少导入三个页面：首页、列表页、内容页）
+              3.组件的拖拉：选中显示div线
+
+              栏目建立
+              栏目是可以在导航栏显示出来的，是一个个的功能模块。
+              栏目的建立：在网站创建的页面上，点击跟栏目，新建栏目->选择栏目类型->填写栏目名称->选择主模版（如首页选择index.jsp，其他的页面一般选择列表页lby.jsp）选择内容页（内容页的代码如nry.jsp）
+
+              首页栏目
+              首页栏目下的子栏目通知公告
+              与首页同级的目录
+
+              若要添加图片展示的页面，可创建一个专门的图片展示的模版（因为要使用不同的组件故复制之前的栏目页，更改组件）再添加栏目
+
+
+              组件的创建
+              组件是对后端的代码的封装，我们学会使用这些的组件如何使用、对我们静态页面的翻译，就可以不用自己写后端的代码了，能够获取发布的文章、信息。组件的翻译规则和c语言语法很像，我们可以在智能设计那里翻译，右下角有一个代码手册可以查看，我们也可以去博达网站学习群网站去搜索相关的内容。
+
+              1.智能设计->选择相应的模块->添加组件->选择相应的组件（一开始可能不知道 选择哪个组件类型，多熟悉熟悉就好）->在组件模版中翻译，使用变量（右下角框的参数）代替相应内容。->右上角的框（设置组件样式）
+
+              资料源建立
+              栏目建立好之后，就需要进行栏目资料源的建立了，我们建立资料源的目的实际上是为
+              需要的栏目建立一个文件夹，用来存放栏目下的文章或者图片链接等资料。
+
+
+              1.在资料源中建立一个文件（文章源、图片源、链接源等）
+              2. 资料源建立原则
+
+              必须与栏目名称或者前台组件名称同名；
+              一般从底层栏目建立起；
+              文章源一个栏目下只能建立一个，其他类型的资料源可以建立多个。
+              资料来源设置
+
+
+
+              网站管理
+              点击相应的资料源 新建文章
+
+
+              注意事项
+              1.首页导航栏的栏目页面的跳转问题主要是栏目的列表页没选好，在栏目设置的属性那要选择对应的列表页、内容页。
+              2.手机首页的页面链接点击不了的问题，主要是因为其他盒子的遮挡，最后重新上传一个首页，以一个大盒子的添加组件就可以解决了。
+              3.首页导航栏，如果要在A栏目添加子栏目，首先要在网站设计群的栏目，在A栏目中添加栏目子栏目，并设置好这些子栏目属性，设置栏目页、内容页的模板。最后添加组件，翻译组件。
+              4.翻译组件，可以点击组件智能设置下方，可以看到组件翻译的基本的语法。
+              5.如果有不懂的，也可以上博达网站学习群去搜索相关的内容来查看
+              ————————————————
+
+              版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
+
+              原文链接：https://blog.csdn.net/weixin_44981288/article/details/111146573题。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 底部footer -->
+  <div id="footer-header">
+    <div id="footer-header-content">
+      <div id="footer-logo-section">
+        <img alt="长安大学校徽 - 圆形徽章设计，显示学校英文缩写和创建年份" height="60" id="footer-logo" src="https://replicate.delivery/xezq/A4dPOvVU4kaDD1AdrDoNpt9lAMOdlJtxEaVgE9wBGMu2oQfJA/out-0.png" width="60"/>
+        <div id="footer-site-title">
+          长安大学 | 信息公开网
+        </div>
+      </div>
+      <div id="footer-contact-info">
+        地址: 陕西省西安市咸宁西路28号邮编: 710049
+        <br/>
+        版权所有: 长安大学站点建设与维护: 网络信息中心 陕ICP备06008037号
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

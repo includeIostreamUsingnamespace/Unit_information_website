@@ -1,0 +1,24 @@
+/* 父容器样式 */
+#Two_parts-parent-container {
+    display: flex;             /* 使用flex布局 */
+    width: 80%;                /* 宽度占父元素的100% */
+    margin: 0 auto;            /* 居中对齐 */
+    gap: 20px;                 /* 设置元素之间的间隔距离为20px */
+    justify-content: center;   /* 将子项居中对齐 */
+}
+
+/* 左边部分 */
+#Two_parts-left-section {
+    flex: 0.4;                   /* 左侧部分占用剩余空间 */
+    padding: 10px;             /* 内边距 */
+    margin-right: 20px;        /* 给左边部分右边加一个间距 */
+    text-align: right;         /* 将左边内容对齐到右侧 */
+}
+
+/* 右边部分 */
+#Two_parts-right-section {
+    flex: 1;                   /* 右侧部分占用剩余空间 */
+    padding: 10px;             /* 内边距 */
+    margin-left:5px;         /* 给右边部分左边加一个间距 */
+    text-align: left;          /* 将右边内容对齐到左侧 */
+}

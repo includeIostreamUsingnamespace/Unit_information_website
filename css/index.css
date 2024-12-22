@@ -1,0 +1,117 @@
+/*!*主页第一版*!*/
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background-color: #ffffff;*/
+/*    color: #1e1e1e;*/
+/*    width: 100%;*/
+/*}*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*}*/
+
+/*ul {*/
+/*    list-style-type: none;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+
+/* 导航条上方样式 */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f6f7ff;
+    grid-area: header;
+}
+.left-menu {
+    padding-left: 20px; /* 让左侧菜单与左边距有一些距离 */
+}
+
+.right-section {
+    margin-right: 20px;  /* 让右侧区域距离右边20px */
+}
+
+
+.main-content {
+    padding-left: 20px;  /* 让右侧内容区域距离左边20px */
+
+}
+
+
+#header .logo-img {
+    width: auto; /* 确保图片宽度与盒子宽度相同 */
+    height: 100%; /* 确保图片高度与盒子高度相同 */
+    object-fit: cover; /* 确保图片覆盖整个元素 */
+    padding: 0; /* 确保没有内边距 */
+}
+
+#search-box {
+    display: flex;
+}
+
+#search-box input {
+    padding: 5px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+}
+
+#search-box button {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+}
+
+.icon {
+    stroke: #ffffff; /* 改变 SVG 图标的填充颜色为红色，假设 SVG 内部图形使用了 fill 属性来定义颜色 */
+    width: 20px; /* 改变图标宽度 */
+    height: 25px; /* 改变图标高度 */
+}
+
+/* 导航条样式 */
+.navbar {
+    background-color: #0a5cad;
+    grid-area: navbar;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    padding: 10px 0;
+}
+
+.navbar ul li a {
+    /*color: #ffffff;*/
+    color: #faf9f8;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+/* Banner图片样式 */
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* 首页主体内容样式 */
+.main-content {
+    padding: 20px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
