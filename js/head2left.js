@@ -1,18 +1,39 @@
-// 获取顶部导航栏的所有子菜单项
-const topNavItems = document.querySelectorAll('.Head_navigation_bar-submenu-item');
+document.addEventListener("DOMContentLoaded", function() {
+    // 获取 URL 中的查询参数
+    const urlParams = new URLSearchParams(window.location.search);
+    const highlightId = urlParams.get('highlight'); // 获取 highlight 参数的值
 
-// 获取左侧导航栏的所有菜单项
-const leftNavItems = document.querySelectorAll('#Left_navigation_bar_menu li div');
+    // 输出 highlightId 的值
+    console.log("highlight 参数的值为: ", highlightId);
 
-// 为每个顶部导航菜单项添加点击事件
-topNavItems.forEach((item, index) => {
-    item.addEventListener('click', () => {
-        // 移除之前选中的颜色
-        leftNavItems.forEach(li => {
-            li.style.backgroundColor = ''; // 清空背景颜色
-        });
+    // 如果存在 highlight 参数，则修改对应 div 的样式
+    if (highlightId) {
+        console.log("highlight 参数存在，值为: " + highlightId);
 
-        // 设置当前点击项的颜色
-        leftNavItems[index].style.backgroundColor = 'yellow'; // 或者使用其他颜色
-    });
+        // 生成要查找的元素 ID
+        const elementId = 'Left_navigation_bar_menu_item_id' + highlightId;
+        console.log("要查找的元素 ID 为: ", elementId);
+
+        const element = document.getElementById(elementId);
+
+        // 判断是否找到了该元素
+        if (element) {
+            console.log("找到了该元素: ", element);
+
+
+            // 设置背景色为蓝色
+            element.style.backgroundColor = '#1e3799';
+            console.log("已设置背景色为蓝色");
+
+            // 可选：设置文字颜色为白色
+            element.style.color = 'white';
+            console.log("已设置文字颜色为白色");
+        } else {
+            console.log("没有找到该元素，可能的原因是 ID 不匹配或 HTML 还未加载");
+
+        }
+    } else {
+        console.log("URL 中没有 highlight 参数");
+
+    }
 });
