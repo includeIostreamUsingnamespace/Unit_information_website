@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="reuse/Head_navigation_bar/Head_navigation_bar.css">
   <link rel="stylesheet" href="reuse/Left_navigation_bar/Left_navigation_bar.css">
   <link rel="stylesheet" href="css/content_Two_parts.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="css/content_Tongchuan_government_new.css" rel="stylesheet"/>
 
   <script src="js/Carousel_map.js" defer></script>
   <script src="js/content.js" defer></script>
@@ -62,9 +65,10 @@
   <!--    <li><a href="#">意见建议</a></li>-->
   <!--  </ul>-->
   <!--</nav>-->
+
   <div id="Head_navigation_bar-navbar">
     <div class="Head_navigation_bar-navbar-item">
-      首页
+      <a href="index.html">首页</a>
       <div class="Head_navigation_bar-submenu">
         <div class="Head_navigation_bar-submenu-item">1.学校概况</div>
         <div class="Head_navigation_bar-submenu-item">2.学校章程</div>
@@ -100,7 +104,8 @@
       </div>
     </div>
     <div class="Head_navigation_bar-navbar-item">
-      信息公开目录
+
+      <a href="list.html">信息公开目录</a>
       <div class="Head_navigation_bar-submenu">
         <!--          <div class="Head_navigation_bar-submenu-item">1.校级领导社会兼职</div>-->
         <!--          <div class="Head_navigation_bar-submenu-item">2.校级领导因公出国（境）</div>-->
@@ -304,75 +309,143 @@
 
 
       <!-- 右侧内容条目 -->
-      <div class="content-area">
-        <div id="content-details">
-          <h2 id="title">标题</h2>
-          <div id="meta-info">
-            <p>发布日期：<span id="publish-date">2024-12-21</span></p>
-            <p>浏览量：<span id="views">10000</span></p>
-          </div>
-          <div id="additional-info">
-            <p>文号：<span id="doc-number">文号12345</span></p>
-            <p>发布单位：<span id="publisher">长安大学</span></p>
-          </div>
-          <div id="article-content">
-            <p>新的标创建网站的基本过程
-              利用博达网站群创建网站的流程分为4个步骤：模版页面制作、栏目建立、资料源建立、资料来源设置
 
-              模版页面制作
-              1.在本地的编辑器中制作模版页面（html+css+js+bootsrap等做的静态页面），制作过程中使用分块来做，尽量每一个功能一个块区，都使用一个大的div来装着，给这个大div设置padding大一点，方便后面添加组件的时候能够选中全部的内容；最少制作3个页面，分别是首页、列表页、内容页
-              2上传到博达网站群中：在网页建设页面， 文件|模版上，点击根目录->新建模版->选用本地html文件->填写相应的名称标题->确认（最少导入三个页面：首页、列表页、内容页）
-              3.组件的拖拉：选中显示div线
-
-              栏目建立
-              栏目是可以在导航栏显示出来的，是一个个的功能模块。
-              栏目的建立：在网站创建的页面上，点击跟栏目，新建栏目->选择栏目类型->填写栏目名称->选择主模版（如首页选择index.jsp，其他的页面一般选择列表页lby.jsp）选择内容页（内容页的代码如nry.jsp）
-
-              首页栏目
-              首页栏目下的子栏目通知公告
-              与首页同级的目录
-
-              若要添加图片展示的页面，可创建一个专门的图片展示的模版（因为要使用不同的组件故复制之前的栏目页，更改组件）再添加栏目
-
-
-              组件的创建
-              组件是对后端的代码的封装，我们学会使用这些的组件如何使用、对我们静态页面的翻译，就可以不用自己写后端的代码了，能够获取发布的文章、信息。组件的翻译规则和c语言语法很像，我们可以在智能设计那里翻译，右下角有一个代码手册可以查看，我们也可以去博达网站学习群网站去搜索相关的内容。
-
-              1.智能设计->选择相应的模块->添加组件->选择相应的组件（一开始可能不知道 选择哪个组件类型，多熟悉熟悉就好）->在组件模版中翻译，使用变量（右下角框的参数）代替相应内容。->右上角的框（设置组件样式）
-
-              资料源建立
-              栏目建立好之后，就需要进行栏目资料源的建立了，我们建立资料源的目的实际上是为
-              需要的栏目建立一个文件夹，用来存放栏目下的文章或者图片链接等资料。
-
-
-              1.在资料源中建立一个文件（文章源、图片源、链接源等）
-              2. 资料源建立原则
-
-              必须与栏目名称或者前台组件名称同名；
-              一般从底层栏目建立起；
-              文章源一个栏目下只能建立一个，其他类型的资料源可以建立多个。
-              资料来源设置
-
-
-
-              网站管理
-              点击相应的资料源 新建文章
-
-
-              注意事项
-              1.首页导航栏的栏目页面的跳转问题主要是栏目的列表页没选好，在栏目设置的属性那要选择对应的列表页、内容页。
-              2.手机首页的页面链接点击不了的问题，主要是因为其他盒子的遮挡，最后重新上传一个首页，以一个大盒子的添加组件就可以解决了。
-              3.首页导航栏，如果要在A栏目添加子栏目，首先要在网站设计群的栏目，在A栏目中添加栏目子栏目，并设置好这些子栏目属性，设置栏目页、内容页的模板。最后添加组件，翻译组件。
-              4.翻译组件，可以点击组件智能设置下方，可以看到组件翻译的基本的语法。
-              5.如果有不懂的，也可以上博达网站学习群去搜索相关的内容来查看
-              ————————————————
-
-              版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
-
-              原文链接：https://blog.csdn.net/weixin_44981288/article/details/111146573题。</p>
-          </div>
+      <div id="content_Tongchuan_government_container">
+        <div id="content_Tongchuan_government_breadcrumb">
+          当前位置: 政府信息公开 / 政策文件 / 其他文件 / 铜政发
+        </div>
+        <table id="content_Tongchuan_government_info_table">
+          <tr>
+            <td>
+              索引号:
+            </td>
+            <td>
+              TCXXGK-2022-003536
+            </td>
+            <td>
+              主题分类:
+            </td>
+            <td>
+              人事工作
+            </td>
+          </tr>
+          <tr>
+            <td>
+              发文机构:
+            </td>
+            <td>
+              铜川市人民政府办公室
+            </td>
+            <td>
+              发文文号:
+            </td>
+            <td>
+              铜政发〔2022〕7号
+            </td>
+          </tr>
+          <tr>
+            <td>
+              发文日期:
+            </td>
+            <td>
+              2022年05月18日
+            </td>
+            <td>
+              发布日期:
+            </td>
+            <td>
+              2022-05-19 08:55
+            </td>
+          </tr>
+          <tr>
+            <td>
+              公文时效:
+            </td>
+            <td>
+              有效
+            </td>
+            <td>
+              发布机构:
+            </td>
+            <td>
+              市政府办公室
+            </td>
+          </tr>
+        </table>
+        <h1 id="content_Tongchuan_government_title">
+          铜川市人民政府
+        </h1>
+        <h2 id="content_Tongchuan_government_subtitle">
+          关于市政府领导同志分工的通知
+        </h2>
+        <div id="content_Tongchuan_government_source_info">
+        <span>
+            来源: 铜川市人民政府办公室
+        </span>
+          <span>
+            发布时间: 2022-05-19 08:55
+        </span>
+          <span>
+            阅读: 10937人
+        </span>
+        </div>
+        <div id="content_Tongchuan_government_actions">
+        <span>
+            字体大小:
+        </span>
+          <a href="#">
+            大
+          </a>
+          <a href="#">
+            中
+          </a>
+          <a href="#">
+            小
+          </a>
+          <span>
+            <a href="#">
+                打印
+            </a>
+        </span>
+          <span>
+            <a href="#">
+                保存
+            </a>
+        </span>
+          <span>
+            <a href="#">
+                收藏
+            </a>
+        </span>
+          <a href="#">
+            <img alt="a small green icon with a speech bubble and a plus sign inside" height="20" src="https://replicate.delivery/xezq/dCEzBwGJyya3BlKRySwy8kuIfbMHvIJMKVXPfwh8ySbhe36nA/out-0.png" style="vertical-align: middle;" width="20"/>
+          </a>
+          <a href="#">
+            <img alt="a small orange icon with a speech bubble and a plus sign inside" height="20" src="https://replicate.delivery/xezq/8Zr1nf4sLnx2TyHW68EAMlYeDVgQu5EeRWnK9fwHRu3H6v1PB/out-0.png" style="vertical-align: middle;" width="20"/>
+          </a>
+        </div>
+        <div id="content_Tongchuan_government_content">
+          <p>
+            各区县人民政府，市新区管委会，市政府各工作部门、直属事业单位：
+          </p>
+          <p>
+            经研究决定，现将市政府领导同志分工通知如下：
+          </p>
+          <p>
+            <strong>
+              市长 郝光耀
+            </strong>
+            领导市政府全面工作。分管市财政局、市审计局。
+          </p>
+          <p>
+            <strong>
+              常务副市长 黄勇
+            </strong>
+            分管市政府办公室、市发展改革委(市粮食和物资储备局)、市人社局、市应急管理局、市统计局、市行政审批服务局、市政府研究室(市经济研究中心)、市机关事务管理服务中心、市政府外事办、市政府新闻办。协助分管市财政局、市审计局。联系市人大常委会，铜川军分区，中、省统计调查队，驻铜部队，市税务局，市养老保险经办处，市委军民融合办。
+          </p>
         </div>
       </div>
+
 
     </div>
 
