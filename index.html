@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="reuse/Left_navigation_bar/Left_navigation_bar.css">
   <link rel="stylesheet" href="css/Three_modules_in_the_middlecontainer.css">
   <link rel="stylesheet" href="reuse/Head_navigation_bar/Head_navigation_bar.css">
+  <link rel="stylesheet" href="css/Tongchuan_City_News.css">
+  <link rel="stylesheet" href="css/Wuda_News_network.css">
 
 
 
@@ -29,6 +31,7 @@
   <script src="js/index.js" defer></script>
   <script src="js/Carousel_map.js" defer></script>
   <script src="reuse/Left_navigation_bar/Left_navigation_bar.js"></script>
+  <script src="js/Wuda_News_network.js"></script>
 
 
 
@@ -207,93 +210,201 @@
 
 
 <!--新闻-->
-    <div id="container_news">
-      <div class="news-header">
+<!--    <div id="container_news">-->
+<!--      <div class="news-header">-->
 
+<!--      </div>-->
+<!--      <div class="news-grid">-->
+<!--        <div class="main-news">-->
+<!--          <div class="carousel">-->
+<!--            <div class="carousel-item active">-->
+<!--              <img alt="A man in a suit speaking at a podium with a red background and the Wuhan University logo" height="400" src="https://placehold.co/600x400/007bff/ffffff?text=Modern+Architecture+1" width="600"/>-->
+<!--              <div class="main-news-title">-->
+<!--                长安大学成立卓越工程师学院-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="carousel-item">-->
+<!--              <img alt="Wuhan University campus view" height="400" src="https://placehold.co/600x400/007bff/ffffff?text=Modern+Architecture+2" width="600"/>-->
+<!--              <div class="main-news-title">-->
+<!--                长安大学举办2024年新年晚会-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="carousel-item">-->
+<!--              <img alt="Students in a laboratory" height="400" src="https://placehold.co/600x400/007bff/ffffff?text=Modern+Architecture+3" width="600"/>-->
+<!--              <div class="main-news-title">-->
+<!--                长安大学获得重大科研突破-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="carousel-item">-->
+<!--              <img alt="Graduation ceremony" height="400" src="https://placehold.co/600x400/007bff/ffffff?text=Modern+Architecture+4" width="600"/>-->
+<!--              <div class="main-news-title">-->
+<!--                长安大学2024届毕业典礼隆重举行-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="dots">-->
+<!--            <div class="dot active">-->
+<!--            </div>-->
+<!--            <div class="dot">-->
+<!--            </div>-->
+<!--            <div class="dot">-->
+<!--            </div>-->
+<!--            <div class="dot">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="side-news">-->
+<!--          <div class="side-news-item">-->
+<!--            <img alt="A man in a suit standing in front of a red background" height="200" src="https://placehold.co/300x200/007bff/ffffff?text=Modern+Architecture+5" width="300"/>-->
+<!--            <div class="side-news-content">-->
+<!--              <div class="side-news-title">-->
+<!--                长安大学成立卓越工程师学院-->
+<!--              </div>-->
+<!--              <div class="side-news-meta">-->
+<!--                新闻网讯 (记者相茹 通讯员余亮) 12月18日-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="side-news-item">-->
+<!--            <img alt="Two men shaking hands in front of a table with a red background" height="200" src="https://placehold.co/300x200/007bff/ffffff?text=Modern+Architecture+6" width="300"/>-->
+<!--            <div class="side-news-content">-->
+<!--              <div class="side-news-title">-->
+<!--                长安大学与中国留学服务中心...-->
+<!--              </div>-->
+<!--              <div class="side-news-meta">-->
+<!--                新闻网讯 (通讯员王兴振) 12月17日上午-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="side-news">-->
+<!--          <div class="side-news-item">-->
+<!--            <img alt="A large group of people sitting at tables in a large room" height="200" src="https://placehold.co/300x200/007bff/ffffff?text=Modern+Architecture+7" width="300"/>-->
+<!--            <div class="side-news-content">-->
+<!--              <div class="side-news-title">-->
+<!--                长安大学人工智能学院成立-->
+<!--              </div>-->
+<!--              <div class="side-news-meta">-->
+<!--                新闻网讯 (记者赵冀帆 通讯员史然) 12月16日-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="side-news-item">-->
+<!--            <img alt="A group of people sitting around a table in a meeting room" height="200" src="https://placehold.co/300x200/007bff/ffffff?text=Modern+Architecture+8" width="300"/>-->
+<!--            <div class="side-news-content">-->
+<!--              <div class="side-news-title">-->
+<!--                长安大学2024年第六次院长联...-->
+<!--              </div>-->
+<!--              <div class="side-news-meta">-->
+<!--                新闻网讯 (记者赵冀帆) 12月5日下午-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+
+    <div id="Wuda_News_network_container">
+      <div id="Wuda_News_network_header">
+    <span>
+     长大新闻网
+    </span>
+        <a href="#">
+          更多 &gt;
+        </a>
       </div>
-      <div class="news-grid">
-        <div class="main-news">
-          <div class="carousel">
-            <div class="carousel-item active">
-              <img alt="A man in a suit speaking at a podium with a red background and the Wuhan University logo" height="400" src="https://placehold.co/600x400/007bff/ffffff?text=Modern+Architecture+1" width="600"/>
-              <div class="main-news-title">
-                长安大学成立卓越工程师学院
+      <div class="Wuda_News_network_grid">
+        <div class="Wuda_News_network_main_news">
+          <div class="Wuda_News_network_carousel">
+            <div class="Wuda_News_network_carousel_item active">
+              <img alt="长安大学校园风光" height="450" src="https://replicate.delivery/xezq/4Op3NDK7rCZKItpFG5B3Wkmp9oSWd8qV5Rr5ewV8vFlFfm9TA/out-0.png" width="1920"/>
+              <div class="Wuda_News_network_main_news_title">
+                长安大学成立卓越工程师学院，培养未来科技领军人才
               </div>
             </div>
-            <div class="carousel-item">
-              <img alt="Wuhan University campus view" height="400" src="https://placehold.co/600x400/007bff/ffffff?text=Modern+Architecture+2" width="600"/>
-              <div class="main-news-title">
-                长安大学举办2024年新年晚会
+            <div class="Wuda_News_network_carousel_item">
+              <img alt="新年晚会现场" height="450" src="https://replicate.delivery/xezq/MRhwEwnzTg6cHhdvVdNfgyoF8hHBpCzLqxIMhpkiYZNFfm9TA/out-0.png" width="1920"/>
+              <div class="Wuda_News_network_main_news_title">
+                长安大学举办2024年新年晚会，师生共庆佳节
               </div>
             </div>
-            <div class="carousel-item">
-              <img alt="Students in a laboratory" height="400" src="https://placehold.co/600x400/007bff/ffffff?text=Modern+Architecture+3" width="600"/>
-              <div class="main-news-title">
-                长安大学获得重大科研突破
+            <div class="Wuda_News_network_carousel_item">
+              <img alt="科研实验室场景" height="450" src="https://replicate.delivery/xezq/sM9kUOehMGT7SyUqaqy2AV1OFNflpWNquNKbnNF3p3mKeN7nA/out-0.png" width="1920"/>
+              <div class="Wuda_News_network_main_news_title">
+                长安大学在量子通信领域取得重大突破，国际影响力显著提升
               </div>
             </div>
-            <div class="carousel-item">
-              <img alt="Graduation ceremony" height="400" src="https://placehold.co/600x400/007bff/ffffff?text=Modern+Architecture+4" width="600"/>
-              <div class="main-news-title">
-                长安大学2024届毕业典礼隆重举行
-              </div>
-            </div>
-          </div>
-          <div class="dots">
-            <div class="dot active">
-            </div>
-            <div class="dot">
-            </div>
-            <div class="dot">
-            </div>
-            <div class="dot">
-            </div>
-          </div>
-        </div>
-        <div class="side-news">
-          <div class="side-news-item">
-            <img alt="A man in a suit standing in front of a red background" height="200" src="https://placehold.co/300x200/007bff/ffffff?text=Modern+Architecture+5" width="300"/>
-            <div class="side-news-content">
-              <div class="side-news-title">
-                长安大学成立卓越工程师学院
-              </div>
-              <div class="side-news-meta">
-                新闻网讯 (记者相茹 通讯员余亮) 12月18日
+            <div class="Wuda_News_network_carousel_item">
+              <img alt="毕业典礼现场" height="450" src="https://replicate.delivery/xezq/y7HfGSnsFa0bLCi4Ijqhe71Y285IxhBQSpI2yKtnERSLeN7nA/out-0.png" width="1920"/>
+              <div class="Wuda_News_network_main_news_title">
+                长安大学2024届毕业典礼隆重举行，近万名学子扬帆起航
               </div>
             </div>
           </div>
-          <div class="side-news-item">
-            <img alt="Two men shaking hands in front of a table with a red background" height="200" src="https://placehold.co/300x200/007bff/ffffff?text=Modern+Architecture+6" width="300"/>
-            <div class="side-news-content">
-              <div class="side-news-title">
-                长安大学与中国留学服务中心...
-              </div>
-              <div class="side-news-meta">
-                新闻网讯 (通讯员王兴振) 12月17日上午
-              </div>
+          <div class="Wuda_News_network_dots">
+            <div class="Wuda_News_network_dot active">
+            </div>
+            <div class="Wuda_News_network_dot">
+            </div>
+            <div class="Wuda_News_network_dot">
+            </div>
+            <div class="Wuda_News_network_dot">
             </div>
           </div>
         </div>
-        <div class="side-news">
-          <div class="side-news-item">
-            <img alt="A large group of people sitting at tables in a large room" height="200" src="https://placehold.co/300x200/007bff/ffffff?text=Modern+Architecture+7" width="300"/>
-            <div class="side-news-content">
-              <div class="side-news-title">
-                长安大学人工智能学院成立
+        <div class="Wuda_News_network_side_news">
+          <div class="Wuda_News_network_side_news_item">
+            <div class="Wuda_News_network_side_news_item_image">
+              <img alt="卓越工程师学院成立仪式" height="300" src="https://replicate.delivery/xezq/T42x3SWJBDrhD5ozotgZphQW5Dn6boSKbErvvwd1dOvivZfJA/out-0.png" width="300"/>
+            </div>
+            <div class="Wuda_News_network_side_news_content">
+              <div class="Wuda_News_network_side_news_title">
+                长安大学成立卓越工程师学院，旨在培养高素质创新人才
               </div>
-              <div class="side-news-meta">
-                新闻网讯 (记者赵冀帆 通讯员史然) 12月16日
+              <div class="Wuda_News_network_side_news_meta">
+                新闻网讯 (记者相茹 通讯员余亮) 12月18日，长安大学卓越工程师学院正式成立。该学院将致力于培养具有国际视野、创新能力和领导力的高端工程人才。
               </div>
             </div>
           </div>
-          <div class="side-news-item">
-            <img alt="A group of people sitting around a table in a meeting room" height="200" src="https://placehold.co/300x200/007bff/ffffff?text=Modern+Architecture+8" width="300"/>
-            <div class="side-news-content">
-              <div class="side-news-title">
-                长安大学2024年第六次院长联...
+          <div class="Wuda_News_network_side_news_item">
+            <div class="Wuda_News_network_side_news_item_image">
+              <img alt="国际合作签约仪式" height="300" src="https://replicate.delivery/xezq/E9XwpYV0zxbFOl4dV0ys5rjGaHSazC8rdrtwCg4fSesLeN7nA/out-0.png" width="300"/>
+            </div>
+            <div class="Wuda_News_network_side_news_content">
+              <div class="Wuda_News_network_side_news_title">
+                长安大学与中国留学服务中心签署战略合作协议
               </div>
-              <div class="side-news-meta">
-                新闻网讯 (记者赵冀帆) 12月5日下午
+              <div class="Wuda_News_network_side_news_meta">
+                新闻网讯 (通讯员王兴振) 12月17日上午，长安大学与中国留学服务中心在校内签署战略合作协议，双方将在国际教育交流与合作等方面展开深入合作。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Wuda_News_network_side_news">
+          <div class="Wuda_News_network_side_news_item">
+            <div class="Wuda_News_network_side_news_item_image">
+              <img alt="人工智能学院成立仪式" height="300" src="https://replicate.delivery/xezq/HU0kLYUZnq7jKV0Sqc8tnXz44FmXcoy14GL1S2KM7PnivZfJA/out-0.png" width="300"/>
+            </div>
+            <div class="Wuda_News_network_side_news_content">
+              <div class="Wuda_News_network_side_news_title">
+                长安大学人工智能学院正式成立，打造AI人才培养高地
+              </div>
+              <div class="Wuda_News_network_side_news_meta">
+                新闻网讯 (记者赵冀帆 通讯员史然) 12月16日，长安大学人工智能学院正式揭牌成立。该学院将整合校内外资源，致力于培养具有国际竞争力的AI领域高端人才。
+              </div>
+            </div>
+          </div>
+          <div class="Wuda_News_network_side_news_item">
+            <div class="Wuda_News_network_side_news_item_image">
+              <img alt="院长联席会议现场" height="300" src="https://replicate.delivery/xezq/5DJQ4NvGYMKCGpGvxhYnJqSLPS6N551UkZ1i6ditqIjivZfJA/out-0.png" width="300"/>
+            </div>
+            <div class="Wuda_News_network_side_news_content">
+              <div class="Wuda_News_network_side_news_title">
+                长安大学2024年第六次院长联席会议召开
+              </div>
+              <div class="Wuda_News_network_side_news_meta">
+                新闻网讯 (记者赵冀帆) 12月5日下午，长安大学2024年第六次院长联席会议在行政楼召开。会议讨论了学校未来发展战略和重点工作安排。
               </div>
             </div>
           </div>
@@ -302,7 +413,10 @@
     </div>
 
 
-<!--左面的那个导航栏。 -->
+
+
+
+    <!--左面的那个导航栏。 -->
   <div class="Three_modules_in_the_middlecontainer">
     <div class="Three_modules_in_the_middlecontainer_item left">
 
@@ -310,7 +424,8 @@
       <div id="Left_navigation_bar_container">
         <ul id="Left_navigation_bar_menu">
           <li>
-            <div>一、基本信息 <span>&#9662;</span></div>
+           <!--    小三角span里面加&#9662;        -->
+            <div>一、基本信息 <span>  </span></div>
             <ul>
               <li>1. 学校概况</li>
               <li>2. 学校章程</li>
@@ -321,7 +436,7 @@
             </ul>
           </li>
           <li>
-            <div>二、招生考试信息 <span>&#9662;</span></div>
+            <div>二、招生考试信息 <span>  </span></div>
             <ul>
               <li>1. 本科生招生章程</li>
               <li>2. 特殊类型招生</li>
@@ -334,7 +449,7 @@
             </ul>
           </li>
           <li>
-            <div>三、财务资产及收费信息 <span>&#9662;</span></div>
+            <div>三、财务资产及收费信息 <span>  </span></div>
             <ul>
               <li>1. 财务资产管理制度</li>
               <li>2. 受捐赠资产管理</li>
@@ -346,7 +461,7 @@
             </ul>
           </li>
           <li>
-            <div>四、人事师资信息 <span>&#9662;</span></div>
+            <div>四、人事师资信息 <span> </span></div>
             <ul>
               <li>1. 校级领导社会兼职</li>
               <li>2. 校级领导因公出国（境）</li>
@@ -356,7 +471,7 @@
             </ul>
           </li>
           <li>
-            <div>五、教学质量信息 <span>&#9662;</span></div>
+            <div>五、教学质量信息 <span>  </span></div>
             <ul>
               <li>1. 师生结构</li>
               <li>2. 专业设置</li>
@@ -368,7 +483,7 @@
             </ul>
           </li>
           <li>
-            <div>六、学生管理服务信息 <span>&#9662;</span></div>
+            <div>六、学生管理服务信息 <span>  </span></div>
             <ul>
               <li>1. 学籍管理</li>
               <li>2. 学生资助</li>
@@ -377,7 +492,7 @@
             </ul>
           </li>
           <li>
-            <div>七、学风建设信息 <span>&#9662;</span></div>
+            <div>七、学风建设信息 <span>  </span></div>
             <ul>
               <li>1. 学风建设机构</li>
               <li>2. 学术规范制度</li>
@@ -385,7 +500,7 @@
             </ul>
           </li>
           <li>
-            <div>八、学位学科信息 <span>&#9662;</span></div>
+            <div>八、学位学科信息 <span>  </span></div>
             <ul>
               <li>1. 学位授予要求</li>
               <li>2. 同等学力学位授予</li>
@@ -394,14 +509,14 @@
             </ul>
           </li>
           <li>
-            <div>九、对外交流合作信息 <span>&#9662;</span></div>
+            <div>九、对外交流合作信息 <span>  </span></div>
             <ul>
               <li>1. 中外合作办学</li>
               <li>2. 国际学生管理</li>
             </ul>
           </li>
           <li>
-            <div>十、其他 <span>&#9662;</span></div>
+            <div>十、其他 <span>  </span></div>
             <ul>
               <li>1. 巡视组反馈意见及整改</li>
               <li>2. 突发重大事件</li>
@@ -417,130 +532,221 @@
     <div class="Three_modules_in_the_middlecontainer_item center">
 
       <div class="main-content">
-        <!-- 第一部分：最新信息公开 -->
-        <div class="section" id="latest-info">
-          <div class="content-header">
-            <div class="content-title">最新信息公开</div>
-            <a class="view-more" href="#">查看更多 ›</a>
-          </div>
-          <div class="news-list">
-            <div class="news-item">
-              <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-              <div class="news-date">2024-12-20</div>
-            </div>
-            <div class="news-item">
-              <div class="news-title">关于2025年加拿大Mitacs本科生实习合作奖学金项目推荐名单的公示</div>
-              <div class="news-date">2024-12-20</div>
-            </div>
-            <div class="news-item">
-              <div class="news-title">2025年全国硕士研究生招生考试长安大学考点温馨提示</div>
-              <div class="news-date">2024-12-20</div>
-            </div>
-            <div class="news-item">
-              <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-              <div class="news-date">2024-12-20</div>
-            </div>          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-            <div class="news-item">
-              <div class="news-title">关于2025年加拿大Mitacs本科生实习合作奖学金项目推荐名单的公示</div>
-              <div class="news-date">2024-12-20</div>
-            </div>
-            <div class="news-item">
-              <div class="news-title">关于2025年加拿大Mitacs本科生实习合作奖学金项目推荐名单的公示</div>
-              <div class="news-date">2024-12-20</div>
-            </div>
+<!--        &lt;!&ndash; 第一部分：最新信息公开 &ndash;&gt;-->
+<!--        <div class="section" id="latest-info">-->
+<!--          <div class="content-header">-->
+<!--            <div class="content-title">最新信息公开</div>-->
+<!--            <a class="view-more" href="#">查看更多 ›</a>-->
+<!--          </div>-->
+<!--          <div class="news-list">-->
+<!--            <div class="news-item">-->
+<!--              <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--              <div class="news-date">2024-12-20</div>-->
+<!--            </div>-->
+<!--            <div class="news-item">-->
+<!--              <div class="news-title">关于2025年加拿大Mitacs本科生实习合作奖学金项目推荐名单的公示</div>-->
+<!--              <div class="news-date">2024-12-20</div>-->
+<!--            </div>-->
+<!--            <div class="news-item">-->
+<!--              <div class="news-title">2025年全国硕士研究生招生考试长安大学考点温馨提示</div>-->
+<!--              <div class="news-date">2024-12-20</div>-->
+<!--            </div>-->
+<!--            <div class="news-item">-->
+<!--              <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--              <div class="news-date">2024-12-20</div>-->
+<!--            </div>          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--            <div class="news-item">-->
+<!--              <div class="news-title">关于2025年加拿大Mitacs本科生实习合作奖学金项目推荐名单的公示</div>-->
+<!--              <div class="news-date">2024-12-20</div>-->
+<!--            </div>-->
+<!--            <div class="news-item">-->
+<!--              <div class="news-title">关于2025年加拿大Mitacs本科生实习合作奖学金项目推荐名单的公示</div>-->
+<!--              <div class="news-date">2024-12-20</div>-->
+<!--            </div>-->
 
-            <!-- 其他新闻条目省略 -->
-          </div>
+<!--            &lt;!&ndash; 其他新闻条目省略 &ndash;&gt;-->
+<!--          </div>-->
 
+<!--        </div>-->
+
+<!--        <br>-->
+
+<!--        &lt;!&ndash; 第二部分：通知公告专栏 &ndash;&gt;-->
+<!--        <div class="section" id="notifications">-->
+<!--          <div class="content-header">-->
+<!--            <div class="content-title">通知公告专栏</div>-->
+<!--            <a class="view-more" href="#">查看更多 ›</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="news-list">-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">关于2025年加拿大Mitacs本科生实习合作奖学金项目推荐名单的公示</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">2025年全国硕士研究生招生考试长安大学考点温馨提示</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; 其他新闻条目省略 &ndash;&gt;-->
+
+<!--        </div>-->
+<!--        <br>-->
+<!--        &lt;!&ndash; 第三部分：信息公开报告 &ndash;&gt;-->
+<!--        <div class="section" id="info-reports">-->
+<!--          <div class="content-header">-->
+<!--            <div class="content-title">信息公开报告</div>-->
+<!--            <a class="view-more" href="#">查看更多 ›</a>-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--        <div class="news-list">-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">关于2025年加拿大Mitacs本科生实习合作奖学金项目推荐名单的公示</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">2025年全国硕士研究生招生考试长安大学考点温馨提示</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          <div class="news-item">-->
+<!--            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>-->
+<!--            <div class="news-date">2024-12-20</div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; 其他新闻条目省略 &ndash;&gt;-->
+<!--        </div>-->
+
+        <div id="Tongchuan_City_News_latest-info" class="Tongchuan_City_News_section">
+          <h2>最新信息公开</h2>
+          <ul class="Tongchuan_City_News_news-list">
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市2023年度政府信息公开工作年度报告</a>
+              <span class="Tongchuan_City_News_date">2024-03-28</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市人民政府办公室关于印发《铜川市2024年政务公开工作要点》的通知</a>
+              <span class="Tongchuan_City_News_date">2024-03-25</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市人民政府关于公布铜川市第二批市级非物质文化遗产代表性项目名录的通知</a>
+              <span class="Tongchuan_City_News_date">2024-03-20</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市人民政府关于印发《铜川市"十四五"现代服务业发展规划》的通知</a>
+              <span class="Tongchuan_City_News_date">2024-03-15</span>
+            </li>
+          </ul>
+          <a href="#" class="Tongchuan_City_News_button">查看更多</a>
         </div>
 
-        <br>
-        <!-- 第二部分：通知公告专栏 -->
-        <div class="section" id="notifications">
-          <div class="content-header">
-            <div class="content-title">通知公告专栏</div>
-            <a class="view-more" href="#">查看更多 ›</a>
-          </div>
+        <div id="Tongchuan_City_News_announcements" class="Tongchuan_City_News_section">
+          <h2>通知公告专栏</h2>
+          <ul class="Tongchuan_City_News_news-list">
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">关于2024年清明节放假安排的通知</a>
+              <span class="Tongchuan_City_News_date">2024-03-28</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">关于2024年清明节放假安排的通知</a>
+              <span class="Tongchuan_City_News_date">2024-03-28</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市2024年度公开招聘事业单位工作人员公告</a>
+              <span class="Tongchuan_City_News_date">2024-03-22</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">关于2024年清明节放假安排的通知</a>
+              <span class="Tongchuan_City_News_date">2024-03-28</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市2024年度城乡居民基本医疗保险缴费标准公告</a>
+              <span class="Tongchuan_City_News_date">2024-03-18</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">关于开展2024年度铜川市科学技术奖励项目申报工作的通知</a>
+              <span class="Tongchuan_City_News_date">2024-03-10</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市2024年度城乡居民基本医疗保险缴费标准公告</a>
+              <span class="Tongchuan_City_News_date">2024-03-18</span>
+            </li>
+          </ul>
+          <a href="#" class="Tongchuan_City_News_button">查看更多</a>
         </div>
-        <div class="news-list">
-          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">关于2025年加拿大Mitacs本科生实习合作奖学金项目推荐名单的公示</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">2025年全国硕士研究生招生考试长安大学考点温馨提示</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <!-- 其他新闻条目省略 -->
 
+        <div id="Tongchuan_City_News_reports" class="Tongchuan_City_News_section">
+          <h2>信息公开报告</h2>
+          <ul class="Tongchuan_City_News_news-list">
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市2023年度政府信息公开工作年度报告</a>
+              <span class="Tongchuan_City_News_date">2024-03-30</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市2023年度环境状况公报</a>
+              <span class="Tongchuan_City_News_date">2024-03-25</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市2023年国民经济和社会发展统计公报</a>
+              <span class="Tongchuan_City_News_date">2024-03-20</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市2023年度食品安全监督管理工作报告</a>
+              <span class="Tongchuan_City_News_date">2024-03-15</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市2023年度食品安全监督管理工作报告</a>
+              <span class="Tongchuan_City_News_date">2024-03-15</span>
+            </li>
+            <li class="Tongchuan_City_News_news-item">
+              <a href="#">铜川市2023年度环境状况公报</a>
+              <span class="Tongchuan_City_News_date">2024-03-25</span>
+            </li>
+          </ul>
+          <a href="#" class="Tongchuan_City_News_button">查看更多</a>
         </div>
-        <br>
-        <!-- 第三部分：信息公开报告 -->
-        <div class="section" id="info-reports">
-          <div class="content-header">
-            <div class="content-title">信息公开报告</div>
-            <a class="view-more" href="#">查看更多 ›</a>
-          </div>
 
-        </div>
-        <div class="news-list">
-          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">关于2025年加拿大Mitacs本科生实习合作奖学金项目推荐名单的公示</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">2025年全国硕士研究生招生考试长安大学考点温馨提示</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">长安大学2024年度下半年非事业编制人员招聘拟录用人员及递补人...</div>
-            <div class="news-date">2024-12-20</div>
-          </div>
-          <!-- 其他新闻条目省略 -->
-        </div>
 
       </div>
     </div>
@@ -569,6 +775,10 @@
           采购招标网
         </div>
         <img alt="Traditional Chinese building with mountains and trees in background" class="right-image" height="150" src="https://placehold.co/300x200/007bff/ffffff?text=Modern+Architecture+5" width="300"/>
+        <div class="right-box">
+          信息公开受理 13474569521
+        </div>
+
       </div>
 
       </div>

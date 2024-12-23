@@ -3,7 +3,7 @@
     display: flex; /* 启用flex布局 */
     justify-content: center; /* 容器内容居中 */
     align-items: flex-start; /* 子元素在垂直方向上置顶对齐 */
-    width: 81%; /* 容器占父元素宽度的90% */
+    width: 80%; /* 容器占父元素宽度的90% */
     margin: 0 auto; /* 设置自动水平边距，使容器居中 */
 }
 
@@ -20,7 +20,7 @@
 
 .center {
     flex: 2; /* 中间占较大比例 */
-    text-align: center;
+    /*text-align: center;*/
     align-self: flex-start; /* 单独设置中间元素置顶 */
 }
 
