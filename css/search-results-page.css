@@ -35,7 +35,7 @@
 .search-result-item {
     background-color: #ffffff; /* 白色背景 */
     border: 1px solid #ddd; /* 边框色 */
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     margin-bottom: 10px;
     padding: 10px;
     transition: all 0.3s ease; /* 添加过渡效果 */

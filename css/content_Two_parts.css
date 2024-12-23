@@ -12,7 +12,7 @@
     flex: 0.4;                   /* 左侧部分占用剩余空间 */
     padding: 10px;             /* 内边距 */
     margin-right: 20px;        /* 给左边部分右边加一个间距 */
-    text-align: right;         /* 将左边内容对齐到右侧 */
+    /*text-align: right;         !* 将左边内容对齐到右侧 *!*/
 }
 
 /* 右边部分 */

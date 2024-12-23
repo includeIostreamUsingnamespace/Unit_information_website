@@ -32,7 +32,7 @@
 .Wuda_News_network_main_news {
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     height: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -106,7 +106,7 @@
 .Wuda_News_network_side_news_item {
     display: flex;
     background-color: #fff;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -130,7 +130,7 @@
     width: 100%;
     height: calc(100% - 10px);
     object-fit: cover;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
 }
 
 .Wuda_News_network_side_news_content {
@@ -152,4 +152,6 @@
 .Wuda_News_network_side_news_meta {
     font-size: 14px;
     color: #6c757d;
+    overflow: hidden;          /* 超出部分隐藏 */
+    text-overflow: ellipsis;   /* 使用省略号表示溢出部分 */
 }

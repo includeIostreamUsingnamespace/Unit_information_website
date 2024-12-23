@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/Carousel_map.css">
   <link rel="stylesheet" href="css/index_menu_items.css">
   <link rel="stylesheet" href="css/portrait_list.css">
-  <link rel="stylesheet" href="reuse/Left_navigation_bar/Left_navigation_bar.css">
+  <link rel="stylesheet" href="css/Left_navigation_bar.css">
   <link rel="stylesheet" href="css/Three_modules_in_the_middlecontainer.css">
   <link rel="stylesheet" href="reuse/Head_navigation_bar/Head_navigation_bar.css">
   <link rel="stylesheet" href="css/Tongchuan_City_News.css">
@@ -30,7 +30,7 @@
   <script src="js/news.js" defer></script>
   <script src="js/index.js" defer></script>
   <script src="js/Carousel_map.js" defer></script>
-  <script src="reuse/Left_navigation_bar/Left_navigation_bar.js"></script>
+  <script src="js/Left_navigation_bar.js"></script>
   <script src="js/Wuda_News_network.js"></script>
 
 
@@ -420,110 +420,114 @@
   <div class="Three_modules_in_the_middlecontainer">
     <div class="Three_modules_in_the_middlecontainer_item left">
 
-      <!-- 信息公开清单 -->
+
+
       <div id="Left_navigation_bar_container">
+        <div id="Left_navigation_bar_header">
+          信息公开目录
+        </div>
         <ul id="Left_navigation_bar_menu">
-          <li>
-           <!--    小三角span里面加&#9662;        -->
-            <div>一、基本信息 <span>  </span></div>
-            <ul>
-              <li>1. 学校概况</li>
-              <li>2. 学校章程</li>
-              <li>3. 规章制度</li>
-              <li>4. 发展规划年度计划</li>
-              <li>5. 教职工代表大会</li>
-              <li>6. 学术委员会</li>
+          <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title">一、基本信息</div>
+            <ul class="Left_navigation_bar_submenu">
+              <li class="Left_navigation_bar_submenu_item">1. 学校概况</li>
+              <li class="Left_navigation_bar_submenu_item">2. 学校章程</li>
+              <li class="Left_navigation_bar_submenu_item">3. 规章制度</li>
+              <li class="Left_navigation_bar_submenu_item">4. 发展规划年度计划</li>
+              <li class="Left_navigation_bar_submenu_item">5. 教职工代表大会</li>
+              <li class="Left_navigation_bar_submenu_item">6. 学术委员会</li>
             </ul>
           </li>
-          <li>
-            <div>二、招生考试信息 <span>  </span></div>
-            <ul>
-              <li>1. 本科生招生章程</li>
-              <li>2. 特殊类型招生</li>
-              <li>3. 录取信息查询</li>
-              <li>4. 本科生招生咨询及申诉</li>
-              <li>5. 研究生招生简章</li>
-              <li>6. 研究生复试</li>
-              <li>7. 拟录取研究生名单</li>
-              <li>8. 研究生招生咨询及申诉</li>
+          <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title">二、招生考试信息</div>
+            <ul class="Left_navigation_bar_submenu">
+              <li class="Left_navigation_bar_submenu_item">1. 本科生招生章程</li>
+              <li class="Left_navigation_bar_submenu_item">2. 特殊类型招生</li>
+              <li class="Left_navigation_bar_submenu_item">3. 录取信息查询</li>
+              <li class="Left_navigation_bar_submenu_item">4. 本科生招生咨询及申诉</li>
+              <li class="Left_navigation_bar_submenu_item">5. 研究生招生简章</li>
+              <li class="Left_navigation_bar_submenu_item">6. 研究生复试</li>
+              <li class="Left_navigation_bar_submenu_item">7. 拟录取研究生名单</li>
+              <li class="Left_navigation_bar_submenu_item">8. 研究生招生咨询及申诉</li>
             </ul>
           </li>
-          <li>
-            <div>三、财务资产及收费信息 <span>  </span></div>
-            <ul>
-              <li>1. 财务资产管理制度</li>
-              <li>2. 受捐赠资产管理</li>
-              <li>3. 校办企业资产管理</li>
-              <li>4. 招投标情况</li>
-              <li>5. 收支预算</li>
-              <li>6. 收支决算</li>
-              <li>7. 收费管理</li>
+          <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title">三、财务资产及收费信息</div>
+            <ul class="Left_navigation_bar_submenu">
+              <li class="Left_navigation_bar_submenu_item">1. 财务资产管理制度</li>
+              <li class="Left_navigation_bar_submenu_item">2. 受捐赠资产管理</li>
+              <li class="Left_navigation_bar_submenu_item">3. 校办企业资产管理</li>
+              <li class="Left_navigation_bar_submenu_item">4. 招投标情况</li>
+              <li class="Left_navigation_bar_submenu_item">5. 收支预算</li>
+              <li class="Left_navigation_bar_submenu_item">6. 收支决算</li>
+              <li class="Left_navigation_bar_submenu_item">7. 收费管理</li>
             </ul>
           </li>
-          <li>
-            <div>四、人事师资信息 <span> </span></div>
-            <ul>
-              <li>1. 校级领导社会兼职</li>
-              <li>2. 校级领导因公出国（境）</li>
-              <li>3. 岗位设置管理</li>
-              <li>4. 干部任免与人员招聘</li>
-              <li>5. 教职工争议处理</li>
+          <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title">四、人事师资信息</div>
+            <ul class="Left_navigation_bar_submenu">
+              <li class="Left_navigation_bar_submenu_item">1. 校级领导社会兼职</li>
+              <li class="Left_navigation_bar_submenu_item">2. 校级领导因公出国（境）</li>
+              <li class="Left_navigation_bar_submenu_item">3. 岗位设置管理</li>
+              <li class="Left_navigation_bar_submenu_item">4. 干部任免与人员招聘</li>
+              <li class="Left_navigation_bar_submenu_item">5. 教职工争议处理</li>
             </ul>
           </li>
-          <li>
-            <div>五、教学质量信息 <span>  </span></div>
-            <ul>
-              <li>1. 师生结构</li>
-              <li>2. 专业设置</li>
-              <li>3. 课程设置</li>
-              <li>4. 就业指导政策</li>
-              <li>5. 就业质量报告</li>
-              <li>6. 本科教学质量报告</li>
-              <li>7. 艺术教育发展报告</li>
+          <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title">五、教学质量信息</div>
+            <ul class="Left_navigation_bar_submenu">
+              <li class="Left_navigation_bar_submenu_item">1. 师生结构</li>
+              <li class="Left_navigation_bar_submenu_item">2. 专业设置</li>
+              <li class="Left_navigation_bar_submenu_item">3. 课程设置</li>
+              <li class="Left_navigation_bar_submenu_item">4. 就业指导政策</li>
+              <li class="Left_navigation_bar_submenu_item">5. 就业质量报告</li>
+              <li class="Left_navigation_bar_submenu_item">6. 本科教学质量报告</li>
+              <li class="Left_navigation_bar_submenu_item">7. 艺术教育发展报告</li>
             </ul>
           </li>
-          <li>
-            <div>六、学生管理服务信息 <span>  </span></div>
-            <ul>
-              <li>1. 学籍管理</li>
-              <li>2. 学生资助</li>
-              <li>3. 学生奖惩处罚</li>
-              <li>4. 学生申诉办法</li>
+          <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title">六、学生管理服务信息</div>
+            <ul class="Left_navigation_bar_submenu">
+              <li class="Left_navigation_bar_submenu_item">1. 学籍管理</li>
+              <li class="Left_navigation_bar_submenu_item">2. 学生资助</li>
+              <li class="Left_navigation_bar_submenu_item">3. 学生奖惩处罚</li>
+              <li class="Left_navigation_bar_submenu_item">4. 学生申诉办法</li>
             </ul>
           </li>
-          <li>
-            <div>七、学风建设信息 <span>  </span></div>
-            <ul>
-              <li>1. 学风建设机构</li>
-              <li>2. 学术规范制度</li>
-              <li>3. 学术不端行为查处机制</li>
+          <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title">七、学风建设信息</div>
+            <ul class="Left_navigation_bar_submenu">
+              <li class="Left_navigation_bar_submenu_item">1. 学风建设机构</li>
+              <li class="Left_navigation_bar_submenu_item">2. 学术规范制度</li>
+              <li class="Left_navigation_bar_submenu_item">3. 学术不端行为查处机制</li>
             </ul>
           </li>
-          <li>
-            <div>八、学位学科信息 <span>  </span></div>
-            <ul>
-              <li>1. 学位授予要求</li>
-              <li>2. 同等学力学位授予</li>
-              <li>3. 新增授权点审核</li>
-              <li>4. 拟增授权点申报</li>
+          <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title">八、学位学科信息</div>
+            <ul class="Left_navigation_bar_submenu">
+              <li class="Left_navigation_bar_submenu_item">1. 学位授予要求</li>
+              <li class="Left_navigation_bar_submenu_item">2. 同等学力学位授予</li>
+              <li class="Left_navigation_bar_submenu_item">3. 新增授权点审核</li>
+              <li class="Left_navigation_bar_submenu_item">4. 拟增授权点申报</li>
             </ul>
           </li>
-          <li>
-            <div>九、对外交流合作信息 <span>  </span></div>
-            <ul>
-              <li>1. 中外合作办学</li>
-              <li>2. 国际学生管理</li>
+          <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title">九、对外交流合作信息</div>
+            <ul class="Left_navigation_bar_submenu">
+              <li class="Left_navigation_bar_submenu_item">1. 中外合作办学</li>
+              <li class="Left_navigation_bar_submenu_item">2. 国际学生管理</li>
             </ul>
           </li>
-          <li>
-            <div>十、其他 <span>  </span></div>
-            <ul>
-              <li>1. 巡视组反馈意见及整改</li>
-              <li>2. 突发重大事件</li>
+          <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title">十、其他</div>
+            <ul class="Left_navigation_bar_submenu">
+              <li class="Left_navigation_bar_submenu_item">1. 巡视组反馈意见及整改</li>
+              <li class="Left_navigation_bar_submenu_item">2. 突发重大事件</li>
             </ul>
           </li>
         </ul>
       </div>
+
 
     </div>
 

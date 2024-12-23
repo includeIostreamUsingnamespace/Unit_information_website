@@ -43,14 +43,14 @@ input[type="text"] {
 .search-box input {
     padding: 5px 10px;
     border: 1px solid #cccccc;
-    border-radius: 5px 0 0 5px;
+    /*border-radius: 5px 0 0 5px;*/
     border-right: none;
 }
 
 button {
     background-color: #ffffff;
     border: 1px solid #cccccc;
-    border-radius: 0 5px 5px 0;
+    /*border-radius: 0 5px 5px 0;*/
     border-left: none;
 }
 
@@ -227,7 +227,7 @@ body {
     text-align: left; /* 正文内容左对齐 */
     padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
 }
 
 #publish-date, #views, #doc-number, #publisher {
@@ -263,7 +263,7 @@ body {
     align-items: center; /* 垂直居中对齐文字和圆点 */
     position: relative;
     background-color: #0a5cad; /* 背景色为#0a5cad */
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     transition: background-color 0.3s ease;
 }
 .tree-menu > li > a:hover {
@@ -277,7 +277,7 @@ body {
     width: 8px;
     height: 8px;
     background-color: #0a5cad; /* 小圆点颜色保持为#0a5cad */
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     position: absolute;
     left: 15px; /* 调整左边距，使圆点和文字的距离更大 */
     top: 50%;
@@ -289,7 +289,7 @@ body {
     width: 6px;
     height: 6px;
     background-color: #0a5cad;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     position: absolute;
     left: 10px; /* 同样调整位置 */
     top: 50%;

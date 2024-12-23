@@ -30,7 +30,7 @@
     list-style: none;
     padding: 0;
     background-color: #f6f7ff;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -103,7 +103,7 @@
     background: white;
     cursor: pointer;
     color: #0a5cad;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
     transition: all 0.3s ease;
     font-size: 14px;
 }
@@ -126,7 +126,7 @@
     width: 50px;
     padding: 7px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
     text-align: center;
     font-size: 14px;
 }

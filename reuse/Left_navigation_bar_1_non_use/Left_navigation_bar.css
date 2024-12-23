@@ -1,0 +1,97 @@
+/*body {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;*/
+/*    background-color: #f5f6fa;*/
+/*}*/
+
+#Left_navigation_bar_container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+}
+
+#Left_navigation_bar_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Left_navigation_bar_menu > li {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#Left_navigation_bar_menu > li > div {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#Left_navigation_bar_menu > li > div:hover {
+    background-color: #1e3799;
+    color: white;
+}
+
+#Left_navigation_bar_menu > li > div:hover span {
+    color: white;
+}
+
+#Left_navigation_bar_menu > li > ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    display: none;
+    background-color: white;
+}
+
+#Left_navigation_bar_menu > li > ul > li {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#Left_navigation_bar_menu > li > ul > li:hover {
+    background-color: #f0f4ff;
+    color: #1e3799;
+}
+
+#Left_navigation_bar_menu > li > ul > li::before {
+    content: "•";
+    color: #1e90ff;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+#Left_navigation_bar_menu > li.active > ul {
+    display: block;
+}
+
+#Left_navigation_bar_menu > li > div > span {
+    color: #a0a0a0;
+    transition: color 0.3s;
+}
+
+@media (max-width: 768px) {
+    #Left_navigation_bar_container {
+        max-width: 100%;
+    }
+
+    #Left_navigation_bar_menu > li > div {
+        font-size: 14px;
+    }
+
+    #Left_navigation_bar_menu > li > ul > li {
+        font-size: 12px;
+    }
+}
