@@ -1,0 +1,8 @@
+#ironbox-responsive-div {
+    width: 80%;            /* 80% of the body width */
+    height: auto;          /* Adjust height based on content */
+    padding: 20px;         /* Add some padding for content */
+    box-sizing: border-box; /* Include padding in width/height */
+    margin: 0 auto;        /* Center the element horizontally */
+    display: block;        /* Ensure it is a block element for margin auto to work */
+}

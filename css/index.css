@@ -32,9 +32,11 @@
     padding-left: 20px; /* 让左侧菜单与左边距有一些距离 */
 }
 
-.right-section {
-    margin-right: 20px;  /* 让右侧区域距离右边20px */
+#right-section {
+    width: 100%;
+    box-sizing: border-box; /* 确保 padding 和 border 包含在内 */
 }
+
 
 
 .main-content {

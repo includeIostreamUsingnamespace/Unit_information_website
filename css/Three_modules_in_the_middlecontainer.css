@@ -1,31 +1,35 @@
-/* 设置容器为flex布局 */
+/* 设置容器的样式 */
 .Three_modules_in_the_middlecontainer {
-    display: flex; /* 启用flex布局 */
-    justify-content: center; /* 容器内容居中 */
-    align-items: flex-start; /* 子元素在垂直方向上置顶对齐 */
-    width: 80%; /* 容器占父元素宽度的90% */
-    margin: 0 auto; /* 设置自动水平边距，使容器居中 */
+    display: flex; /* 使用flex布局 */
+    width: 100%; /* 容器占父元素宽度的100% */
+    box-sizing: border-box; /* 确保padding不影响元素大小 */
+    margin: 0; /* 确保容器没有额外的外边距 */
 }
 
 /* 每个子元素的样式 */
 .Three_modules_in_the_middlecontainer_item {
-    padding: 10px; /* 添加适当的内边距 */
     box-sizing: border-box; /* 包括padding在内计算元素宽度 */
 }
 
 .left {
-    flex: 0.6; /* 左侧占较小比例，稍微收缩 */
-    align-self: flex-start; /* 单独设置左侧元素置顶 */
+    flex: 0 0 25%; /* 固定宽度为父容器的25% */
+    padding-left: 0; /* 去除内边距 */
+    margin-left: 0; /* 去除左边距 */
 }
 
 .center {
-    flex: 2; /* 中间占较大比例 */
-    /*text-align: center;*/
-    align-self: flex-start; /* 单独设置中间元素置顶 */
+    flex: 0 0 50%; /* 固定宽度为父容器的50% */
 }
 
 .right {
-    flex: 0.6; /* 右侧占较小比例，稍微收缩 */
-    text-align: right;
-    align-self: flex-start; /* 单独设置右侧元素置顶 */
+    flex: 0 0 25%; /* 固定宽度为父容器的25% */
+    padding-right: 0; /* 去除内边距 */
+    margin-right: 0; /* 去除右边距 */
+}
+
+/* 如果需要清除浮动，可以直接设置为不使用浮动的方式 */
+.Three_modules_in_the_middlecontainer::after {
+    content: "";
+    display: table;
+    clear: both;
 }
