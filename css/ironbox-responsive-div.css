@@ -1,8 +1,13 @@
 #ironbox-responsive-div {
-    width: 80%;            /* 80% of the body width */
-    height: auto;          /* Adjust height based on content */
-    padding: 20px;         /* Add some padding for content */
-    box-sizing: border-box; /* Include padding in width/height */
-    margin: 0 auto;        /* Center the element horizontally */
-    display: block;        /* Ensure it is a block element for margin auto to work */
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: block;
+
+    width: 1200px; /* 设置固定宽度 */
+
+
+    margin: 0 auto; /* 居中显示 */
+    overflow-x: hidden; /* 防止内容溢出 */
+
 }

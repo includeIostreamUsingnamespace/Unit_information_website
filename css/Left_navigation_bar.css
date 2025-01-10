@@ -1,135 +1,8 @@
 
 
-/*!* 定义左侧导航栏容器的样式 *!*/
-/*#Left_navigation_bar_container {*/
-/*    max-width: 100%; !* 最大宽度为400px *!*/
-/*    margin: 20px 0; !* 上下外边距为20px，左右自动居中 *!*/
-/*    background-color: white; !* 背景颜色为白色 *!*/
-/*    !*border-radius: 8px;*! !* 圆角边框，已注释 *!*/
-/*    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); !* 盒子阴影 *!*/
-/*    overflow: hidden; !* 超出部分隐藏 *!*/
-/*}*/
-
-/*!* 定义左侧导航栏头部的样式 *!*/
-/*#Left_navigation_bar_header {*/
-/*    background-color: #1e3799; !* 背景颜色为深蓝色 *!*/
-/*    color: white; !* 文字颜色为白色 *!*/
-/*    padding: 20px; !* 内边距为20px *!*/
-/*    text-align: center; !* 文字居中 *!*/
-/*    font-size: 24px; !* 字体大小为24px *!*/
-/*    font-weight: 500; !* 字体粗细 *!*/
-/*    text-transform: uppercase; !* 文字大写 *!*/
-/*    letter-spacing: 1px; !* 字母间距为1px *!*/
-/*}*/
-
-/*!* 定义左侧导航栏菜单的样式 *!*/
-/*#Left_navigation_bar_menu {*/
-/*    list-style: none; !* 无序列表样式 *!*/
-/*    padding: 0; !* 无内边距 *!*/
-/*    margin: 0; !* 无外边距 *!*/
-/*}*/
-
-/*!* 定义左侧导航栏菜单项的样式 *!*/
-/*.Left_navigation_bar_item {*/
-/*    border-bottom: 1px solid #e6e6e6; !* 底部边框为1px实线灰色 *!*/
-/*}*/
-
-/*!* 定义最后一个左侧导航栏菜单项的样式 *!*/
-/*.Left_navigation_bar_item:last-child {*/
-/*    border-bottom: none; !* 无底部边框 *!*/
-/*}*/
-
-/*!* 定义左侧导航栏标题的样式 *!*/
-/*.Left_navigation_bar_title {*/
-/*    padding: 15px 20px; !* 内边距 *!*/
-/*    display: flex; !* 弹性布局 *!*/
-/*    justify-content: space-between; !* 两侧对齐 *!*/
-/*    align-items: center; !* 垂直居中 *!*/
-/*    cursor: pointer; !* 鼠标指针为手型 *!*/
-/*    font-size: 16px; !* 字体大小为16px *!*/
-/*    color: #333; !* 字体颜色为深灰色 *!*/
-/*    background-color: white; !* 背景颜色为白色 *!*/
-/*    transition: all 0.4s ease; !* 过渡效果 *!*/
-/*}*/
-
-/*!* 定义左侧导航栏标题鼠标悬停时的样式 *!*/
-/*.Left_navigation_bar_title:hover {*/
-/*    background-color: #f0f4ff; !* 背景颜色为浅蓝色 *!*/
-/*    color: #1e3799; !* 字体颜色为深蓝色 *!*/
-/*}*/
-
-/*!* 定义左侧导航栏子菜单的样式 *!*/
-/*.Left_navigation_bar_submenu {*/
-/*    list-style: none; !* 无序列表样式 *!*/
-/*    padding: 0; !* 无内边距 *!*/
-/*    margin: 0; !* 无外边距 *!*/
-/*    max-height: 0; !* 最大高度为0 *!*/
-/*    overflow: hidden; !* 超出部分隐藏 *!*/
-/*    transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); !* 过渡效果 *!*/
-/*    background-color: #f8f9fa; !* 背景颜色为浅灰色 *!*/
-/*    opacity: 0; !* 透明度为0 *!*/
-/*    transform: translateX(-20px); !* 水平位移-20px *!*/
-/*}*/
-
-/*!* 定义激活状态的左侧导航栏子菜单的样式 *!*/
-/*.Left_navigation_bar_item.active .Left_navigation_bar_submenu {*/
-/*    max-height: 1000px; !* 最大高度为1000px *!*/
-/*    opacity: 1; !* 透明度为1 *!*/
-/*    transform: translateX(0); !* 水平位移为0 *!*/
-/*}*/
-
-/*!* 定义左侧导航栏子菜单项的样式 *!*/
-/*.Left_navigation_bar_submenu_item {*/
-/*    padding: 12px 20px 12px 40px; !* 内边距 *!*/
-/*    font-size: 14px; !* 字体大小为14px *!*/
-/*    color: #666; !* 字体颜色为灰色 *!*/
-/*    cursor: pointer; !* 鼠标指针为手型 *!*/
-/*    transition: all 0.4s ease; !* 过渡效果 *!*/
-/*    position: relative; !* 相对定位 *!*/
-/*}*/
-
-/*!* 定义左侧导航栏子菜单项鼠标悬停时的样式 *!*/
-/*.Left_navigation_bar_submenu_item:hover {*/
-/*    background-color: #e9ecef; !* 背景颜色为浅灰色 *!*/
-/*    color: #1e3799; !* 字体颜色为深蓝色 *!*/
-/*}*/
-
-/*!* 定义左侧导航栏子菜单项前缀的样式 *!*/
-/*.Left_navigation_bar_submenu_item::before {*/
-/*    content: ""; !* 内容为空 *!*/
-/*    position: absolute; !* 绝对定位 *!*/
-/*    left: 20px; !* 左侧位置为20px *!*/
-/*    top: 50%; !* 顶部位置为50% *!*/
-/*    width: 6px; !* 宽度为6px *!*/
-/*    height: 6px; !* 高度为6px *!*/
-/*    background-color: #8eb3f7; !* 背景颜色为浅蓝色 *!*/
-/*    border-radius: 50%; !* 圆形边框 *!*/
-/*    transform: translateY(-50%); !* 垂直位移-50% *!*/
-/*}*/
-
-/*!* 响应式设计，当屏幕宽度小于768px时的样式 *!*/
-/*@media (max-width: 768px) {*/
-/*    #Left_navigation_bar_container {*/
-/*        max-width: 100%; !* 最大宽度为100% *!*/
-/*        margin: 0; !* 无外边距 *!*/
-/*        !*border-radius: 0;*! !* 圆角边框，已注释 *!*/
-/*    }*/
-
-/*    .Left_navigation_bar_title {*/
-/*        font-size: 14px; !* 字体大小为14px *!*/
-/*    }*/
-
-/*    .Left_navigation_bar_submenu_item {*/
-/*        font-size: 12px; !* 字体大小为12px *!*/
-/*    }*/
-/*}*/
-
-
-
-
 /* 定义左侧导航栏容器的样式 */
 #Left_navigation_bar_container {
-    max-width: 100%; /* 最大宽度为100% */
+    /*max-width: 100%; !* 最大宽度为100% *!*/
     margin: 20px 0; /* 上下外边距为20px，左右自动居中 */
     background-color: white; /* 背景颜色为白色 */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 盒子阴影 */
@@ -141,10 +14,10 @@
     background-color: #1e3799; /* 背景颜色为深蓝色 */
     color: white; /* 文字颜色为白色 */
     padding: 20px; /* 内边距为20px */
-    text-align: center; /* 文字居中 */
+    /*text-align: center; !* 文字居中 *!*/
     font-size: 24px; /* 字体大小为24px */
     font-weight: 500; /* 字体粗细 */
-    text-transform: uppercase; /* 文字大写 */
+    /*text-transform: uppercase; !* 文字大写 *!*/
     letter-spacing: 1px; /* 字母间距为1px */
 }
 
@@ -237,7 +110,7 @@
 @media (max-width: 768px) {
     #Left_navigation_bar_container {
         max-width: 100%; /* 最大宽度为100% */
-        margin: 0 auto; /* 上下外边距为0，左右自动居中 */
+        margin: 20px auto; /* 上下外边距为0，左右自动居中 */
         width: 100%; /* 宽度设置为100% */
         display: flex; /* 使用flex布局 */
         flex-direction: column; /* 垂直排列 */
@@ -245,10 +118,12 @@
     }
 
     #Left_navigation_bar_header {
-        padding: 15px; /* 内边距调整为15px */
+        /* 内边距调整为15px */
         font-size: 20px; /* 字体大小调整为20px */
         width: 100%; /* 宽度设置为100% */
-        text-align: center; /* 文字居中 */
+        /*text-align: left; !* 文字居中 *!*/
+        /*距离右边一定距离*/
+        padding: 15px 15px 15px 50px;
     }
 
     #Left_navigation_bar_menu {

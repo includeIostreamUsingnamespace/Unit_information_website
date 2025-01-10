@@ -1,12 +1,4 @@
-/*!* 确保父容器使用 Flexbox，并按水平方向排列子元素 *!*/
-/*body {*/
-/*    font-family: Arial, sans-serif;*/
-/*    margin: 10px;*/
-/*    padding: 10px;*/
-/*    display: flex; !* 设置为 Flexbox 布局 *!*/
-/*    flex-direction: row; !* 水平方向排列子元素 *!*/
-/*    background-color: #f5f5f5;*/
-/*}*/
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -26,6 +18,7 @@
 .main-content {
     flex: 1; /* 主内容区域占据剩余空间 */
     margin-right: 5px; /* 为右侧区域留出空间 */
+
 }
 
 /* 右侧区域 */
@@ -103,6 +96,18 @@
     object-fit: cover;
 }
 
+@media (max-width: 768px) {
+
+    /* 右侧信息框 */
+    .right-box {
+        background-color: #345277;
+        color: white;
+        padding: 15px 15px 15px 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+}
 
 
 

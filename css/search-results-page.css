@@ -4,6 +4,7 @@
     font-family: Arial, sans-serif;
     background-color: #ffffff; /* 整体页面背景色 */
     color: #1e1e1e; /* 主要黑色字体 */
+    margin: 0 auto;
 }
 
 #search-results-title {

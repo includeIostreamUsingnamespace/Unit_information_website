@@ -1,7 +1,8 @@
 /* 父容器样式 */
 #Two_parts-parent-container {
     display: flex;             /* 使用flex布局 */
-    width: 80%;                /* 宽度占父元素的80% */
+    /*width: 80%;                !* 宽度占父元素的80% *!*/
+    width: 1200px; /* 设置固定宽度 */
     margin: 0 auto;            /* 居中对齐 */
     gap: 20px;                 /* 设置元素之间的间隔距离为20px */
     justify-content: center;   /* 将子项居中对齐 */

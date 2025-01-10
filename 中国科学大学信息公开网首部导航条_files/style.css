@@ -134,7 +134,10 @@ a:hover { color:#095ab5; }
 .nav .sub-menu .sub-item { position: relative; white-space: nowrap; vertical-align: top; _zoom:1;}
 .nav .sub-menu .sub-item a {display: block;color: #000;height: 40px;line-height: 40px;padding: 0 17px;font-size: 16px;background:none;}
 .nav .sub-menu .sub-item.hover> a,
-.nav .sub-menu .sub-item a:hover{ color: #fff; background-color:#1384e2; display: block; }
+
+/*这里的bgc是修改鼠标放到导航条上面的颜色的*/
+.nav .sub-menu .sub-item a:hover{ color: #fff; background-color:#0068b7; display: block; }
+
 .nav .sub-menu .sub-menu { left: 100%; top:0px; z-index: 200; background:#fff;}
 /**主页banner开始**/
 #banner {background: #e7e2df;}
