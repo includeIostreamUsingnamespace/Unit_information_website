@@ -25,6 +25,7 @@
     flex: 0 0 25%; /* 固定宽度为父容器的25% */
     padding-right: 0; /* 去除内边距 */
     margin-right: 0; /* 去除右边距 */
+    padding-top: 20px;
 }
 
 /* 媒体查询：当屏幕宽度小于等于768px时，改变布局 */
@@ -34,13 +35,23 @@
         flex-direction: column; /* 将flex容器的主轴方向改为垂直方向 */
     }
 
-    .left, .center, .right {
+    .left, .center {
         flex: 0 0 100%; /* 每个模块占据100%的宽度 */
         padding-left: 0; /* 去除内边距 */
         padding-right: 0; /* 去除内边距 */
         margin-left: 0; /* 去除左边距 */
         margin-right: 0; /* 去除右边距 */
 
+    }
+
+
+    .right {
+        flex: 0 0 100%; /* 每个模块占据100%的宽度 */
+        padding-left: 0; /* 去除内边距 */
+        padding-right: 0; /* 去除内边距 */
+        margin-left: 0; /* 去除左边距 */
+        margin-right: 0; /* 去除右边距 */
+        padding-top: 15px;
     }
     .main-content{
         padding: 0;
