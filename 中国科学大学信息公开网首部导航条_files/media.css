@@ -88,7 +88,7 @@
 /* 设置导航菜单的背景颜色为白色 */
 .wp-navi-slide .wp-menu {background:#fff;}
 .wp-navi-slide .wp-menu .menu-item {display: inline-block;float:none; position: relative; z-index: 100;width:100%;padding-left:0px;text-align:left;border-bottom:1px solid #eee}
-.wp-navi-slide .wp-menu .menu-item .menu-switch-arrow{display: block;width: 38px;height: 38px;position: absolute;right: 6px;top: 1px;background: url(css/img/icons.png) no-repeat 10px -116px;}
+.wp-navi-slide .wp-menu .menu-item .menu-switch-arrow{display: block;width: 38px;height: 38px;position: absolute;right: 6px;top: 1px;background: url(../images/photo01.png) no-repeat 10px -116px;}
 .wp-navi-slide .wp-menu .menu-item a.menu-link {display:block;padding: 0 20px;line-height: 40px;color: #343434;font-size: 14px; }
 .wp-navi-slide .wp-menu .menu-item a.menu-link.hover,
 .wp-navi-slide .wp-menu .menu-item.hover a.menu-link,
@@ -194,7 +194,7 @@
 
 .column-switch {display:block;}
 
-.col_menu .col_menu_head h3.col_name .col_name_text {display:block;line-height:40px;pa;padding: 0px 5px 0px 12px;font-size: 17px;}/**栏目名称图标**/
+.col_menu .col_menu_head h3.col_name .col_name_text {display:block;line-height:40px;padding: 0px 5px 0px 12px;font-size: 17px;}/**栏目名称图标**/
 .col_menu {width: 100%;float:none;margin-right:0px;position:relative;}
 .col_menu .col_menu_con{display:none;border:0px solid #e4e4e4;}
 .col_metas .col_title h2 {font-size:18px;}/**当前栏目名称**/
