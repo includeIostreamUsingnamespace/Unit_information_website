@@ -1,0 +1,17 @@
+.s2-info ul li:hover a {
+    
+    background-color: #00467f;
+    background-size: 0;
+    border-color: transparent;}
+.s2-info ul li:hover h3{
+font-size: 17px;
+    line-height: 25px;
+    height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff;}
+.s2-info ul li:hover a span {
+    display: none;}
+.f-lx a {
+color:#fff;
+display:inline-block;}

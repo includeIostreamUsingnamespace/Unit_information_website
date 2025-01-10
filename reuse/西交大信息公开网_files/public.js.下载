@@ -1,0 +1,77 @@
+$(function () {
+
+    //  头部二级导航
+
+    $(".nav>ul>li").mouseover(function () {
+        if ($(this).find("div").html()) {
+            $(this).stop(true, false).addClass("on");
+            $(this).find("div").stop(true, false).slideDown()
+        }
+    });
+
+
+    $(".nav>ul>li").mouseout(function () {
+        $(this).stop(true, false).removeClass("on");
+        $(this).find("div").stop(true, false).slideUp()
+
+    });
+
+
+    //  首页 移动端导航 展开
+
+    $(".menu").click(function () {
+        $(".m-nav").animate({
+            "left": "0"
+        }, 300);
+        $(this).hide()
+        $(".close-menu").fadeIn();
+        $("body").css("overflow", "hidden");
+    })
+    //  首页 移动端导航 关闭
+
+    $(".close-menu").click(function () {
+        $(".close-menu").fadeOut()
+        $(".m-nav").animate({
+            "left": "100%"
+        }, 300);
+        $(".menu").fadeIn();
+        $("body").css("overflow", "auto");
+    })
+    //  首页 移动端导航 二级导航展开关闭 
+
+    $(".m-nav>ul>li>span").click(function () {
+        $(this).toggleClass("on").parent().siblings("li").find("span").removeClass("on")
+        $(this).siblings("ul").slideToggle().parent().siblings("li").find("ul").slideUp()
+    })
+
+
+
+
+    //  内页 移动端导航 二级导航展开关闭 
+
+    $(".nymain .leftNav>h2 span").click(function () {
+        $(this).toggleClass("on");
+        $(".nymain .leftNav>ul").stop().slideToggle();
+    })
+
+    // 内页 移动端左侧三级导航 展示
+
+    $(".nymain .leftNav>ul>li>span").click(function () {
+        $(this).parent().stop().toggleClass("on").siblings("li").removeClass("on");
+        $(this).siblings("ul").stop().slideToggle(300).parent().siblings().find("ul").stop().slideUp();
+    })
+
+
+   $(".ny-index .leftNav>h2 span").click(function () {
+        $(this).toggleClass("on");
+        $(".ny-index .leftNav>ul").stop().slideToggle();
+    })
+
+    // 内页 移动端左侧三级导航 展示
+
+    $(".ny-index .leftNav>ul>li>span").click(function () {
+        $(this).parent().stop().toggleClass("on").siblings("li").removeClass("on");
+        $(this).siblings("ul").stop().slideToggle(300).parent().siblings().find("ul").stop().slideUp();
+    })
+    
+})

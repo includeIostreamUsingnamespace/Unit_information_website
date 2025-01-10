@@ -1,0 +1,20 @@
+window.onload = function() {
+  var agent = navigator.userAgent.toLowerCase();
+  var isIe = /(msie\s|trident.*rv:)([\w.]+)/.test(agent);
+  var version = 0;
+  var v1 =  agent.match(/(?:msie\s([\w.]+))/);
+  var v2 = agent.match(/(?:trident.*rv:([\w.]+))/);
+  if(v1 && v2 && v1[1] && v2[1]){
+      version = Math.max(v1[1]*1,v2[1]*1);
+  }else if(v1 && v1[1]){
+      version = v1[1]*1;
+  }else if(v2 && v2[1]){
+      version = v2[1]*1;
+  }else{
+      version = 0;
+  }
+  if(isIe&&version<9){
+ document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeend', '<div id="browser-modal"><div class="browser-modal-cover"></div><div class="browser-content"><div class="browser-text"><h3 class="browser-text-title">请升级浏览器版本</h3><p class="browser-text-desc">你正在使用旧版本浏览器。请升级浏览器以获得更好的体验。</p></div><div class="browser-list"><div class="browser-item"><a href="https://www.google.cn/chrome/" target="_blank"><div class="iconfont iconchrome"></div><h4>Chrome</h4></a></div><div class="browser-item"><a href="http://www.firefox.com.cn/" target="_blank"><div class="iconfont iconfirefox"></div><h4>Firefox</h4></a></div><div class="browser-item"><a href="https://www.opera.com/zh-cn" target="_blank"><div class="iconfont iconopera"></div><h4>Opera</h4></a></div><div class="browser-item"><a href="https://www.microsoft.com/zh-cn/edge" target="_blank"><div class="iconfont iconEdge"></div><h4>Edge</h4></a></div></div></div></div>');
+		
+  }
+};

@@ -1,0 +1,17 @@
+﻿
+#browser-modal{width:100%;height:100%;top:0;left:0;text-align:center;color:#303233;position:fixed;z-index:9999;}
+#browser-modal .browser-modal-cover{position:fixed;left:0;top:0;height:100%;width:100%;background-color:#111;;z-index:-1}
+#browser-modal .browser-content{width:700px;margin-top:120px;margin-left:auto;margin-right:auto;padding-bottom:80px;padding-top:50px;background-color:#fff;border-radius:5px}
+#browser-modal .browser-content .browser-dpc-logo img{height:42px;margin:45px auto 40px}
+#browser-modal .browser-content .browser-text-title{text-transform:uppercase;font-size:24px}
+#browser-modal .browser-content .browser-text-desc{margin-top:30px;margin-bottom:20px;font-size:14px}
+#browser-modal .browser-content .browser-list{width:600px;margin:20px auto;height:130px}
+#browser-modal .browser-content .browser-item{float:left;width:150px;padding-top:20px;padding-bottom:20px;margin-left:auto;margin-right:auto}
+#browser-modal .browser-content .browser-item .iconfont{width:100px;height:100px;margin:0 auto;font-size:80px;line-height:80px;margin-bottom:10px;}
+#browser-modal .browser-content .browser-item .iconchrome{background: url(../images/four_browsers_log.png) no-repeat 0 0}
+#browser-modal .browser-content .browser-item .iconfirefox{background: url(../images/four_browsers_log.png) no-repeat 0 -100px}
+#browser-modal .browser-content .browser-item .iconopera{background: url(../images/four_browsers_log.png) no-repeat 0 -200px}
+#browser-modal .browser-content .browser-item .iconEdge{background: url(../images/four_browsers_log.png) no-repeat 0 -300px}
+#browser-modal .browser-content .browser-item a{cursor:pointer;display:block}
+#browser-modal .browser-content .browser-item a img{display:block;margin:0 auto;max-width:100px;width:100px;height:100px}
+#browser-modal .browser-content .browser-item a h4{text-align:center;margin-top:20px;font-size:18px;font-weight:700}

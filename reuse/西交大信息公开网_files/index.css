@@ -1,0 +1,491 @@
+@charset "utf-8";
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 147px;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+}
+
+
+.banner a {
+    display: block;
+}
+
+.banner .slick {
+    position: relative;
+    z-index: 9;
+}
+
+.banner .slick-slide a {
+    display: block;
+    position: relative;
+}
+
+
+
+.banner .slick-prev {
+    width: 22px;
+    height: 30px;
+    background: url(../images/banner-l.png) no-repeat;
+    background-size: cover;
+    left: 3%;
+}
+
+.banner .slick-next {
+    width: 22px;
+    height: 30px;
+    background: url(../images/banner-r.png) no-repeat;
+    background-size: cover;
+    right: 3%;
+}
+
+.index {
+    background-color: #fff;
+}
+
+
+/* s1 */
+.s1 {
+    background-color: #00467f;
+    padding-top: 35px;
+    padding-left: 4%;
+}
+
+.s1 ul li {
+    float: left;
+    width: 20%;
+    margin-bottom: 35px;
+}
+
+.s1 ul li a .icon {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.s1 ul li a:hover .icon {
+    animation: jello 0.8s;
+}
+
+.s1-tx {
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+}
+
+.s1 ul li a p {
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 30px;
+    max-height: 60px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+
+/* s2 */
+.s2 {
+    padding: 0 30px;
+    position: relative;
+}
+
+.s2-l {
+    padding-right: 230px;
+}
+
+.tit {
+    position: relative;
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 30px;
+}
+
+.tit::after {
+    content: '';
+    width: 69px;
+    height: 3px;
+    background-color: #00467f;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+
+.tit h3 {
+    font-size: 22px;
+    line-height: 30px;
+    color: #333333;
+    padding-left: 35px;
+    background: url(../images/icon-tit.png) no-repeat;
+    background-position: left center;
+}
+
+.tit a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #666666;
+}
+
+.tit a:hover {
+    color: #00467f;
+}
+
+.s2-info {
+    float: left;
+    width: 50%;
+    padding-right: 30px;
+}
+
+.s2-list {
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+}
+
+.s2-info ul li a p {
+    font-size: 14px;
+    line-height: 28px;
+    height: 56px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff;
+    opacity: 0.6;
+    display: none;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.s2-info ul li.on a p {
+    display: block;
+}
+
+
+.s2-info ul li a h3 {
+    line-height: 18px;
+    font-size: 16px;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.s2-info ul li a h3 span {
+    float: right;
+    font-size: 14px;
+    color: #999999;
+    display: block;
+    padding-left: 5px;
+    border-left: 1px solid #999;
+    font-weight: normal;
+}
+
+
+.s2-info ul li a {
+    padding: 24.2px 0;
+    padding-left: 20px;
+    background: url(../images/s1-dots1.png) no-repeat;
+    background-position: 5px center;
+    border-bottom: 1px dashed #bfbfbf;
+}
+
+
+.s2-info ul li.on a {
+    /* padding: 15px; */
+    background-color: #00467f;
+    background-size: 0;
+    border-color: transparent;
+}
+
+.s2-info ul li.on a span {
+    display: none;
+}
+
+.s2-info ul li.on a h3 {
+    font-size: 17px;
+    line-height: 25px;
+    height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff;
+}
+
+.s2-list ul li a p {
+    font-size: 16px;
+    color: #333333;
+    line-height: 19px;
+    padding-left: 20px;
+    background: url(../images/s1-dots.png) no-repeat;
+    background-position: left center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.s2-list ul li:first-child a {
+    padding-top: 0;
+}
+
+.s2-list ul li a {
+    padding: 20px 0;
+    border-bottom: 1px dashed #bfbfbf;
+}
+
+.s2-list ul li a:hover p {
+    background: url(../images/s1-dots-h.png) no-repeat;
+    background-position: left center;
+    color: #00467f;
+    text-decoration: underline;
+}
+
+.s2-r {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 230px;
+    padding-top: 25px;
+}
+
+
+.s2-r h3 {
+    line-height: 40px;
+    background-color: #065290;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.s2-r ul li a {
+    position: relative;
+}
+
+.s2-r ul li {
+    margin-bottom: 9px;
+}
+
+.s2-r ul li:last-child {
+    margin-bottom: 0;
+}
+
+.s2-r ul li a .pic {
+    height: 69px;
+    padding-top: 0;
+}
+
+.s2-r ul li a .pic::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/s1-zzc.png) no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+}
+
+.s2-r ul li a p {
+    font-size: 14px;
+    line-height: 36px;
+    color: #ffffff;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.s2-r ul li a:hover img {
+    transform: scale(1.1);
+}
+
+.s3 {
+    padding: 40px 17px;
+
+}
+
+.s3-banner ul li {
+    padding: 0 13px;
+}
+
+.s3-banner .pic {
+    padding-top: 43.7%;
+}
+
+.s3-banner ul li a {
+    position: relative;
+}
+
+.s3-banner ul li a p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    font-family: 微软雅黑;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.s3-banner ul li:nth-child(odd) p {
+    color: #fff0d0;
+}
+
+.s3-banner ul li:nth-child(even) p {
+    color: #fff;
+}
+
+.s3-banner ul li a:hover img {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .s1 ul li {
+        width: 25%;
+        margin-bottom: 25px;
+    }
+
+    .s1 ul li a p {
+        font-size: 16px;
+    }
+
+    .s1 {
+        padding-top: 25px;
+    }
+
+    .tit h3 {
+        font-size: 20px;
+    }
+
+    .tit a {
+        font-size: 14px;
+    }
+
+    .s2-l {
+        padding-right: 0;
+    }
+
+    .s2-r {
+        position: static;
+        font-size: 0;
+        width: 100%;
+    }
+
+    .s2-r ul {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .s2-r ul li {
+        display: inline-block;
+        width: 200px;
+        padding-top: 10px;
+        margin-right: 10px;
+    }
+
+    .s2-list {
+        padding-right: 0;
+    }
+
+    .s3 {
+        padding: 20px 17px;
+    }
+    .banner{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .s1 ul li {
+        width: 33.33%;
+    }
+
+    .s1 ul li a p {
+        font-size: 15px;
+    }
+
+    .s2-info {
+        float: none;
+        width: auto;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .s2-list {
+        float: none;
+        width: auto;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .tit {
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+
+    .s2 {
+        padding: 0 10px;
+    }
+
+    .s3 {
+        padding: 15px 0;
+    }
+    .s3-banner ul li{
+        padding: 0 10px;
+    }
+    .s2-r{
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .s1 {
+        padding-top: 20px;
+    }
+
+    .s1 ul li {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .s2-info ul li.on a h3 {
+        font-size: 16px;
+    }
+
+    .s2-info ul li a h3 {
+        font-size: 16px;
+    }
+
+    .s2-list ul li a {
+        padding: 15px 0;
+    }
+}

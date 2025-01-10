@@ -45,21 +45,6 @@
     background-color: white;
 }
 
-.menu-item {
-    padding: 15px 20px;
-    border-bottom: 1px solid #eee;
-    color: #333;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.menu-item:before {
-    content: '›';
-    color: #ffd700;
-    margin-right: 10px;
-    font-size: 20px;
-}
 
 /* 主内容区头部 */
 .content-header {

@@ -1,7 +1,7 @@
 /* 父容器样式 */
 #Two_parts-parent-container {
     display: flex;             /* 使用flex布局 */
-    width: 80%;                /* 宽度占父元素的100% */
+    width: 80%;                /* 宽度占父元素的80% */
     margin: 0 auto;            /* 居中对齐 */
     gap: 20px;                 /* 设置元素之间的间隔距离为20px */
     justify-content: center;   /* 将子项居中对齐 */
@@ -9,16 +9,40 @@
 
 /* 左边部分 */
 #Two_parts-left-section {
-    flex: 0.4;                   /* 左侧部分占用剩余空间 */
+    flex: 0.4;                 /* 左侧部分占用剩余空间 */
     padding: 10px;             /* 内边距 */
     margin-right: 20px;        /* 给左边部分右边加一个间距 */
-    /*text-align: right;         !* 将左边内容对齐到右侧 *!*/
+    /*text-align: right;       !* 将左边内容对齐到右侧 *!*/
 }
 
 /* 右边部分 */
 #Two_parts-right-section {
-    flex: 1.3;                   /* 右侧部分占用剩余空间 */
-    padding: 0px;             /* 内边距 */
-    margin-left:0px;         /* 给右边部分左边加一个间距 */
+    flex: 1.3;                 /* 右侧部分占用剩余空间 */
+    padding: 0px;              /* 内边距 */
+    margin-left: 0px;          /* 给右边部分左边加一个间距 */
     text-align: left;          /* 将右边内容对齐到左侧 */
+}
+
+/* 媒体查询：当屏幕宽度小于等于768px时，改变布局 */
+@media (max-width: 768px) {
+    #Two_parts-parent-container {
+        flex-direction: column; /* 将flex容器的主轴方向改为垂直方向 */
+        width: 100%;            /* 宽度占父元素的100% */
+        gap: 10px;              /* 减少元素之间的间隔距离 */
+    }
+
+    #Two_parts-left-section, #Two_parts-right-section {
+        flex: 0 0 100%;         /* 每个部分占据100%的宽度 */
+        margin-right: 0;        /* 去除左边部分的右边距 */
+        margin-left: 0;         /* 去除右边部分的左边距 */
+        padding: 10px;          /* 统一内边距 */
+    }
+
+    #Two_parts-left-section {
+        text-align: left;       /* 将左边内容对齐到左侧 */
+    }
+
+    #Two_parts-right-section {
+        text-align: left;       /* 将右边内容对齐到左侧 */
+    }
 }
