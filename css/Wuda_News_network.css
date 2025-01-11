@@ -1,11 +1,6 @@
-
-
 #Wuda_News_network_container {
     width: 100%;
-
-
 }
-
 
 #Wuda_News_network_header {
     display: flex;
@@ -32,9 +27,7 @@
 .Wuda_News_network_main_news {
     position: relative;
     overflow: hidden;
-    /*border-radius: 10px;*/
     height: 100%;
-    /*阴影*/
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -82,15 +75,15 @@
     gap: 8px;
 }
 
-.Wuda_News_network_dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.5;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
+/*.Wuda_News_network_dot {*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    border-radius: 50%;*/
+/*    background-color: #fff;*/
+/*    opacity: 0.5;*/
+/*    cursor: pointer;*/
+/*    transition: opacity 0.3s ease;*/
+/*}*/
 
 .Wuda_News_network_dot.active {
     opacity: 1;
@@ -101,19 +94,17 @@
     flex-direction: column;
     gap: 15px;
     height: 100%;
+    width: 100%;
     overflow-y: auto;
 }
 
 .Wuda_News_network_side_news_item {
     display: flex;
     background-color: #fff;
-    /*border-radius: 10px;*/
     overflow: hidden;
-
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
     transition: transform 0.3s ease;
-    height: calc(50% - 7.5px);
+    height: calc(50% - 8px);
 }
 
 .Wuda_News_network_side_news_item:hover {
@@ -122,10 +113,7 @@
 
 .Wuda_News_network_side_news_item_image {
     width: 140px;
-    /*height: 95%;*/
-    /*高度按照父元素的居中*/
     height: 90%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,65 +124,117 @@
     width: 100%;
     height: calc(100% - 10px);
     object-fit: cover;
-    /*border-radius: 8px;*/
 }
 
 .Wuda_News_network_side_news_content {
-    flex: 1;
-    padding: 15px;
+    flex: 1;  /* 保证占据剩余的空间 */
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    text-overflow: ellipsis; /* 用省略号表示 */
+    word-wrap: break-word; /* 自动换行 */
+    word-break: break-word; /* 防止文字溢出容器 */
+    white-space: normal; /* 确保文本换行 */
+    overflow-wrap: break-word; /* 更兼容的换行方法 */
+    width: 100%; /* 确保容器宽度100%，自动适应手机屏幕 */
 }
 
+
 .Wuda_News_network_side_news_title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: #212529;
     margin-bottom: 10px;
-    line-height: 1.4;
+
+    line-height: 1.2; /* 增加行间距 */
 }
 
 .Wuda_News_network_side_news_meta {
     font-size: 14px;
     color: #6c757d;
-    overflow: hidden;          /* 超出部分隐藏 */
 
-    /*text-overflow: ellipsis;   !* 使用省略号表示溢出部分 *!*/
+
+    display: -webkit-box; /* 使用 WebKit 的弹性盒子模型 */
+    -webkit-box-orient: vertical; /* 垂直方向排列 */
+    -webkit-line-clamp: 7; /* 显示的行数 */
+    overflow: hidden; /* 隐藏超出容器的内容 */
+    text-overflow: ellipsis; /* 超出部分显示省略号 */
+    line-height: 1.2; /* 行高 */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px) {
     .Wuda_News_network_grid {
         grid-template-columns: 1fr; /* 改为单列布局 */
         gap: 20px; /* 调整间距 */
         height: auto; /* 高度自适应 */
+    }
+
+    .Wuda_News_network_side_news_content {
+        padding: 10px; /* 移动端适当减少内边距 */
+
+        word-break: break-word; /* 确保长单词自动换行 */
+        white-space: normal; /* 确保文字能够换行 */
+        width: 100%; /* 确保容器宽度适应 */
+
+        overflow: hidden; /* 隐藏超出容器的内容 */
+        text-overflow: ellipsis; /* 超出部分显示省略号 */
+
 
     }
 
-    /* 隐藏中间和右边部分 */
-    /*.Wuda_News_network_grid > :nth-child(2),*/
-    /*.Wuda_News_network_grid > :nth-child(3) {*/
-    /*    display: none;*/
-    /*}*/
+    .Wuda_News_network_side_news_title {
+        font-size: 14px; /* 调整字体大小 */
+        line-height: 1.6; /* 增加行间距 */
+        word-wrap: break-word; /* 确保文字在需要时换行 */
+        /*
+           word-wrap 属性用于指定当单词太长而无法在一行内显示时，
+           是否应该被拆分换行。设置为 break-word 时，表示在必要时
+           将单词拆分，以确保内容不会溢出其容器。
+        */
+        word-break: break-word; /* 确保长单词自动换行 */
+        white-space: normal; /* 确保文字能够换行 */
+        width: 100%; /* 确保容器宽度适应 */
 
-    /*/* 左边部分占据 100% 宽度 */
-    /*.Wuda_News_network_grid > :first-child {*/
-    /*    width: 100%;*/
-    /*}*/
+        overflow: hidden; /* 隐藏超出容器的内容 */
+        text-overflow: ellipsis; /* 超出部分显示省略号 */
+
+
+    }
+
+    .Wuda_News_network_side_news_meta {
+        font-size: 12px; /* 移动端适当减少元数据的字体大小 */
+
+
+        -webkit-line-clamp: 4; /* 显示的行数 */
+
+    }
+
+    .Wuda_News_network_side_news_item_image{
+        padding-left: 1px;
+    }
+
+    /* 定义一个名为 .Wuda_News_network_side_news 的 CSS 类 */
+    .Wuda_News_network_side_news {
+        /* 使用 Flexbox 布局 */
+        display: flex;
+        /* 设置主轴方向为垂直方向 */
+        flex-direction: column;
+        /* 设置子元素之间的间隔为 15 像素 */
+        gap: 15px;
+        /* 设置元素的高度为 100% */
+        height: 100%;
+        /* 设置元素的宽度为 100% */
+        width: 100%;
+        /* 设置垂直方向的溢出内容为自动滚动 */
+        overflow-y: auto;
+    }
+
+
+    #Wuda_News_network_header{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 0;
+    }
+
+
 }

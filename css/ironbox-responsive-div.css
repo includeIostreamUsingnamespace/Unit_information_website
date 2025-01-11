@@ -11,3 +11,12 @@
     overflow-x: hidden; /* 防止内容溢出 */
 
 }
+
+
+@media (max-width: 768px) {
+    #ironbox-responsive-div {
+        padding: 20px 0 0;
+        width: 100%; /* 在小屏幕上宽度为100% */
+    }
+
+}

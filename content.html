@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="css/content_Tongchuan_government_new.css" rel="stylesheet"/>
+  <link href="css/header.css" rel="stylesheet"/>
 
   <script src="js/Carousel_map.js" defer></script>
   <script src="js/content.js" defer></script>
@@ -55,24 +56,37 @@
 
 </head>
 
-<body>
+<head>
+
+
+
   <!-- 导航条上方 -->
-  <header class="header">
+
+  <!-- 顶部 Header -->
+  <header id="header">
     <div class="logo">
-      <img src="images/logo.png" alt="单位logo">
+      <img src="images/长安大学校园公开网信息公开网LOGO去背景.png" alt="单位logo" loading="lazy" class="logo-img"     style="height: 75px;">
+
+
+
     </div>
-    <div class="search-box">
-      <input type="text" placeholder="请输入关键字">
-      <button id="search">
-         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-        <circle cx="11" cy="11" r="8" stroke="black"></circle>
-        <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="black"></line>
-    </svg>
+    <div id="search-box" class="search-box">
+      <input type="text" placeholder="请输入关键字" aria-label="搜索关键字">
+      <button id="search" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
       </button>
     </div>
   </header>
 
-  <!-- 导航条 --><!-- 首部导航栏 -->
+
+
+
+
+
   <!--    中科大导航栏目START-->
 
 
@@ -456,7 +470,8 @@
   }
 
   .imt-image-status span {
-    color: var(--bg-2, #fff) !important;
+    /*color: var(--bg-2, #fff) !important;*/
+    color: #fff !important;
     font-size: 14px !important;
     line-height: 14px !important;
     font-weight: 500 !important;
@@ -758,15 +773,15 @@
 
             </li>
 
-            <li class="menu-item i5"><a class="menu-link" href="list.html" target="_self">依申请公开</a>
+            <li class="menu-item i5"><a class="menu-link" href="list.html" target="_self">信息公开报告</a>
 
             </li>
 
-            <li class="menu-item i6"><a class="menu-link" href="list.html" target="_self">信息公开年度报告</a>
+            <li class="menu-item i6"><a class="menu-link" href="list.html" target="_self">信息公开申请</a>
 
             </li>
 
-            <li class="menu-item i7"><a class="menu-link" href="list.html" target="_self">信息公开组织机构<em class="menu-switch-arrow"></em></a>
+            <li class="menu-item i7"><a class="menu-link" href="list.html" target="_self">意见建议<em class="menu-switch-arrow"></em></a>
 
 
               <ul class="sub-menu ">
@@ -1046,7 +1061,7 @@
   <!--Start||focus-->
   <div class="wp-wrapper" id="container-1">
     <div class="wp-inner" frag="面板84">
-      <div class="l-banner" frag="窗口84" portletmode="simpleColumnAttri" style="background-image: url(&quot;/_upload/tpl/13/45/4933/template4933/images/list_banner.jpg&quot;);">
+      <div class="l-banner" frag="窗口84" portletmode="simpleColumnAttri" style="background-image: url(./images/photo03.png);">
 
         <img border="0" style="margin:0 auto;" src="https://xxgk.ustc.edu.cn/fzghhgzjh/list.htm" data-imgsrc="/_upload/tpl/13/45/4933/template4933/images/list_banner.jpg">
 
@@ -1297,7 +1312,9 @@
           <li class="Left_navigation_bar_item">
             <div class="Left_navigation_bar_title" id="Left_navigation_bar_menu_item_id1">一、基本信息</div>
             <ul class="Left_navigation_bar_submenu">
-              <li class="Left_navigation_bar_submenu_item">1. 学校概况</li>
+              <li class="Left_navigation_bar_submenu_item">
+                <a href="list.html">1. 学校概况</a>
+              </li>
               <li class="Left_navigation_bar_submenu_item">2. 学校章程</li>
               <li class="Left_navigation_bar_submenu_item">3. 规章制度</li>
               <li class="Left_navigation_bar_submenu_item">4. 发展规划年度计划</li>
@@ -1559,13 +1576,12 @@
 
 
 
-  <!-- 底部footer -->
   <div id="footer-header">
     <div id="footer-header-content">
       <div id="footer-logo-section">
-        <img alt="长安大学校徽 - 圆形徽章设计，显示学校英文缩写和创建年份" height="60" id="footer-logo" src="https://replicate.delivery/xezq/A4dPOvVU4kaDD1AdrDoNpt9lAMOdlJtxEaVgE9wBGMu2oQfJA/out-0.png" width="60"/>
+        <img alt="长安大学校徽 - 圆形徽章设计，显示学校英文缩写和创建年份"  id="footer-logo" src="./images/长安大学校徽logo.png" />
         <div id="footer-site-title">
-          长安大学 | 信息公开网
+          信息公开网
         </div>
       </div>
       <div id="footer-contact-info">
@@ -1575,6 +1591,7 @@
       </div>
     </div>
   </div>
+
 
 </body>
 

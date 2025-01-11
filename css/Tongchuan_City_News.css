@@ -34,18 +34,39 @@
     padding: 12px 0;
     border-bottom: 1px solid #e0e0e0;
     transition: all 0.3s ease;
+
+
+
+
+    display: -webkit-box; /* 使用 WebKit 的弹性盒子模型 */
+    -webkit-box-orient: vertical; /* 垂直方向排列 */
+    -webkit-line-clamp: 1; /* 显示的行数 */
+    overflow: hidden; /* 隐藏超出容器的内容 */
+    text-overflow: ellipsis; /* 超出部分显示省略号 */
+    line-height: 1.5; /* 行高 */
+
+
 }
 
 .Tongchuan_City_News_news-item:last-child {
     border-bottom: none;
 }
 
-.Tongchuan_City_News_news-item a {
+.Tongchuan_City_News_news-item  {
+    width: 100%;
     color: #333;
     text-decoration: none;
     font-size: 16px;
     flex: 1;
-    transition: color 0.3s ease;
+    /*transition: color 0.3s ease;*/
+
+    display: -webkit-box; /* 使用 WebKit 的弹性盒子模型 */
+    -webkit-box-orient: vertical; /* 垂直方向排列 */
+    -webkit-line-clamp: 3; /* 显示的行数 */
+    overflow: hidden; /* 隐藏超出容器的内容 */
+    text-overflow: ellipsis; /* 超出部分显示省略号 */
+    line-height: 1.5; /* 行高 */
+
 }
 
 .Tongchuan_City_News_news-item a:before {
@@ -83,4 +104,14 @@
 
 .Tongchuan_City_News_button:hover {
     background-color: #0d4a9e;
+}
+
+
+@media (max-width: 768px) {
+    .Tongchuan_City_News_news-item  {
+
+        font-size: 14px;
+
+
+    }
 }

@@ -137,7 +137,7 @@
     }
 
     .Left_navigation_bar_submenu_item {
-        font-size: 12px; /* 字体大小为12px */
+        font-size: 14px; /* 字体大小为12px */
         padding: 10px 15px 10px 30px; /* 内边距调整为10px 15px 10px 30px */
         width: 100%; /* 宽度设置为100% */
     }
@@ -166,13 +166,13 @@
     }
 
     .Left_navigation_bar_title {
-        font-size: 12px; /* 字体大小调整为12px */
+        font-size: 14px; /* 字体大小调整为12px */
         padding: 8px 10px; /* 内边距调整为8px 10px */
         width: 100%; /* 宽度设置为100% */
     }
 
     .Left_navigation_bar_submenu_item {
-        font-size: 10px; /* 字体大小调整为10px */
+        font-size: 14px; /* 字体大小调整为10px */
         padding: 8px 10px 8px 20px; /* 内边距调整为8px 10px 8px 20px */
         width: 100%; /* 宽度设置为100% */
     }

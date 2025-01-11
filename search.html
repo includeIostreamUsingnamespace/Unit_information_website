@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/search-results-page.css">
   <link rel="stylesheet" href="reuse/Head_navigation_bar/Head_navigation_bar.css">
   <link rel="stylesheet" href="css/content_single_part.css">
+  <link rel="stylesheet" href="css/header.css">
 
   <script src="js/search.js" defer></script>
   <script src="js/Carousel_map.js" defer></script>
@@ -46,22 +47,32 @@
 
 </head>
 
-<body>
+<head>
+
+  <!-- 整体容器 -->
+<div id="index_container">
+
 <!-- 导航条上方 -->
-<header class="header">
-  <div class="logo">
-    <img src="images/logo.png" alt="单位logo">
-  </div>
-  <div class="search-box">
-    <input type="text" placeholder="请输入关键字">
-    <button id="search">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-        <circle cx="11" cy="11" r="8" stroke="black"></circle>
-        <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="black"></line>
-      </svg>
-    </button>
-  </div>
-</header>
+  <!-- 顶部 Header -->
+  <header id="header">
+    <div class="logo">
+      <img src="images/长安大学校园公开网信息公开网LOGO去背景.png" alt="单位logo" loading="lazy" class="logo-img"     style="height: 75px;">
+
+
+
+    </div>
+    <div id="search-box" class="search-box">
+      <input type="text" placeholder="请输入关键字" aria-label="搜索关键字">
+      <button id="search" title="搜索">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
 
 
 
@@ -754,15 +765,15 @@
 
           </li>
 
-          <li class="menu-item i5"><a class="menu-link" href="list.html" target="_self">依申请公开</a>
+          <li class="menu-item i5"><a class="menu-link" href="list.html" target="_self">信息公开报告</a>
 
           </li>
 
-          <li class="menu-item i6"><a class="menu-link" href="list.html" target="_self">信息公开年度报告</a>
+          <li class="menu-item i6"><a class="menu-link" href="list.html" target="_self">信息公开申请</a>
 
           </li>
 
-          <li class="menu-item i7"><a class="menu-link" href="list.html" target="_self">信息公开组织机构<em class="menu-switch-arrow"></em></a>
+          <li class="menu-item i7"><a class="menu-link" href="list.html" target="_self">意见建议<em class="menu-switch-arrow"></em></a>
 
 
             <ul class="sub-menu ">
@@ -1339,15 +1350,15 @@
   </div>
 </div>
 
+</div>
 
 
-<!-- 底部footer -->
 <div id="footer-header">
   <div id="footer-header-content">
     <div id="footer-logo-section">
-      <img alt="长安大学校徽 - 圆形徽章设计，显示学校英文缩写和创建年份" height="60" id="footer-logo" src="https://replicate.delivery/xezq/A4dPOvVU4kaDD1AdrDoNpt9lAMOdlJtxEaVgE9wBGMu2oQfJA/out-0.png" width="60"/>
+      <img alt="长安大学校徽 - 圆形徽章设计，显示学校英文缩写和创建年份"  id="footer-logo" src="./images/长安大学校徽logo.png" />
       <div id="footer-site-title">
-        长安大学 | 信息公开网
+        信息公开网
       </div>
     </div>
     <div id="footer-contact-info">

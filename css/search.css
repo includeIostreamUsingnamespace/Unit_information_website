@@ -1,11 +1,11 @@
-/* 全局样式 */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #1e1e1e;
-}
+/*!* 全局样式 *!*/
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background-color: #ffffff;*/
+/*    color: #1e1e1e;*/
+/*}*/
 
 a {
     text-decoration: none;

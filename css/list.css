@@ -187,15 +187,7 @@ footer {
     border: 1px solid #ccc;
 }
 
-footer {
-    clear: both;
-}
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
 
 .content-area {
     display: flex;
@@ -301,3 +293,58 @@ body {
 .tree-menu {
     margin-bottom: 0px; /* 给树形菜单增加底部间距 */
 }
+
+
+
+/* 移动端适配 - 小于768px屏幕 */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column; /* 切换为垂直布局 */
+        align-items: flex-start; /* 左对齐 */
+        padding: 15px; /* 增加内边距 */
+    }
+
+    .left-menu {
+        padding-left: 0; /* 移除左侧菜单内边距 */
+    }
+
+    #right-section {
+        width: 100%; /* 宽度为100% */
+        display: flex;
+        flex-direction: column; /* 切换为垂直布局 */
+        /*align-items: flex-start; !* 左对齐 *!*/
+    }
+
+    #search-box {
+        width: 100%; /* 使搜索框宽度占满 */
+        margin-top: 10px; /* 增加顶部间距 */
+        justify-content: space-between; /* 使输入框和按钮在一行内有间距 */
+    }
+
+    #search-box input {
+        width: 80%; /* 输入框占大部分宽度 */
+        margin-right: 5px; /* 增加右侧间距 */
+    }
+
+    #search-box button {
+        width: 15%; /* 按钮占一定宽度 */
+    }
+
+
+
+    /* Navbar 样式调整 */
+    .navbar ul {
+        flex-direction: column; /* 切换为垂直排列 */
+        align-items: center; /* 中心对齐 */
+    }
+
+    .navbar ul li {
+        padding: 5px 0; /* 减小间距 */
+    }
+
+    /* 首页内容调整 */
+    .main-content {
+        padding: 10px; /* 减少内边距 */
+    }
+}
+

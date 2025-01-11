@@ -18,3 +18,11 @@
     /*字体距离右面一定距离*/
     padding-right: 20px;
 }
+
+@media (max-width: 768px) {
+    #content_single_part-parent-container {
+
+        width: 100%;                /* 父容器宽度100% */
+
+    }
+}
