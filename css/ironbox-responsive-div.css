@@ -1,22 +1,41 @@
+/*#ironbox-responsive-div {*/
+/*    height: auto;*/
+/*    padding: 20px;*/
+/*    box-sizing: border-box;*/
+/*    display: block;*/
+
+/*    width: 1200px; !* 设置固定宽度 *!*/
+
+
+/*    margin: 0 auto; !* 居中显示 *!*/
+/*    overflow-x: hidden; !* 防止内容溢出 *!*/
+
+/*}*/
+
+
+/*@media (max-width: 768px) {*/
+/*    #ironbox-responsive-div {*/
+/*        padding: 20px 0 0;*/
+/*        width: 100%; !* 在小屏幕上宽度为100% *!*/
+/*    }*/
+
+/*}*/
+
+
 #ironbox-responsive-div {
     height: auto;
     padding: 20px;
     box-sizing: border-box;
     display: block;
-
     width: 1200px; /* 设置固定宽度 */
-
-
     margin: 0 auto; /* 居中显示 */
     overflow-x: hidden; /* 防止内容溢出 */
-
+    background-color: #ffffff; /* 整体页面背景 */
 }
-
 
 @media (max-width: 768px) {
     #ironbox-responsive-div {
         padding: 20px 0 0;
         width: 100%; /* 在小屏幕上宽度为100% */
     }
-
 }

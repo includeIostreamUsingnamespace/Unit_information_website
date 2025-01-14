@@ -1,12 +1,123 @@
 
+/*.flex-container {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    align-items: flex-start;*/
+/*    gap: 20px; !* 可选，增加子项间距 *!*/
+/*}*/
+
+
+/*!* 左侧菜单 *!*/
+/*.left-menu {*/
+/*    width: 200px;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*!* 主内容区域 *!*/
+/*.main-content {*/
+/*    flex: 1; !* 主内容区域占据剩余空间 *!*/
+/*    margin-right: 5px; !* 为右侧区域留出空间 *!*/
+
+/*}*/
+
+/*!* 右侧区域 *!*/
+/*.right-section {*/
+/*    width: 300px;*/
+/*}*/
+
+/*!* 左菜单项 *!*/
+/*.menu-title {*/
+/*    background-color: #345277;*/
+/*    color: white;*/
+/*    padding: 10px 20px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.menu-items {*/
+/*    background-color: white;*/
+/*}*/
+
+
+/*!* 主内容区头部 *!*/
+/*.content-header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.content-title {*/
+/*    font-size: 18px;*/
+/*    color: #333;*/
+/*}*/
+
+/*.view-more {*/
+/*    color: #666;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.news-list {*/
+/*    background-color: white;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*.news-item {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    padding: 10px 0;*/
+/*    border-bottom: 1px solid #eee;*/
+/*}*/
+
+/*.news-title {*/
+/*    color: #333;*/
+/*    flex: 1;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*.news-date {*/
+/*    color: #999;*/
+/*    white-space: nowrap;*/
+/*}*/
+
+/*!* 右侧信息框 *!*/
+/*.right-box {*/
+/*    background-color: #345277;*/
+/*    color: white;*/
+/*    padding: 15px;*/
+/*    margin-bottom: 20px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.right-image {*/
+/*    width: 100%;*/
+/*    height: 150px;*/
+/*    margin-bottom: 20px;*/
+/*    object-fit: cover;*/
+/*}*/
+
+/*@media (max-width: 768px) {*/
+
+/*    !* 右侧信息框 *!*/
+/*    .right-box {*/
+/*        background-color: #345277;*/
+/*        color: white;*/
+/*        padding: 15px 15px 15px 20px;*/
+/*        margin-bottom: 20px;*/
+/*        text-align: left;*/
+/*    }*/
+
+/*}*/
+
+
 .flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px; /* 可选，增加子项间距 */
+    background-color: #ffffff; /* 整体页面背景 */
 }
-
 
 /* 左侧菜单 */
 .left-menu {
@@ -18,7 +129,7 @@
 .main-content {
     flex: 1; /* 主内容区域占据剩余空间 */
     margin-right: 5px; /* 为右侧区域留出空间 */
-
+    background-color: #ffffff; /* 整体页面背景 */
 }
 
 /* 右侧区域 */
@@ -28,16 +139,15 @@
 
 /* 左菜单项 */
 .menu-title {
-    background-color: #345277;
+    background-color: #0a5cad; /* 主题蓝色 */
     color: white;
     padding: 10px 20px;
     margin-bottom: 10px;
 }
 
 .menu-items {
-    background-color: white;
+    background-color: #ffffff; /* 整体页面背景 */
 }
-
 
 /* 主内容区头部 */
 .content-header {
@@ -49,16 +159,20 @@
 
 .content-title {
     font-size: 18px;
-    color: #333;
+    color: #1e1e1e; /* 主要黑色 */
 }
 
 .view-more {
-    color: #666;
+    color: #575757; /* 次要黑灰色 */
     text-decoration: none;
 }
 
+.view-more:hover {
+    color: #0068b7; /* 主要黑色字体 hover */
+}
+
 .news-list {
-    background-color: white;
+    background-color: #ffffff; /* 整体页面背景 */
     padding: 20px;
 }
 
@@ -70,19 +184,19 @@
 }
 
 .news-title {
-    color: #333;
+    color: #1e1e1e; /* 主要黑色 */
     flex: 1;
     margin-right: 20px;
 }
 
 .news-date {
-    color: #999;
+    color: #575757; /* 次要黑灰色 */
     white-space: nowrap;
 }
 
 /* 右侧信息框 */
 .right-box {
-    background-color: #345277;
+    background-color: #0a5cad; /* 主题蓝色 */
     color: white;
     padding: 15px;
     margin-bottom: 20px;
@@ -97,18 +211,13 @@
 }
 
 @media (max-width: 768px) {
-
     /* 右侧信息框 */
     .right-box {
-        background-color: #345277;
+        background-color: #0a5cad; /* 主题蓝色 */
         color: white;
         padding: 15px 15px 15px 20px;
         margin-bottom: 20px;
         text-align: left;
     }
-
 }
-
-
-
 

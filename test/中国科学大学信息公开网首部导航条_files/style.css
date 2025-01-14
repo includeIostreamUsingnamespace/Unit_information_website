@@ -1,76 +1,52 @@
 @charset "utf-8";
 /*Technical Support SudyTech*/
 html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{ margin:0; padding:0; }
-/* 设置所有HTML元素的默认margin和padding为0 */
 header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{ display:block; }
-/* 将HTML5的新元素设置为块级元素 */
 table{ border-collapse:collapse; border-spacing:0; }
-/* 设置表格的边框合并和间距为0 */
 caption,th{ text-align:left; font-weight:normal; }
-/* 设置表格标题和表头的文本对齐方式为左对齐，字体加粗为正常 */
 html,body,fieldset,img,iframe,abbr{ border:0;}
-/* 设置HTML、body、fieldset、img、iframe、abbr的边框为0 */
 img{vertical-align:top;}
-/* 设置图片的垂直对齐方式为顶部对齐 */
 html{ overflow-x:hidden; }
-/* 设置HTML的横向溢出内容为隐藏 */
 i,cite,em,var,address,dfn{ font-style:normal; }
-/* 设置斜体、引用、强调、变量、地址、定义的字体样式为正常 */
 [hidefocus],summary{ outline:0; }
-/* 设置隐藏焦点和摘要的轮廓为0 */
 li{ list-style:none; }
-/* 设置列表项的列表样式为无 */
 h1,h2,h3,h4,h5,h6,small{ font-size:100%; }
-/* 设置标题和small的字体大小为100% */
 sup,sub{ font-size:83%; }
-/* 设置上标和下标的字体大小为83% */
 pre,code,kbd,samp{ font-family:inherit; }
-/* 设置预格式化文本、代码、键盘输入、示例的字体家族为继承 */
 q:before,q:after{ content:none; }
-/* 设置引用的before和after伪元素的内容为空 */
 textarea{ overflow:auto; resize:none; }
-/* 设置文本域的溢出内容为自动，不可调整大小 */
 label,summary{ cursor:default; }
-/* 设置标签和摘要的鼠标样式为默认 */
 a,button{ cursor:pointer; }
-/* 设置链接和按钮的鼠标样式为指针 */
 h1,h2,h3,h4,h5,h6,em,strong,b{ font-weight:bold; }
-/* 设置标题、强调、加粗、粗体的字体加粗为粗体 */
 del,ins,u,s,a,a:hover{ text-decoration:none; }
-/* 设置删除线、插入线、下划线、删除线、链接、链接悬停的文本装饰为无 */
 body,textarea,input,button,select,keygen,legend{ font:13px/1 arial,\5b8b\4f53; color:#333; outline:0; }
-/* 设置body、文本域、输入框、按钮、选择框、生成键、图例的字体大小、行高、字体家族、颜色和轮廓为13px/1 arial,宋体，#333，0 */
 :focus { outline:0; }
-/* 设置获取焦点的元素的轮廓为0 */
 /*备用样式表*/
 .none { display:none; }
-/* 设置类名为none的元素为不显示 */
 .wcb{ width:100%; height:30px; border:2px dashed #97CBE0; }
-/* 设置类名为wcb的元素的宽度、高度和边框为100%，30px，2px虚线#97CBE0 */
 .hidden { visibility:hidden; }
-/* 设置类名为hidden的元素为不可见 */
 .clear { width:100%; height:0; line-height:0; font-size:0; overflow:hidden; clear:both; display:block; _display:inline; }
 
-/* 设置类名为clear的元素的宽度、高度、行高、字体大小、溢出内容、清除浮动、显示方式和IE6兼容显示方式 */
 .clearfix:after{clear: both;content: "";display: block;height:0;visibility: hidden;}
-/* 设置类名为clearfix的元素的after伪元素的清除浮动、内容、显示方式、高度和可见性 */
+
 .clearfix{ display: block; *zoom:1; }
 
-/* 设置类名为clearfix的元素的显示方式和IE6/7的兼容缩放 */
-.icon{display:inline-block;width: 32px;height: 32px;vertical-align:middle;background:url(images/icon.png) no-repeat;}
-/* 设置类名为icon的元素的显示方式、宽度、高度、垂直对齐方式和背景图片 */
+
+
+/*.icon{display:inline-block;width: 32px;height: 32px;vertical-align:middle;background:url(images/icon.png) no-repeat;}*/
 /*css3扩展*/
 body:before {content: ""; position: fixed; top: -10px; left: 0; z-index: 110; width: 100%; height: 10px;
  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
 	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
 	     box-shadow: 0px 0px 10px rgba(0,0,0,.8);
 }
-/* 设置body的before伪元素的内容、位置、层级、宽度和高度，以及阴影效果 */
+
+
+
 ::-webkit-input-placeholder { color:#ccc;/* WebKit browsers */}
 :-moz-placeholder {color:#ccc; /* Mozilla Firefox 4 to 18 */}
 ::-moz-placeholder { color:#ccc;/* Mozilla Firefox 19+ */}
 :-ms-input-placeholder { color:#ccc;/* Internet Explorer 10+ */}
-/* 设置不同浏览器的输入框占位符颜色为#ccc */
 .scroller {position: absolute; z-index: 1; width: 750px; height: 160px;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-transform: translateZ(0);
@@ -89,7 +65,6 @@ body:before {content: ""; position: fixed; top: -10px; left: 0; z-index: 110; wi
     -o-text-size-adjust: none;
     text-size-adjust: none;
  }
- /* 设置类名为scroller的元素的位置、层级、宽度和高度，以及各种浏览器的前缀属性 */
  input:-webkit-autofill,
  input:-webkit-autofill:hover,
  input:-webkit-autofill:focus,
@@ -97,148 +72,90 @@ body:before {content: ""; position: fixed; top: -10px; left: 0; z-index: 110; wi
      -webkit-transition-delay: 99999s;
      -webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
 }
-/* 设置不同状态下输入框的自动填充的过渡延迟和过渡效果 */
  /**隐藏滚动条**/
  /**body::-webkit-scrollbar{display: none;}**/
  ::-webkit-scrollbar{width: 8px;height: 8px;background-color: #CCCCCC;-webkit-border-radius: 6px;}
 ::-webkit-scrollbar-thumb:horizontal { width: 4px;  background-color: #CCCCCC;  -webkit-border-radius: 6px;}
 ::-webkit-scrollbar-track-piece { background-color: #fff; /*滚动条的背景颜色*/ -webkit-border-radius: 0; /*滚动条的圆角宽度*/}
 ::-webkit-scrollbar-thumb:vertical {height: 50px;background-color: #999;-webkit-border-radius: 4px;  outline: 1px solid #fff; outline-offset: -1px;border: 1px solid #fff;}
-/* 设置不同浏览器的滚动条样式 */
 /**布局开始**/
 body {line-height: 1;font-size: 13px;font-family: "Arial","Microsoft YaHei","\u5b8b\u4f53", Tahoma, Geneva, sans-serif;color:#333;}
-/* 设置body的行高、字体大小、字体家族和颜色 */
 p{line-height:1.75;}
-/* 设置段落元素的行高为1.75 */
 a {color:#3b3b3b; text-decoration:none; transition:all 0.4s ease-in-out; }
-/* 设置链接的颜色、文本装饰和过渡效果 */
 a:hover { color:#095ab5; }
-/* 设置链接悬停的颜色 */
 /*页面尺寸*/
 .wrapper { width:100%; margin:0 auto;  }
-/* 设置类名为wrapper的元素的宽度和自动外边距 */
 .wrapper .inner {width: 1300px;margin:0 auto;} /**页面全局宽度**/
-/* 设置类名为wrapper的子元素inner的宽度和自动外边距 */
 /*headtop*/
 #headtop{background: #666;}
-/* 设置id为headtop的元素的背景颜色 */
 #headtop .inner{}
-/* 设置id为headtop的子元素inner的样式 */
 .headtop .top-left{float: left;}
-/* 设置类名为headtop的子元素top-left的浮动方式为左浮动 */
 .headtop .top-right{float:right;}
-/* 设置类名为headtop的子元素top-right的浮动方式为右浮动 */
 /*head开始*/
 .header {border-bottom:none;height:auto;line-height:inherit;}
-/* 设置类名为header的元素的底部边框、高度和行高 */
 .header .inner{height: 140px;position:relative;background: url('images/by.png') no-repeat right 47px;}
-/* 设置类名为header的子元素inner的高度、位置和背景图片 */
 .header .sitelogo{float:left;margin-top: 41px;}
-/* 设置类名为header的子元素sitelogo的浮动方式和上外边距 */
 .header .sitelogo span{position:relative;font-size:inherit; font-weight:normal;}
-/* 设置类名为header的子元素sitelogo的子元素span的位置、字体大小和字体加粗 */
 .header .sitelogo span a{ color:transparent; margin:0;}
-/* 设置类名为header的子元素sitelogo的子元素span的子元素a的颜色和外边距 */
 .header .sitelogo h1{font-size:inherit; font-weight:normal; background:none; padding-left:0px;}
-/* 设置类名为header的子元素sitelogo的子元素h1的字体大小、字体加粗、背景和左内边距 */
 .header .sitelogo .sitetitle {display:inline-block;margin-top: 9px;margin-left: 18px;font-size: 36px;font-weight:bold;border-left: 1px solid #8dafd6;line-height: 36px;padding: 6px 0 3px 19px;color: #173984;} /**站点名称**/
 
-/* 设置类名为header的子元素sitelogo的子元素sitetitle的显示方式、上外边距、左外边距、字体大小、字体加粗、左边框、行高、内边距和颜色 */
 .header .head-left{float:left;display:inline-block;}
-/* 设置类名为header的子元素head-left的浮动方式和显示方式 */
 .header .head-main{float:left;margin-top:10px;}
-/* 设置类名为header的子元素head-main的浮动方式和上外边距 */
 .header .head-right{float:right;margin-top: 50px;width: 260px;}
-/* 设置类名为header的子元素head-right的浮动方式、上外边距和宽度 */
 /*rale样式*/
 .site-rale{}
-/* 设置类名为site-rale的元素样式 */
 .site-rale ul{}
-/* 设置类名为site-rale的子元素ul的样式 */
 .site-rale ul li.links{float:left;}
-/* 设置类名为site-rale的子元素ul的子元素li的浮动方式 */
 .site-rale ul li.links a{line-height: 35px;padding: 0 12px 0 12px;padding-left: 19px;font-size: 13px;color: #cad3d4;background:url(images/link_icon.png) no-repeat;}
-/* 设置类名为site-rale的子元素ul的子元素li的子元素a的行高、内边距、字体大小、颜色和背景图片 */
 .site-rale ul li.links a:hover{color:#fff;}
-/* 设置类名为site-rale的子元素ul的子元素li的子元素a的悬停颜色 */
 .site-rale ul li.links.i1 a{background-position: 0px 0px;}
-/* 设置类名为site-rale的子元素ul的子元素li的类名为i1的子元素a的背景位置 */
 .site-rale ul li.links.i2 a{background-position: -60px 0px;}
-/* 设置类名为site-rale的子元素ul的子元素li的类名为i2的子元素a的背景位置 */
 .site-rale ul li.links.i3 a{background-position: -117px 0px;}
-/* 设置类名为site-rale的子元素ul的子元素li的类名为i3的子元素a的背景位置 */
 .site-rale ul li.links.i4 a{background-position: -177px 0px;}
-/* 设置类名为site-rale的子元素ul的子元素li的类名为i4的子元素a的背景位置 */
 /*lang样式*/
 .site-lang{}
-/* 设置类名为site-lang的元素样式 */
 .site-lang ul{float:right;}
-/* 设置类名为site-lang的子元素ul的浮动方式 */
 .site-lang ul li.links{float:left;}
-/* 设置类名为site-lang的子元素ul的子元素li的浮动方式 */
 .site-lang ul li.links a{line-height: 35px;margin:0px 5px;font-size: 13px;color: #cad3d4;}
-/* 设置类名为site-lang的子元素ul的子元素li的子元素a的行高、外边距、字体大小和颜色 */
 .site-lang ul li.links a:hover{color:#fff;}
-/* 设置类名为site-lang的子元素ul的子元素li的子元素a的悬停颜色 */
 /*默认主导航样式*/
 #nav{background: #034ea1;}
-/* 设置id为nav的元素的背景颜色 */
 #nav .inner{}
-/* 设置id为nav的子元素inner的样式 */
 #nav .inner .wp-panel{}/*导航*/
-/* 设置id为nav的子元素inner的子元素wp-panel的样式 */
 #nav .inner .wp-panel .wp-window{}
-/* 设置id为nav的子元素inner的子元素wp-panel的子元素wp-window的样式 */
 #nav .inner .wp-panel .navbg{position:absolute; z-index:-1;left:0;right:0;top:0;bottom:0; width:auto; height:100%;background:#fff;opacity:.7;filter:alpha(opacity=70);}
 
-
-/* 设置id为nav的子元素inner的子元素wp-panel的子元素navbg的位置、层级、宽度和高度，以及背景颜色和透明度 */
 /*导航样式：后台绑定时也可以定义配置*/
-.nav .wp-menu {margin:0 auto} /* 设置导航菜单的外边距为自动，使其水平居中 */
+.nav .wp-menu {margin:0 auto}
 .nav .wp-menu .menu-item {display: inline-block; float: left; position: relative;}
-
-
-/* 设置类名为nav的子元素wp-menu的子元素menu-item的显示方式、浮动方式和位置 */
 .nav .wp-menu .menu-item.i1 { background:none;}
-/* 设置类名为nav的子元素wp-menu的子元素menu-item的类名为i1的背景为无 */
 .nav .wp-menu .menu-item a > .menu-switch-arrow{display: none;width:20px;height:20px;background:url(images/nav_j.png) no-repeat center center;vertical-align:middle;}
-/* 设置类名为nav的子元素wp-menu的子元素menu-item的子元素a的子元素menu-switch-arrow的显示方式、宽度、高度、背景图片和垂直对齐方式 */
-.nav .wp-menu .menu-item a.menu-link {display: inline-block;padding: 0 37px;line-height: 50px;color: #FFFFFF;font-size: 18px;}
-/* 设置类名为nav的子元素wp-menu的子元素menu-item的子元素a的类名为menu-link的显示方式、内边距、行高、颜色和字体大小 */
+
+/*首页导航条一级标题字体大小调整位置*/
+.nav .wp-menu .menu-item a.menu-link {display: inline-block;padding: 0 37px;line-height: 50px;color: #FFFFFF;font-size: 16px;}
+
 .nav .wp-menu .menu-item.hover a.menu-link,
-/* 设置类名为nav的子元素wp-menu的子元素menu-item的悬停状态和子元素a的悬停状态的背景颜色、文本装饰和颜色 */
 .nav .wp-menu .menu-item a.hover{background-color:#1384e2; text-decoration: none; color: #eee;}
-/* 设置类名为nav的子元素sub-menu的显示方式、位置、左偏移、上偏移、最小宽度、文本对齐方式、层级和背景颜色 */
 .nav .sub-menu {display: none;position: absolute;left: 0;top: 50px;min-width: 100%;text-align: center;z-index: 100;background:#fff;}
-/* 设置类名为nav的子元素sub-menu的子元素sub-item的位置、空白处理、垂直对齐方式和IE6/7的兼容缩放 */
 .nav .sub-menu .sub-item { position: relative; white-space: nowrap; vertical-align: top; _zoom:1;}
-/* 设置类名为nav的子元素sub-menu的子元素sub-item的子元素a的显示方式、颜色、高度、行高、内边距、字体大小和背景 */
 .nav .sub-menu .sub-item a {display: block;color: #000;height: 40px;line-height: 40px;padding: 0 17px;font-size: 16px;background:none;}
-/* 设置类名为nav的子元素sub-menu的子元素sub-item的悬停状态和子元素a的悬停状态的背景颜色、文本装饰和颜色 */
 .nav .sub-menu .sub-item.hover> a,
-.nav .sub-menu .sub-item a:hover{ color: #fff; background-color:#1384e2; display: block; }
+
+/*这里的bgc是修改鼠标放到导航条上面的颜色的*/
+.nav .sub-menu .sub-item a:hover{ color: #fff; background-color:#0068b7; display: block; }
+
 .nav .sub-menu .sub-menu { left: 100%; top:0px; z-index: 200; background:#fff;}
-
-/* 设置类名为nav的子元素sub-menu的子元素sub-menu的左偏移、上偏移、层级和背景颜色 */
-
-
-/* 设置id为banner的元素的背景颜色 */
 /**主页banner开始**/
-/* 设置id为banner的子元素inner的宽度、最大宽度、文本对齐方式和位置 */
 #banner {background: #e7e2df;}
 #banner .inner {width:auto;max-width: 1345px;text-align: center;position:relative;}
-/* 设置id为m-container的元素样式 */
 /**主体模块样式**/
-/* 设置id为m-container的子元素inner的样式 */
 #m-container {}
 #m-container .inner {}
-/* 设置类名为mod的元素样式 */
 /**首页三列布局**/
 .mod {}
 .mbox {}
-/* 设置类名为main1的元素样式 */
 
-/* 设置类名为main1的子元素inner的内边距 */
 .main1{}
 .main1 .inner{padding: 30px 0px 50px;}
 .main1 .ml{float:left; width:360px;padding-top:8px;}
@@ -260,9 +177,9 @@ a:hover { color:#095ab5; }
 .post .con .wp_article_list .list_item { border-bottom:1px dashed #ccc; } /**新闻列表**/
 .post .con .wp_article_list .list_item .Article_Index { background:url(images/li.gif) no-repeat center; }
 .post .more_btn {display:inline-block;*display:inline; *zoom:1; height: 20px;margin-top: 10px;line-height: 20px;float:right;}
-.post .more_btn .more_text,.post .more_btn a {font-size:13px; cursor:pointer;} 
-.post .more_btn a{color:#666;} 
-.post .more_btn a:hover{color:#666;} 
+.post .more_btn .more_text,.post .more_btn a {font-size:13px; cursor:pointer;}
+.post .more_btn a{color:#666;}
+.post .more_btn a:hover{color:#666;}
 /**自定义新闻列表**/
 .news_list { }
 .news_list li.news {line-height: 34px;padding-left:0px;} /**标题图标**/
@@ -284,9 +201,9 @@ a:hover { color:#095ab5; }
 .rili .news_list li.news .news_date{float: left;width: 60px;height: 28px;line-height:28px;margin-top:3px;margin-right: -70px;font-family:"Microsoft YaHei";border-radius:4px;background: #146cc1;text-align:center;vertical-align:middle;}
 .rili .news_list li.news .news_date .news_year{display:inline-block;padding: 0 4px;font-size: 18px;color: #fff;}
 .rili .news_list li.news .news_date .news_days{display:inline-block;height: 26px;padding: 0 6px;font-size: 14px;color: #034ea1;border-radius:0px 4px 4px 0px;background: #fff;vertical-align:top;border:1px solid #146cc1;}
-.rili .news_list li.news .news_wz{width:100%;} 
+.rili .news_list li.news .news_wz{width:100%;}
 .rili .news_list li.news .news_wz .news_con{margin-left:70px;}
-.rili .news_list li.news .news_title{line-height: 34px;margin-top: 0px;font-size: 14px;color:#000;} 
+.rili .news_list li.news .news_title{line-height: 34px;margin-top: 0px;font-size: 14px;color:#000;}
 .rili .news_list li.news .news_text{line-height: 20px; margin-top:0px;font-size: 12px;color:#666;}
 /*日历新闻样式2*/
 .rili2{}
@@ -298,15 +215,15 @@ a:hover { color:#095ab5; }
 .rili2 .news_list li.news .news_date .news_year{line-height: 30px;font-size: 22px; color:#fff; background-color:#949494; transition:all 0.4s ease-in-out;}
 .rili2 .news_list li.news .news_date .news_days{line-height:30px; font-size: 12px; color:#6b6b6b; background-color:#e3e4e6;}
 .rili2 .news_list li.news .news_wz{width:100%;}
-.rili2 .news_list li.news .news_wz .news_con{margin-left:70px; padding: 4px 0px;} 
-.rili2 .news_list li.news .news_title{line-height: 23px;margin-top: 4px;font-size: 15px;color:#000;} 
+.rili2 .news_list li.news .news_wz .news_con{margin-left:70px; padding: 4px 0px;}
+.rili2 .news_list li.news .news_title{line-height: 23px;margin-top: 4px;font-size: 15px;color:#000;}
 .rili2 .news_list li.news:hover .news_date .news_year{background-color:#0945a8;transition:all 0.4s ease-in-out;}
 .rili2 .news_list li.news:hover .news_date .news_days{background-color:#e3e4e6;}
 /*标题文*/
 .news_text{}
 .news_text .news_list {}
-.news_text .news_list li.news{margin-bottom:10px;} 
-.news_text .news_list li.news .news_title{line-height: 24px; font-size: 15px;} 
+.news_text .news_list li.news{margin-bottom:10px;}
+.news_text .news_list li.news .news_title{line-height: 24px; font-size: 15px;}
 .news_text .news_list li.news .news_text{line-height:22px;font-size: 13px;}
 .news_text .news_list li.news .news_time{line-height: 28px;font-size: 13px;}
 /*图列表*/
@@ -316,8 +233,8 @@ a:hover { color:#095ab5; }
 .news_tu .news_list li.news .news_imgs img{width:100%;height:100%;position:absolute;left: 0;right:0;bottom:0;top:0;transition:0.7s;}
 .news_tu .news_list li.news:hover .news_imgs img{transform:scale(1.05);}
 .news_tu .news_list li.news .news_wz{}
-.news_tu .news_list li.news .news_wz .news_con{} 
-.news_tu .news_list li.news .news_title{line-height: 45px;height:45px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;font-size: 14px;} 
+.news_tu .news_list li.news .news_wz .news_con{}
+.news_tu .news_list li.news .news_title{line-height: 45px;height:45px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;font-size: 14px;}
 .news_tu .news_list li.news .news_title a{}
 /*文字图标链接*/
 .link_text {margin-bottom:0px;}
@@ -390,7 +307,7 @@ a:hover { color:#095ab5; }
 #d-container {}
 #d-container .inner {background:#fff;}
 
-.col_menu {width: 240px;float:left;margin-right:-240px;position:relative;} 
+.col_menu {width: 240px;float:left;margin-right:-240px;position:relative;}
 .col_menu .l-qh{ margin-bottom:10px;}
 .col_menu .col_menu_head {background: #0f429b;}/**位置栏目背景**/
 .col_menu .col_menu_head h3.col_name { font-size:20px; font-weight:normal; color:#fff; }/**位置栏目字体**/
@@ -402,22 +319,22 @@ a:hover { color:#095ab5; }
 .col_list .wp_listcolumn .wp_column a {color:#333;font-size: 15px;font-weight:normal;background:none;border-top:0px solid #fff;border-bottom: 1px solid #F6EAEA;}
 .col_list .wp_listcolumn .wp_column a .column-name{padding:5px 0px 5px 28px;line-height:32px;}
 .col_list .wp_listcolumn .wp_column a:hover,
-.col_list .wp_listcolumn .wp_column a.selected { color:#0f429b; background:#eee; } 
+.col_list .wp_listcolumn .wp_column a.selected { color:#0f429b; background:#eee; }
 .col_list .wp_listcolumn .wp_column a.selected span.column-name{color: #0f429b;}
 .col_list .wp_listcolumn .wp_subcolumn .wp_column a { color:#454545;background:none; border-top:1px solid #fff; border-bottom:1px solid #bbb;}
 .col_list .wp_listcolumn .wp_column.parent > a .column-name{font-weight:bold; color:#0f429b;}
 /*二级子栏目**/
-.col_list .wp_listcolumn .wp_column .sub_list a {color:#333;border-top:1px solid #eee;margin-top:-1px;} 	
+.col_list .wp_listcolumn .wp_column .sub_list a {color:#333;border-top:1px solid #eee;margin-top:-1px;}
 .col_list .wp_listcolumn .sub_list a .column-name {display:inline-block;line-height: 28px;padding: 5px 10px 5px 52px;cursor:pointer;}
 .col_list .wp_listcolumn .sub_list a:hover,
-.col_list .wp_listcolumn .wp_column a.selected {font-weight:bold; font-weight:bold;color:#0f429b;} 
+.col_list .wp_listcolumn .wp_column a.selected {font-weight:bold; font-weight:bold;color:#0f429b;}
 /*三级子栏目**/
-.col_list .wp_listcolumn .wp_column .sub_list .sub_list a {background:none; } 	
+.col_list .wp_listcolumn .wp_column .sub_list .sub_list a {background:none; }
 .col_list .wp_listcolumn .sub_list .sub_list a .column-name { padding: 5px 10px 5px 51px; cursor:pointer;}
 .col_list .wp_listcolumn .sub_list .sub_list a :hover,
-.col_list .wp_listcolumn .sub_list .sub_list a.selected {font-weight:bold; color:#0f429b;} 
+.col_list .wp_listcolumn .sub_list .sub_list a.selected {font-weight:bold; color:#0f429b;}
 /**栏目新闻**/
-.col_news {width: 100%;min-height:500px;float:right;} 
+.col_news {width: 100%;min-height:500px;float:right;}
 .col_news .col_news_box{margin-left: 290px;}
 .col_news_head {border-bottom: 1px solid #DBDBDB;}
 .col_metas .col_title { display:inline-block; float:left; height: 48px; line-height: 48px; }  /**当前栏目**/
@@ -457,7 +374,7 @@ a:hover { color:#095ab5; }
 #wp_paging_w6 .wp_paging {
     font-size: 12px;
     line-height: 34px;
-    padding: 4px 0 72px;    
+    padding: 4px 0 72px;
     text-align: right;
 }
 
@@ -511,7 +428,7 @@ display: inline-block;
     padding: 0 10px;
 }
 
-#wp_paging_w6 .wp_paging li 
+#wp_paging_w6 .wp_paging li
  span.all_count {
     margin: 0 15px;
 }

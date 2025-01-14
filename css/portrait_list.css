@@ -1,11 +1,305 @@
-/*!* 全局样式 *!*/
+/*!*!* 全局样式 *!*!*/
+/*!*body {*!*/
+/*!*    font-family: Arial, sans-serif;*!*/
+/*!*    margin: 0;*!*/
+/*!*    padding: 0;*!*/
+/*!*    background-color: ##f6f7ff;*!*/
+/*!*    color: #1e1e1e;*!*/
+/*!*}*!*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*}*/
+
+/*ul {*/
+/*    list-style-type: none;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+
+/*!* 导航条上方样式 *!*/
+/*.portrait_list-header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 10px 20px;*/
+/*    background-color: #ffffff;*/
+/*    grid-area: header;*/
+/*}*/
+
+/*.portrait_list-logo img {*/
+/*    height: 50px;*/
+/*}*/
+
+/*input[type="text"] {*/
+/*    outline: none;*/
+/*}*/
+
+/*.portrait_list-search-box {*/
+/*    display: flex;*/
+/*}*/
+
+/*.portrait_list-search-box input {*/
+/*    padding: 5px 10px;*/
+/*    border: 1px solid #cccccc;*/
+/*    !*border-radius: 5px 0 0 5px;*!*/
+/*    border-right: none;*/
+/*}*/
+
+/*button {*/
+/*    background-color: #ffffff;*/
+/*    border: 1px solid #cccccc;*/
+/*    !*border-radius: 0 5px 5px 0;*!*/
+/*    border-left: none;*/
+/*}*/
+
+/*.portrait_list-icon {*/
+/*    stroke: #ffffff;*/
+/*    width: 20px;*/
+/*    height: 25px;*/
+/*}*/
+
+/*!* 导航条样式 *!*/
+/*.portrait_list-navbar {*/
+/*    background-color: #0a5cad;*/
+/*    grid-area: navbar;*/
+/*}*/
+
+/*.portrait_list-navbar ul {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+/*.portrait_list-navbar ul li {*/
+/*    padding: 10px 0;*/
+/*}*/
+
+/*.portrait_list-navbar ul li a {*/
+/*    color: #fff;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.portrait_list-navbar ul li a:hover {*/
+/*    color: #0068b7;*/
+/*}*/
+
+/*!* Banner图片样式 *!*/
+/*.portrait_list-banner img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*}*/
+
+/*!* footer样式 *!*/
+/*footer {*/
+/*    background-color: #003366;*/
+/*    color: white;*/
+/*    padding: 20px;*/
+/*    grid-area: footer;*/
+/*}*/
+
+/*.portrait_list-footer-content {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.portrait_list-logo {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.portrait_list-logo img {*/
+/*    height: 50px;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*.portrait_list-address {*/
+/*    text-align: right;*/
+/*}*/
+
+/*!* 列表页样式 *!*/
+/*.portrait_list-sidebar {*/
+/*    width: 200px;*/
+/*    float: left;*/
+/*    background-color: #f6f7ff;*/
+
+/*    padding: 20px;*/
+/*    box-shadow: none; !* 取消阴影效果 *!*/
+/*    border: none; !* 取消边框 *!*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*!* 树型菜单 *!*/
+/*.portrait_list-tree-menu li a::after {*/
+/*    display: inline-block;*/
+/*    transform: rotate(90deg);*/
+/*    margin-left: 5px;*/
+/*    font-size: 23px;*/
+/*}*/
+
+/*.portrait_list-tree-menu li ul {*/
+/*    display: none;*/
+/*    padding-left: 20px;*/
+/*}*/
+
+/*.portrait_list-tree-menu li.expanded ul {*/
+/*    display: block;*/
+/*    padding-left: 20px;*/
+/*}*/
+
+/*.portrait_list-tree-menu li.expanded > ul li a::after {*/
+/*    display: none; !* 当父级li有expanded类，即菜单展开时，隐藏其子菜单li元素后的小圆点 *!*/
+/*}*/
+
+/*.portrait_list-tree-menu li {*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.portrait_list-tree-menu li a:hover {*/
+/*    color: #0068b7;*/
+/*}*/
+
+/*.portrait_list-content-area {*/
+/*    margin-left: 220px;*/
+/*}*/
+
+/*.portrait_list-content-list li:before {*/
+/*    content: "•";*/
+/*    color: #0a5cad;*/
+/*    margin-right: 5px;*/
+/*}*/
+
+/*.portrait_list-header.school-img {*/
+/*    float: right;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*.portrait_list-header.school-img img {*/
+/*    width: 200px;*/
+/*    height: auto;*/
+/*}*/
+
+/*#portrait_list-content-details {*/
+/*    margin: 20px;*/
+/*    padding: 20px;*/
+/*    border: 1px solid #ccc;*/
+/*}*/
+
+/*footer {*/
+/*    clear: both;*/
+/*}*/
+
 /*body {*/
-/*    font-family: Arial, sans-serif;*/
 /*    margin: 0;*/
 /*    padding: 0;*/
-/*    background-color: ##f6f7ff;*/
-/*    color: #1e1e1e;*/
+/*    font-family: Arial, sans-serif;*/
 /*}*/
+
+/*.portrait_list-content-area {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: flex-start; !* 垂直对齐到顶部 *!*/
+/*    padding: 20px;*/
+/*}*/
+
+/*#portrait_list-content-details {*/
+/*    width: 100%;*/
+/*    max-width: 800px; !* 控制最大宽度 *!*/
+/*    text-align: center; !* 默认将内容居中对齐 *!*/
+/*}*/
+
+/*#portrait_list-title {*/
+/*    font-size: 24px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*#portrait_list-meta-info, #portrait_list-additional-info {*/
+/*    display: flex;*/
+/*    justify-content: center; !* 水平居中对齐 *!*/
+/*    gap: 20px; !* 设置两列之间的间距 *!*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*#portrait_list-meta-info p, #portrait_list-additional-info p {*/
+/*    margin: 5px 0;*/
+/*}*/
+
+/*#portrait_list-article-content {*/
+/*    margin-top: 20px;*/
+/*    text-align: left; !* 正文内容左对齐 *!*/
+/*    padding: 15px;*/
+/*    border: 1px solid #ccc;*/
+/*    !*border-radius: 5px;*!*/
+/*}*/
+
+/*#portrait_list-publish-date, #portrait_list-views, #portrait_list-doc-number, #portrait_list-publisher {*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.portrait_list-tree-menu {*/
+/*    list-style-type: none; !* 去除默认的列表样式 *!*/
+/*    padding-left: 0;*/
+/*    margin: 0;*/
+/*}*/
+
+/*.portrait_list-tree-menu > li {*/
+/*    margin: 10px 0;*/
+/*}*/
+
+/*!* 树形菜单项的样式 *!*/
+/*.portrait_list-tree-menu > li > a {*/
+/*    text-decoration: none;*/
+/*    font-size: 16px;*/
+/*    color: #fff; !* 文字颜色改为白色 *!*/
+/*    padding: 8px 30px; !* 增加右侧的内边距，使圆点和文字之间的距离增大 *!*/
+/*    display: flex; !* 使用flex布局来对齐圆点和文字 *!*/
+/*    align-items: center; !* 垂直居中对齐文字和圆点 *!*/
+/*    position: relative;*/
+/*    background-color: #0a5cad; !* 背景色为#0a5cad *!*/
+/*    !*border-radius: 5px;*!*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
+/*.portrait_list-tree-menu > li > a:hover {*/
+/*    background-color: #d0e7ff; !* 悬停时改变背景颜色 *!*/
+/*}*/
+
+/*!* 小圆点样式 *!*/
+/*!* 调整小圆点的位置，增大圆点与文字之间的距离 *!*/
+/*.portrait_list-tree-menu > li > a::before {*/
+/*    content: '';*/
+/*    width: 8px;*/
+/*    height: 8px;*/
+/*    background-color: #0a5cad; !* 小圆点颜色保持为#0a5cad *!*/
+/*    !*border-radius: 50%;*!*/
+/*    position: absolute;*/
+/*    left: 15px; !* 调整左边距，使圆点和文字的距离更大 *!*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*}*/
+/*!* 为子级列表添加小圆点 *!*/
+/*.portrait_list-tree-menu > li > ul > li > a::before {*/
+/*    content: '';*/
+/*    width: 6px;*/
+/*    height: 6px;*/
+/*    background-color: #0a5cad;*/
+/*    !*border-radius: 50%;*!*/
+/*    position: absolute;*/
+/*    left: 10px; !* 同样调整位置 *!*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*}*/
+
+/*!* 为 content-area 或 tree-menu 增加底部间距 *!*/
+/*.portrait_list-content-area {*/
+/*    padding-bottom: 5000px; !* 适当调整底部间距，确保下拉框可以完全显示 *!*/
+/*}*/
+
+/*.portrait_list-tree-menu {*/
+/*    margin-bottom: 0px; !* 给树形菜单增加底部间距 *!*/
+/*}*/
+
 
 a {
     text-decoration: none;
@@ -24,7 +318,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ffffff;
+    background-color: #ffffff; /* 整体页面背景 */
     grid-area: header;
 }
 
@@ -45,24 +339,26 @@ input[type="text"] {
     border: 1px solid #cccccc;
     /*border-radius: 5px 0 0 5px;*/
     border-right: none;
+    color: #1e1e1e; /* 主要黑色 */
 }
 
 button {
-    background-color: #ffffff;
+    background-color: #ffffff; /* 整体页面背景 */
     border: 1px solid #cccccc;
     /*border-radius: 0 5px 5px 0;*/
     border-left: none;
+    color: #1e1e1e; /* 主要黑色 */
 }
 
 .portrait_list-icon {
-    stroke: #ffffff;
+    stroke: #0a5cad; /* 主题蓝色 */
     width: 20px;
     height: 25px;
 }
 
 /* 导航条样式 */
 .portrait_list-navbar {
-    background-color: #0a5cad;
+    background-color: #0a5cad; /* 主题蓝色 */
     grid-area: navbar;
 }
 
@@ -76,12 +372,12 @@ button {
 }
 
 .portrait_list-navbar ul li a {
-    color: #fff;
+    color: #fff; /* 白色文字 */
     font-weight: bold;
 }
 
 .portrait_list-navbar ul li a:hover {
-    color: #0068b7;
+    color: #0068b7; /* 主要黑色字体 hover */
 }
 
 /* Banner图片样式 */
@@ -92,7 +388,7 @@ button {
 
 /* footer样式 */
 footer {
-    background-color: #003366;
+    background-color: #0a5cad; /* 主题蓝色 */
     color: white;
     padding: 20px;
     grid-area: footer;
@@ -123,8 +419,7 @@ footer {
 .portrait_list-sidebar {
     width: 200px;
     float: left;
-    background-color: #f6f7ff;
-
+    background-color: #f6f7ff; /* 淡蓝背景色 */
     padding: 20px;
     box-shadow: none; /* 取消阴影效果 */
     border: none; /* 取消边框 */
@@ -158,7 +453,7 @@ footer {
 }
 
 .portrait_list-tree-menu li a:hover {
-    color: #0068b7;
+    color: #0068b7; /* 主要黑色字体 hover */
 }
 
 .portrait_list-content-area {
@@ -167,7 +462,7 @@ footer {
 
 .portrait_list-content-list li:before {
     content: "•";
-    color: #0a5cad;
+    color: #0a5cad; /* 主题蓝色 */
     margin-right: 5px;
 }
 
@@ -195,6 +490,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #ffffff; /* 整体页面背景 */
 }
 
 .portrait_list-content-area {
@@ -261,12 +557,12 @@ body {
     /*border-radius: 5px;*/
     transition: background-color 0.3s ease;
 }
+
 .portrait_list-tree-menu > li > a:hover {
     background-color: #d0e7ff; /* 悬停时改变背景颜色 */
 }
 
 /* 小圆点样式 */
-/* 调整小圆点的位置，增大圆点与文字之间的距离 */
 .portrait_list-tree-menu > li > a::before {
     content: '';
     width: 8px;
@@ -278,6 +574,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+
 /* 为子级列表添加小圆点 */
 .portrait_list-tree-menu > li > ul > li > a::before {
     content: '';

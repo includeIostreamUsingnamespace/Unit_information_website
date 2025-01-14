@@ -4,57 +4,272 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>多行省略号与超链接示例</title>
-    <style>
-        /* 基本样式 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
 
-        .container {
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-        }
 
-        .box {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
 
-        /* 多行省略号 */
-        .multi-line-ellipsis {
-            display: -webkit-box; /* 使用 WebKit 的弹性盒子模型 */
-            -webkit-box-orient: vertical; /* 垂直方向排列 */
-            -webkit-line-clamp: 3; /* 显示的行数 */
-            overflow: hidden; /* 隐藏超出容器的内容 */
-            text-overflow: ellipsis; /* 超出部分显示省略号 */
-            line-height: 1.5; /* 行高 */
-        }
 
-        /* 超链接样式 */
-        .multi-line-ellipsis a {
-            color: #007BFF; /* 超链接颜色 */
-            text-decoration: none; /* 去掉下划线 */
-        }
 
-        .multi-line-ellipsis a:hover {
-            text-decoration: underline; /* 鼠标悬停时显示下划线 */
-        }
-    </style>
+    <!--  中科大导航条部分start-->
+
+<!--    <link type="text/css" href="./中国科学大学信息公开网首部导航条_files/system.css" rel="stylesheet">-->
+<!--    <link type="text/css" href="./中国科学大学信息公开网首部导航条_files/1.css" rel="stylesheet">-->
+<!--    <link type="text/css" href="./中国科学大学信息公开网首部导航条_files/197.css" rel="stylesheet">-->
+<!--    <link type="text/css" href="./中国科学大学信息公开网首部导航条_files/sudyNav.css" rel="stylesheet">-->
+<!--    <link type="text/css" href="./中国科学大学信息公开网首部导航条_files/datepicker.css" rel="stylesheet">-->
+<!--    <link type="text/css" href="./中国科学大学信息公开网首部导航条_files/simplenews.css" rel="stylesheet">-->
+
+    <script language="javascript" src="中国科学大学信息公开网首部导航条_files/jquery.min.js" sudy-wp-context="" sudy-wp-siteid="308"></script>
+    <script language="javascript" src="中国科学大学信息公开网首部导航条_files/jquery.sudy.wp.visitcount.js"></script>
+    <script type="text/javascript" src="中国科学大学信息公开网首部导航条_files/jquery.sudyNav.js"></script>
+    <script type="text/javascript" src="中国科学大学信息公开网首部导航条_files/jquery.datepicker.js"></script>
+    <script type="text/javascript" src="中国科学大学信息公开网首部导航条_files/datepicker_lang_HK.js"></script>
+    <script type="text/javascript" src="中国科学大学信息公开网首部导航条_files/extends.js"></script>
+    <script type="text/javascript" src="中国科学大学信息公开网首部导航条_files/jquery.sudy.js"></script>
+
+<!--    <link rel="stylesheet" type="text/css" href="./中国科学大学信息公开网首部导航条_files/extends.css">-->
+    <link rel="stylesheet" href="./中国科学大学信息公开网首部导航条_files/style.css" type="text/css">
+<!--    <link rel="stylesheet" href="./中国科学大学信息公开网首部导航条_files/mobile.css" type="text/css">-->
+<!--    <link rel="stylesheet" href="./中国科学大学信息公开网首部导航条_files/media.css" type="text/css">-->
+<!--    <link rel="shorcut icon" href="https://xxgk.ustc.edu.cn/_upload/tpl/13/45/4933/template4933/favicon.ico">-->
+
+    <!--  中科大导航条部分END-->
+
+
 </head>
+
+
 <body>
-<div class="container">
-    <!-- 多行省略号与超链接示例 -->
-    <div class="box">
-        <h2>多行省略号与超链接</h2>
-        <div class="multi-line-ellipsis">
-            <a href="https://example.com">
-                这是一个非常长的多行文本内容，包含超链接，超出指定行数时会显示省略号。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </a>
+
+
+<!--Start||nav-->
+<div class="wrapper nav wp-navi wp-navi-slide" id="nav">
+    <div class="inner clearfix">
+        <div class="wp-panel">
+<!--            <div class="wp-window" frag="窗口1">-->
+                <div class="wp-window" frag="窗口1" style="display: flex; justify-content: center;">
+<!--                TODO 这里的问题-->
+                <ul class="wp-menu clearfix" data-nav-aside="{&quot;title&quot;:&quot;导航&quot;,&quot;index&quot;:0} ">
+
+                    <li class="menu-item i1">
+                        <a class="menu-link" href="index.html" target="_self">首页</a>
+                    </li>
+
+                    <li class="menu-item i2">
+                        <a class="menu-link" href="list.html" target="_self">信息公开制度</a>
+                    </li>
+
+                    <li class="menu-item i3">
+                        <a class="menu-link" href="list.html" target="_self">信息公开指南</a>
+                    </li>
+
+                    <li class="menu-item i4">
+                        <a class="menu-link" href="list.html" target="_self">信息公开目录<em class="menu-switch-arrow"></em></a>
+
+                        <ul class="sub-menu ">
+                            <li class="sub-item i4-1"><a class="sub-link" href="list.html" target="_self">基本信息</a>
+                                <em class="menu-switch-arrow"></em>
+
+                                <ul class="sub-menu ">
+                                    <li class="sub-item i4-1-1"><a class="sub-link" href="list.html" target="_self">学校概况</a></li>
+                                    <li class="sub-item i4-1-2"><a class="sub-link" href="list.html" target="_self">学校章程</a></li>
+                                    <li class="sub-item i4-1-3"><a class="sub-link" href="list.html" target="_self">规章制度</a></li>
+                                    <li class="sub-item i4-1-4"><a class="sub-link" href="list.html" target="_self">发展规划年度计划</a></li>
+                                    <li class="sub-item i4-1-5"><a class="sub-link" href="list.html" target="_self">教职工代表大会</a></li>
+                                    <li class="sub-item i4-1-6"><a class="sub-link" href="list.html" target="_self">学术委员会</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="sub-item i4-2"><a class="sub-link" href="list.html" target="_self">招生考试信息</a>
+                                <em class="menu-switch-arrow"></em>
+
+                                <ul class="sub-menu ">
+                                    <li class="sub-item i4-2-1"><a class="sub-link" href="list.html" target="_self">本科生招生章程</a></li>
+                                    <li class="sub-item i4-2-2"><a class="sub-link" href="list.html" target="_self">特殊类型招生</a></li>
+                                    <li class="sub-item i4-2-3"><a class="sub-link" href="list.html" target="_self">录取信息查询</a></li>
+                                    <li class="sub-item i4-2-4"><a class="sub-link" href="list.html" target="_self">本科生招生咨询及申诉</a></li>
+                                    <li class="sub-item i4-2-5"><a class="sub-link" href="list.html" target="_self">研究生招生简章</a></li>
+                                    <li class="sub-item i4-2-6"><a class="sub-link" href="list.html" target="_self">研究生复试</a></li>
+                                    <li class="sub-item i4-2-7"><a class="sub-link" href="list.html" target="_self">拟录取研究生名单</a></li>
+                                    <li class="sub-item i4-2-8"><a class="sub-link" href="list.html" target="_self">研究生招生咨询及申诉</a></li>
+                                </ul>
+
+                            </li>
+
+
+
+                            <li class="sub-item i4-3"><a class="sub-link" href="list.html" target="_self">财务、资产及收费信息</a>
+                                <em class="menu-switch-arrow"></em>
+                                <ul class="sub-menu ">
+                                    <li class="sub-item i4-3-1"><a class="sub-link" href="list.html" target="_self">财务资产管理制度</a></li>
+                                    <li class="sub-item i4-3-2"><a class="sub-link" href="list.html" target="_self">受捐赠资产管理</a></li>
+                                    <li class="sub-item i4-3-3"><a class="sub-link" href="list.html" target="_self">校办企业资产管理</a></li>
+                                    <li class="sub-item i4-3-4"><a class="sub-link" href="list.html" target="_self">招投标情况</a></li>
+                                    <li class="sub-item i4-3-5"><a class="sub-link" href="list.html" target="_self">收支预算</a></li>
+                                    <li class="sub-item i4-3-6"><a class="sub-link" href="list.html" target="_self">收支决算</a></li>
+                                    <li class="sub-item i4-3-7"><a class="sub-link" href="list.html" target="_self">收费管理</a></li>
+                                </ul>
+
+                            </li>
+
+
+
+
+                            <li class="sub-item i4-4"><a class="sub-link" href="list.html" target="_self">人事师资信息</a>
+                                <em class="menu-switch-arrow"></em>
+                                <ul class="sub-menu ">
+                                    <li class="sub-item i4-4-1"><a class="sub-link" href="list.html" target="_self">校级领导社会兼职</a></li>
+                                    <li class="sub-item i4-4-2"><a class="sub-link" href="list.html" target="_self">校级领导因公出国（境）</a></li>
+                                    <li class="sub-item i4-4-3"><a class="sub-link" href="list.html" target="_self">岗位设置管理</a></li>
+                                    <li class="sub-item i4-4-4"><a class="sub-link" href="list.html" target="_self">干部任免与人员招聘</a></li>
+                                    <li class="sub-item i4-4-5"><a class="sub-link" href="list.html" target="_self">教职工争议处理</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="sub-item i4-5"><a class="sub-link" href="list.html" target="_self">教学质量信息</a>
+                                <em class="menu-switch-arrow"></em>
+                                <ul class="sub-menu ">
+                                    <li class="sub-item i4-5-1"><a class="sub-link" href="list.html" target="_self">师生结构</a></li>
+                                    <li class="sub-item i4-5-2"><a class="sub-link" href="list.html" target="_self">专业设置</a></li>
+                                    <li class="sub-item i4-5-3"><a class="sub-link" href="list.html" target="_self">课程设置</a></li>
+                                    <li class="sub-item i4-5-4"><a class="sub-link" href="list.html" target="_self">就业指导政策</a></li>
+                                    <li class="sub-item i4-5-5"><a class="sub-link" href="list.html" target="_self">就业质量报告</a></li>
+                                    <li class="sub-item i4-5-6"><a class="sub-link" href="list.html" target="_self">本科教学质量报告</a></li>
+                                    <li class="sub-item i4-5-7"><a class="sub-link" href="list.html" target="_self">艺术教育发展报告</a></li>
+                                </ul>
+
+
+                            </li>
+
+                            <li class="sub-item i4-6"><a class="sub-link" href="list.html" target="_self">学生管理服务信息</a>
+                                <em class="menu-switch-arrow"></em>
+                                <ul class="sub-menu ">
+                                    <li class="sub-item i4-6-1"><a class="sub-link" href="list.html" target="_self">学籍管理</a></li>
+                                    <li class="sub-item i4-6-2"><a class="sub-link" href="list.html" target="_self">学生资助</a></li>
+                                    <li class="sub-item i4-6-3"><a class="sub-link" href="list.html" target="_self">学生奖惩处罚</a></li>
+                                    <li class="sub-item i4-6-4"><a class="sub-link" href="list.html" target="_self">学生申诉办法</a></li>
+                                </ul>
+
+                            </li>
+
+                            <li class="sub-item i4-7"><a class="sub-link" href="list.html" target="_self">学风建设信息</a>
+                                <em class="menu-switch-arrow"></em>
+                                <ul class="sub-menu ">
+
+                                    <li class="sub-item i4-7-1"><a class="sub-link" href="list.html" target="_self">学风建设机构</a></li>
+
+                                    <li class="sub-item i4-7-2"><a class="sub-link" href="list.html" target="_self">学术规范制度</a></li>
+
+                                    <li class="sub-item i4-7-3"><a class="sub-link" href="list.html" target="_self">学术不端行为查处机制</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="sub-item i4-8"><a class="sub-link" href="list.html" target="_self">学位学科信息</a>
+                                <em class="menu-switch-arrow"></em>
+                                <ul class="sub-menu ">
+                                    <li class="sub-item i4-8-1"><a class="sub-link" href="list.html" target="_self">学位授予要求</a></li>
+                                    <li class="sub-item i4-8-2"><a class="sub-link" href="list.html" target="_self">同等学力学位授予</a></li>
+                                    <li class="sub-item i4-8-3"><a class="sub-link" href="list.html" target="_self">新增授权点审核</a></li>
+                                    <li class="sub-item i4-8-4"><a class="sub-link" href="list.html" target="_self">拟增授权点申报</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="sub-item i4-9"><a class="sub-link" href="list.html" target="_self">对外交流与合作信息</a>
+                                <em class="menu-switch-arrow"></em>
+                                <ul class="sub-menu ">
+
+                                    <li class="sub-item i4-9-1"><a class="sub-link" href="list.html" target="_self">中外合作办学</a></li>
+
+                                    <li class="sub-item i4-9-2"><a class="sub-link" href="list.html" target="_self">国际学生管理</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-item i4-12"><a class="sub-link" href="list.html" target="_self">其他</a>
+                                <em class="menu-switch-arrow"></em>
+                                <ul class="sub-menu ">
+
+                                    <li class="sub-item i4-12-1"><a class="sub-link" href="list.html" target="_self">巡视组反馈意见及整改</a></li>
+
+                                    <li class="sub-item i4-12-2"><a class="sub-link" href="list.html" target="_self">突发重大事件</a></li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="menu-item i5">
+                        <a class="menu-link" href="list.html" target="_self">信息公开报告</a>
+
+                    </li>
+
+                    <li class="menu-item i6">
+                        <a class="menu-link" href="list.html" target="_self">信息公开申请</a>
+                    </li>
+
+                    <li class="menu-item i7">
+
+                        <a class="menu-link" href="list.html" target="_self">意见建议<em class="menu-switch-arrow"></em></a>
+
+                        <ul class="sub-menu ">
+                            <li class="sub-item i7-1"><a class="sub-link" href="list.html" target="_self">工作机构</a></li>
+                            <li class="sub-item i7-2"><a class="sub-link" href="list.html" target="_self">监督机构</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
         </div>
     </div>
 </div>
+
+
+<!--End||nav-->
+
+
+
+
+<!--Start||focus-->
+<div class="wp-wrapper" id="container-1">
+    <div class="wp-inner" frag="面板84">
+        <!--        <div class="l-banner" frag="窗口84" portletmode="simpleColumnAttri" style="background-image: url(&quot;/_upload/tpl/13/45/4933/template4933/images/list_banner.jpg&quot;);">-->
+        <div class="l-banner" frag="窗口84" portletmode="simpleColumnAttri" style="background-image: url(./images/photo03.png);">
+
+            <img border="0" style="margin:0 auto;" src="https://xxgk.ustc.edu.cn/fzghhgzjh/list.htm" data-imgsrc="/_upload/tpl/13/45/4933/template4933/images/list_banner.jpg">
+
+        </div>
+    </div>
+</div>
+<!--End||focus-->
+
+
+
+
+<script type="text/javascript" src="中国科学大学信息公开网首部导航条_files/comcus.js"></script>
+<script type="text/javascript" src="中国科学大学信息公开网首部导航条_files/list.js"></script>
+<script type="text/javascript" src="中国科学大学信息公开网首部导航条_files/app.js"></script>
+<script type="text/javascript">
+    $(function(){
+        // 初始化SDAPP
+        new SDAPP({
+            "menu":{
+                type:"slide,aside"
+            }
+        });
+    });
+</script>
+
+
+<!--中科大导航栏END-->
+<!-- 首部导航栏END -->
+
+
+
+
 </body>
 </html>

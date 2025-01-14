@@ -1,3 +1,49 @@
+/*!* 父容器样式 *!*/
+/*#Two_parts-parent-container {*/
+/*    display: flex;             !* 使用flex布局 *!*/
+/*    !*width: 80%;                !* 宽度占父元素的80% *!*!*/
+/*    width: 1200px; !* 设置固定宽度 *!*/
+/*    margin: 0 auto;            !* 居中对齐 *!*/
+/*    gap: 20px;                 !* 设置元素之间的间隔距离为20px *!*/
+/*    justify-content: center;   !* 将子项居中对齐 *!*/
+/*}*/
+
+/*!* 左边部分 *!*/
+/*#Two_parts-left-section {*/
+/*    flex: 0.4;                 !* 左侧部分占用40%的空间 *!*/
+/*    padding: 10px;             !* 内边距 *!*/
+/*    margin-right: 20px;        !* 给左边部分右边加一个间距 *!*/
+/*}*/
+
+/*!* 右边部分 *!*/
+/*#Two_parts-right-section {*/
+/*    flex: 1;                   !* 右侧部分占用剩余空间 *!*/
+/*    padding: 10px;             !* 内边距 *!*/
+/*    margin-left: 5px;          !* 给右边部分左边加一个间距 *!*/
+/*    text-align: left;          !* 将右边内容对齐到左侧 *!*/
+/*}*/
+
+/*!* 媒体查询：当屏幕宽度小于等于768px时，改变布局 *!*/
+/*@media (max-width: 768px) {*/
+/*    #Two_parts-parent-container {*/
+/*        flex-direction: column; !* 将flex容器的主轴方向改为垂直方向 *!*/
+/*        width: 100%;            !* 宽度占父元素的100% *!*/
+/*        gap: 0;                 !* 去除元素之间的间隔 *!*/
+/*    }*/
+
+/*    #Two_parts-left-section, #Two_parts-right-section {*/
+/*        flex: 0 0 100%;         !* 每个部分占据100%的宽度 *!*/
+/*        margin: 0;              !* 去除外边距 *!*/
+/*        padding: 10px;          !* 保持内边距 *!*/
+/*    }*/
+
+/*    #Two_parts-left-section {*/
+/*        text-align: left;       !* 将左边内容对齐到左侧 *!*/
+/*    }*/
+/*}*/
+
+
+
 /* 父容器样式 */
 #Two_parts-parent-container {
     display: flex;             /* 使用flex布局 */
@@ -6,6 +52,7 @@
     margin: 0 auto;            /* 居中对齐 */
     gap: 20px;                 /* 设置元素之间的间隔距离为20px */
     justify-content: center;   /* 将子项居中对齐 */
+    background-color: #ffffff; /* 整体页面背景 */
 }
 
 /* 左边部分 */
@@ -13,6 +60,8 @@
     flex: 0.4;                 /* 左侧部分占用40%的空间 */
     padding: 10px;             /* 内边距 */
     margin-right: 20px;        /* 给左边部分右边加一个间距 */
+    background-color: #ffffff; /* 淡蓝背景色 */
+    color: #1e1e1e; /* 主要黑色 */
 }
 
 /* 右边部分 */
@@ -21,6 +70,8 @@
     padding: 10px;             /* 内边距 */
     margin-left: 5px;          /* 给右边部分左边加一个间距 */
     text-align: left;          /* 将右边内容对齐到左侧 */
+    background-color: #ffffff; /* 整体页面背景 */
+    color: #1e1e1e; /* 主要黑色 */
 }
 
 /* 媒体查询：当屏幕宽度小于等于768px时，改变布局 */
