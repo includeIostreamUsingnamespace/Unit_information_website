@@ -8,47 +8,59 @@
  * [Large Screen for PC & Pad]
  * 960~1199
  */
-@media screen and (max-width: 1316px) {
-    /* 设置页面主体宽度为100%，居中显示 */
-.wrapper .inner { width:100%; margin:0 auto;}
-    /* 设置左侧容器宽度为自动 */
-#l-container .inner{width:auto;}
-    /* 设置模块宽度为自动，左右内边距为8px */
-.wrapper .inner .mod {width:auto;padding:0 8px;}
-    /* 导航菜单使用flex布局，子元素平均分布 */
-.nav .wp-menu{
-    display: flex;
-    justify-content: space-around;
-}
-    /* 设置菜单项链接的左右内边距和字体大小 */
-.nav .wp-menu .menu-item a.menu-link {padding: 0 15.5px;font-size: 16px;}
 
-    /* 主内容区域1的样式 */
-.main1 .inner{}
-.main1 .ml{width:33.3%;}
-.main1 .mc{ width:32%;margin-left:20px;}
-.main1 .mr{width:30%;}
 
-    /* 主内容区域2的样式 */
-.main2 .ml{width: 426px;}
-.main2 .mr{width: 502px;}
+/*@media screen and (max-width: 1316px) {*/
+/*    !* 设置页面主体宽度为100%，居中显示 *!*/
+/*.wrapper .inner { width:100%; margin:0 auto;}*/
+/*    !* 设置左侧容器宽度为自动 *!*/
+/*#l-container .inner{width:auto;}*/
+/*    !* 设置模块宽度为自动，左右内边距为8px *!*/
+/*.wrapper .inner .mod {width:auto;padding:0 8px;}*/
+/*    !* 导航菜单使用flex布局，子元素平均分布 *!*/
+/*.nav .wp-menu{*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*}*/
 
-    /* 新闻列表标题的样式 */
-.post-21 .news_list li.news .news_title,
-.post-22 .news_list li.news .news_title,
-.post-23 .news_list li.news .news_title{width:75%;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;} 
-.post-31 .news_list li.news .news_title{width:100%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
-.post-33 .news_list li.news .news_title{width:75%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+/*    !* 设置菜单项链接的左右内边距和字体大小 *!*/
+/*.nav .wp-menu .menu-item a.menu-link {padding: 0 15.5px;font-size: 16px;}*/
 
-    /* 新闻列表文本的样式 */
-.post-22 .news_list li.news .news_text{width:100%;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:3;overflow: hidden;}
-.post-32 .news_list li.news .news_title{width:100%;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;overflow: hidden;}
+/*    !* 主内容区域1的样式 *!*/
+/*.main1 .inner{}*/
+/*.main1 .ml{width:33.3%;}*/
+/*.main1 .mc{ width:32%;margin-left:20px;}*/
+/*.main1 .mr{width:30%;}*/
 
-/*links*/
-.botlinks .links-wrap {margin:4px 5px;}
-/*banner*/
-.focus .focus-title-bar {}
-}
+/*    !* 主内容区域2的样式 *!*/
+/*.main2 .ml{width: 426px;}*/
+/*.main2 .mr{width: 502px;}*/
+
+/*    !* 新闻列表标题的样式 *!*/
+/*.post-21 .news_list li.news .news_title,*/
+/*.post-22 .news_list li.news .news_title,*/
+/*.post-23 .news_list li.news .news_title{width:75%;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;}*/
+/*.post-31 .news_list li.news .news_title{width:100%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}*/
+/*.post-33 .news_list li.news .news_title{width:75%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}*/
+
+/*    !* 新闻列表文本的样式 *!*/
+/*.post-22 .news_list li.news .news_text{width:100%;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:3;overflow: hidden;}*/
+/*.post-32 .news_list li.news .news_title{width:100%;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;overflow: hidden;}*/
+
+/*!*links*!*/
+/*.botlinks .links-wrap {margin:4px 5px;}*/
+/*!*banner*!*/
+/*.focus .focus-title-bar {}*/
+/*}*/
+
+
+
+
+
+
+
+
+
 
 /**
  * [Medium Screen for Pad]

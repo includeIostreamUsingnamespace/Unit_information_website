@@ -592,6 +592,9 @@
 /*.post-12 .news_list li.news .ck13 span.news_title.n3 {padding-left:0;}*/
 
 
+
+
+
 @charset "utf-8";
 /*Technical Support SudyTech*/
 html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{ margin:0; padding:0; }
@@ -709,12 +712,23 @@ a:hover { color:#0068b7; /* 主要黑色字体 hover */ }
 .site-lang ul li.links{float:left;}
 .site-lang ul li.links a{line-height: 35px;margin:0px 5px;font-size: 13px;color: #cad3d4;}
 .site-lang ul li.links a:hover{color:#fff;}
+
+
 /*默认主导航样式*/
 #nav{background: #0a5cad; /* 主题蓝色 */}
 #nav .inner{}
 #nav .inner .wp-panel{}/*导航*/
-#nav .inner .wp-panel .wp-window{}
+#nav .inner .wp-panel .wp-window{
+
+}
+
+
 #nav .inner .wp-panel .navbg{position:absolute; z-index:-1;left:0;right:0;top:0;bottom:0; width:auto; height:100%;background:#fff;opacity:.7;filter:alpha(opacity=70);}
+
+
+
+
+
 /*导航样式：后台绑定时也可以定义配置*/
 .nav .wp-menu {margin:0 auto}
 
@@ -723,10 +737,33 @@ a:hover { color:#0068b7; /* 主要黑色字体 hover */ }
 .nav .wp-menu .menu-item a > .menu-switch-arrow{display: none;width:20px;height:20px;background:url(images/nav_j.png) no-repeat center center;vertical-align:middle;}
 
 /*首页导航条一级标题字体大小调整位置*/
+/* 选择器解释：
+   .nav: 选择具有 class 为 "nav" 的元素。
+   .wp-menu: 选择具有 class 为 "wp-menu" 的子元素，这些子元素必须位于 .nav 元素内。
+   .menu-item: 选择具有 class 为 "menu-item" 的子元素，这些子元素必须位于 .wp-menu 元素内。
+   a.menu-link: 选择具有 class 为 "menu-link" 的 <a> 元素，这些元素必须位于 .menu-item 元素内。
+   样式解释：
+   display: inline-block;: 将 <a> 元素设置为 inline-block，使其具有块级元素的特性，同时保持内联元素的特性。
+   padding: 0 42px;: 设置 <a> 元素的内边距，上下内边距为 0，左右内边距为 42px。
+   line-height: 50px;: 设置 <a> 元素的行高为 50px，这将影响元素的高度。
+   color: #ffffff;: 设置 <a> 元素的文本颜色为白色。
+   font-size: 16px;: 设置 <a> 元素的字体大小为 16px。
+*/
 .nav .wp-menu .menu-item a.menu-link {display: inline-block;padding: 0 42px;line-height: 50px;color: #ffffff;font-size: 16px;}
 
 .nav .wp-menu .menu-item.hover a.menu-link,
 .nav .wp-menu .menu-item a.hover{background-color:#0068b7; /* 主要黑色字体 hover */ text-decoration: none; color: #eee;}
+
+/*尝试固定宽度*/
+a.menu-link{
+    padding: 0 42px;
+}
+
+a.menu-link.parent{
+    padding: 0 42px;
+}
+
+
 
 /*下面这一句导致了尾部没有放到最下面*/
 /*.nav .sub-menu {display: none;position: absolute;left: 0;top: 50px;min-width: 100%;text-align: center;z-index: 100;background:#fff;}*/
@@ -746,7 +783,6 @@ a:hover { color:#0068b7; /* 主要黑色字体 hover */ }
 /*下面这个padding第二个参数修改二级标题的宽度*/
 .nav .sub-menu .sub-item a {display: block;color: #000;height: 40px;line-height: 40px;padding: 0 5px;font-size: 16px;background:none;}
 .nav .sub-menu .sub-item.hover> a,
-
     /*这里的bgc是修改鼠标放到导航条上面的颜色的*/
 .nav .sub-menu .sub-item a:hover{ color: #fff; background-color:#0068b7; /* 主要黑色字体 hover */ display: block; }
 
