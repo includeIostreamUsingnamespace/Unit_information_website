@@ -92,7 +92,7 @@
 /* 中间模块 */
 .center {
     flex: 0 0 50%; /* 固定宽度为父容器的50% */
-    background-color: #f6f7ff; /* 淡蓝背景色 */
+    background-color: #ffffff; /* 淡蓝背景色 */
 }
 
 /* 右侧模块 */

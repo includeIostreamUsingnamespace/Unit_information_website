@@ -160,6 +160,7 @@
 .content-title {
     font-size: 18px;
     color: #1e1e1e; /* 主要黑色 */
+    padding-left: 5px;
 }
 
 .view-more {

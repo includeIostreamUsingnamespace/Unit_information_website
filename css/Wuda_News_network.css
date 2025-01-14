@@ -83,15 +83,15 @@
 
 
 
-/*!*.Wuda_News_network_dot {*!*/
-/*!*    width: 10px;*!*/
-/*!*    height: 10px;*!*/
-/*!*    border-radius: 50%;*!*/
-/*!*    background-color: #fff;*!*/
-/*!*    opacity: 0.5;*!*/
-/*!*    cursor: pointer;*!*/
-/*!*    transition: opacity 0.3s ease;*!*/
-/*!*}*!*/
+/*/*.Wuda_News_network_dot {*/
+/*/*    width: 10px;*/
+/*/*    height: 10px;*/
+/*/*    border-radius: 50%;*/
+/*/*    background-color: #fff;*/
+/*/*    opacity: 0.5;*/
+/*/*    cursor: pointer;*/
+/*/*    transition: opacity 0.3s ease;*/
+/*/*}*/
 
 /*.Wuda_News_network_dot.active {*/
 /*    opacity: 1;*/
@@ -198,7 +198,7 @@
 /*           word-wrap 属性用于指定当单词太长而无法在一行内显示时，*/
 /*           是否应该被拆分换行。设置为 break-word 时，表示在必要时*/
 /*           将单词拆分，以确保内容不会溢出其容器。*/
-/*        *!*/
+/*        */
 /*        word-break: break-word; !* 确保长单词自动换行 *!*/
 /*        white-space: normal; !* 确保文字能够换行 *!*/
 /*        width: 100%; !* 确保容器宽度适应 *!*/
