@@ -2,11 +2,12 @@
 
 #carouselContainer {
     width: 100%;
-    /*height: 575px;*/
-    height: auto;
+    height: 550px;
+    /*height: auto;*/
     position: relative;
     overflow: hidden;
     background-color: #f6f7ff; /* 淡蓝背景色 */
+    margin: auto;
 }
 
 #carouselTrack {
