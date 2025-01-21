@@ -362,18 +362,26 @@
         height: 120px; /* 移动端图片高度减小 */
     }
 
+    /*.CKTC_side_news_title {*/
+    /*    font-size: 16px; !* 移动端标题字体减小 *!*/
+    /*    white-space: normal; !* 允许标题换行 *!*/
+    /*    -webkit-line-clamp: 2; !* 最多显示两行 *!*/
+    /*    display: -webkit-box;*/
+    /*    -webkit-box-orient: vertical;*/
+    /*    overflow: hidden;*/
+    /*    text-overflow: ellipsis;*/
+    /*}*/
     .CKTC_side_news_title {
-        font-size: 14px; /* 移动端标题字体减小 */
-        white-space: normal; /* 允许标题换行 */
-        -webkit-line-clamp: 2; /* 最多显示两行 */
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        font-size: 16px; /* 标题字体大小 */
+        white-space: nowrap; /* 不允许换行 */
+        overflow: hidden; /* 隐藏超出部分 */
+        text-overflow: ellipsis; /* 超出部分显示省略号 */
+        display: block; /* 确保标题是块级元素 */
+        width: 100%; /* 占满父容器宽度 */
     }
 
     .CKTC_side_news_meta {
-        font-size: 12px; /* 移动端描述字体减小 */
+        font-size: 15px; /* 移动端描述字体减小 */
         -webkit-line-clamp: 2; /* 最多显示两行 */
     }
 
@@ -386,6 +394,6 @@
         padding-left: 15px;
         padding-right: 15px;
         margin-bottom: 0;
-        font-size: 16px; /* 移动端标题字体减小 */
+        font-size: 20px; /* 移动端标题字体减小 */
     }
 }

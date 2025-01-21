@@ -342,15 +342,15 @@
     }
 
     #Left_navigation_bar_header {
-        font-size: 18px; /* 字体大小调整为18px */
+        font-size: 20px;
         padding: 10px; /* 内边距调整为10px */
         width: 100%; /* 宽度设置为100% */
         text-align: center; /* 文字居中 */
     }
 
     .Left_navigation_bar_title {
-        font-size: 14px; /* 字体大小调整为12px */
-        padding: 8px 10px; /* 内边距调整为8px 10px */
+        font-size: 16px;
+        padding: 10px 10px; /* 内边距调整为8px 10px */
         width: 100%; /* 宽度设置为100% */
     }
 
