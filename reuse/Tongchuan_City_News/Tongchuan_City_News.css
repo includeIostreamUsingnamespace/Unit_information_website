@@ -1,12 +1,12 @@
 
-#Tongchuan_City_News_body {
+#CKTC_City_News_body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f0f2f5;
 }
 
-.Tongchuan_City_News_section {
+.CKTC_City_News_section {
     background: white;
     padding: 20px;
     /*border-radius: 8px;*/
@@ -14,7 +14,7 @@
     margin-bottom: 20px;
 }
 
-.Tongchuan_City_News_section h2 {
+.CKTC_City_News_section h2 {
     color: #1a5fb4;
     font-size: 20px;
     margin-bottom: 15px;
@@ -22,13 +22,13 @@
     border-bottom: 2px solid #1a5fb4;
 }
 
-.Tongchuan_City_News_news-list {
+.CKTC_City_News_news-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.Tongchuan_City_News_news-item {
+.CKTC_City_News_news-item {
     display: flex;
     justify-content: space-between;
     padding: 12px 0;
@@ -36,11 +36,11 @@
     transition: all 0.3s ease;
 }
 
-.Tongchuan_City_News_news-item:last-child {
+.CKTC_City_News_news-item:last-child {
     border-bottom: none;
 }
 
-.Tongchuan_City_News_news-item a {
+.CKTC_City_News_news-item a {
     color: #333;
     text-decoration: none;
     font-size: 16px;
@@ -48,28 +48,28 @@
     transition: color 0.3s ease;
 }
 
-.Tongchuan_City_News_news-item a:before {
+.CKTC_City_News_news-item a:before {
     content: "›";
     color: #1a5fb4;
     margin-right: 10px;
     font-weight: bold;
 }
 
-.Tongchuan_City_News_news-item:hover {
+.CKTC_City_News_news-item:hover {
     background-color: #f0f7ff;
     padding-left: 10px;
 }
 
-.Tongchuan_City_News_news-item:hover a {
+.CKTC_City_News_news-item:hover a {
     color: #1a5fb4;
 }
 
-.Tongchuan_City_News_date {
+.CKTC_City_News_date {
     color: #888;
     font-size: 14px;
 }
 
-.Tongchuan_City_News_button {
+.CKTC_City_News_button {
     display: inline-block;
     background: #1a5fb4;
     color: white;
@@ -81,6 +81,6 @@
     margin-top: 15px;
 }
 
-.Tongchuan_City_News_button:hover {
+.CKTC_City_News_button:hover {
     background-color: #0d4a9e;
 }

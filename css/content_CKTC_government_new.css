@@ -1,0 +1,95 @@
+
+#content_CKTC_government_container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff; /* 整体页面背景 */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#content_CKTC_government_breadcrumb {
+    font-size: 14px;
+    color: #575757; /* 次要黑灰色 */
+    margin-bottom: 20px;
+    float: right;
+}
+
+#content_CKTC_government_info_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#content_CKTC_government_info_table td {
+    padding: 8px;
+    border: 1px solid #eee;
+}
+
+#content_CKTC_government_info_table td:first-child {
+    width: 80px;
+    background-color: #f6f7ff; /* 淡蓝背景色 */
+    font-weight: bold;
+    text-align: right;
+}
+
+#content_CKTC_government_title {
+    text-align: center;
+    font-size: 28px;
+    color: #0a5cad; /* 主题蓝色 */
+    margin-bottom: 10px;
+}
+
+#content_CKTC_government_subtitle {
+    text-align: center;
+    font-size: 24px;
+    color: #0a5cad; /* 主题蓝色 */
+    margin-bottom: 20px;
+}
+
+#content_CKTC_government_source_info {
+    font-size: 12px;
+    color: #575757; /* 次要黑灰色 */
+    margin-bottom: 20px;
+}
+
+#content_CKTC_government_source_info span {
+    margin-right: 10px;
+}
+
+#content_CKTC_government_actions {
+    font-size: 12px;
+    color: #575757; /* 次要黑灰色 */
+    margin-bottom: 20px;
+}
+
+#content_CKTC_government_actions span {
+    margin-right: 10px;
+}
+
+#content_CKTC_government_content {
+    line-height: 1.8;
+    font-size: 16px;
+    color: #1e1e1e; /* 主要黑色 */
+}
+
+#content_CKTC_government_content strong {
+    font-weight: bold;
+}
+
+#content_CKTC_government_content p {
+    margin-bottom: 15px;
+}
+
+#content_CKTC_government_actions a {
+    color: #0a5cad; /* 主题蓝色 */
+    text-decoration: none;
+}
+
+#content_CKTC_government_actions a:hover {
+    color: #0068b7; /* 主要黑色字体 hover */
+    text-decoration: underline;
+}
+
+#content_CKTC_government_actions i {
+    margin-left: 5px;
+}

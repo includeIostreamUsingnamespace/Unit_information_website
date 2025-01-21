@@ -3,9 +3,9 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
-    const carousel = document.querySelector('.Wuda_News_network_carousel');
-    const dots = document.querySelectorAll('.Wuda_News_network_dot');
-    const items = document.querySelectorAll('.Wuda_News_network_carousel_item');
+    const carousel = document.querySelector('.CKTC_carousel');
+    const dots = document.querySelectorAll('.CKTC_dot');
+    const items = document.querySelectorAll('.CKTC_carousel_item');
 
     dots.forEach((dot, index) => {
         dot.addEventListener('mouseover', () => {
