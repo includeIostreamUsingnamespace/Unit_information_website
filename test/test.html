@@ -3,224 +3,144 @@
 
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Noto Sans SC', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f2f5;
-        }
-
-        .CKWD_container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        #CKWD_header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            color: #337ab7;
-            font-size: 16px;
-        }
-
-        #CKWD_header a {
-            color: #337ab7;
-            text-decoration: none;
-        }
-
-        #CKWD_grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 20px;
-        }
-
-        #CKWD_main_news {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            height: 400px;
-        }
-
-        .CKWD_carousel {
-            height: 100%;
-        }
-
-        .CKWD_carousel_item {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .CKWD_carousel_item.active {
-            opacity: 1;
-        }
-
-        .CKWD_carousel_item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        #CKWD_main_news_title {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: #fff;
-            padding: 10px;
-            font-size: 18px;
-        }
-
-        #CKWD_dots {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            display: flex;
-            gap: 5px;
-        }
-
-        .CKWD_dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: #fff;
-            opacity: 0.5;
-            cursor: pointer;
-        }
-
-        .CKWD_dot.active {
-            opacity: 1;
-        }
-
-        .CKWD_side_news {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .CKWD_side_news_item {
-            display: flex;
-            flex-direction: column;
-            background-color: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .CKWD_side_news_item img {
-            width: calc(100% - 20px);
-            height: 120px;
-            object-fit: cover;
-            margin: 10px auto;
-            display: block;
-        }
-
-        .CKWD_side_news_content {
-            padding: 10px;
-        }
-
-        .CKWD_side_news_title {
-            font-size: 14px;
-            font-weight: 500;
-            color: #212529;
-            margin-bottom: 5px;
-        }
-
-        .CKWD_side_news_meta {
-            font-size: 12px;
-            color: #6c757d;
-        }
-    </style>
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
-<div class="CKWD_container">
-    <div id="CKWD_header">
-        <span>武大新闻网</span>
-        <a href="#">></a>
+<!-- 信息公开清单 -->
+<!--  左侧导航条-->
+<div id="Left_navigation_bar_container">
+    <div id="Left_navigation_bar_header">
+        信息公开目录
     </div>
-    <div id="CKWD_grid">
-        <div id="CKWD_main_news">
-            <div class="CKWD_carousel">
-                <div class="CKWD_carousel_item active">
-                    <img src="https://placehold.co/600x400/FF0000/FFFFFF" alt="A man in a suit speaking at a podium with a red background and the Wuhan University logo">
-                    <div class="CKWD_main_news_title">武汉大学成立卓越工程师学院</div>
-                </div>
-                <div class="CKWD_carousel_item">
-                    <img src="https://placehold.co/600x400/00FF00/000000" alt="Wuhan University campus view">
-                    <div class="CKWD_main_news_title">武汉大学举办2024年新年晚会</div>
-                </div>
-                <div class="CKWD_carousel_item">
-                    <img src="https://placehold.co/600x400/0000FF/FFFFFF" alt="Students in a laboratory">
-                    <div class="CKWD_main_news_title">武汉大学获得重大科研突破</div>
-                </div>
-                <div class="CKWD_carousel_item">
-                    <img src="https://placehold.co/600x400/FFFF00/000000" alt="Graduation ceremony">
-                    <div id="CKWD_main_news_title">武汉大学2024届毕业典礼隆重举行</div>
-                </div>
-            </div>
-            <div id="CKWD_dots">
-                <div class="CKWD_dot active"></div>
-                <div class="CKWD_dot"></div>
-                <div class="CKWD_dot"></div>
-                <div class="CKWD_dot"></div>
-            </div>
-        </div>
-        <div class="CKWD_side_news">
-            <div class="CKWD_side_news_item">
-                <img src="https://placehold.co/300x200" alt="A man in a suit standing in front of a red background">
-                <div class="CKWD_side_news_content">
-                    <div class="CKWD_side_news_title">武汉大学成立卓越工程师学院</div>
-                    <div class="CKWD_side_news_meta">新闻网讯 (记者相茹 通讯员余亮) 12月18日</div>
-                </div>
-            </div>
-            <div class="CKWD_side_news_item">
-                <img src="https://placehold.co/300x200" alt="Two men shaking hands in front of a table with a red background">
-                <div class="CKWD_side_news_content">
-                    <div class="CKWD_side_news_title">武汉大学与中国留学服务中心...</div>
-                    <div class="CKWD_side_news_meta">新闻网讯 (通讯员王兴振) 12月17日上午</div>
-                </div>
-            </div>
-        </div>
-        <div class="CKWD_side_news">
-            <div class="CKWD_side_news_item">
-                <img src="https://placehold.co/300x200" alt="A large group of people sitting at tables in a large room">
-                <div class="CKWD_side_news_content">
-                    <div class="CKWD_side_news_title">武汉大学人工智能学院成立</div>
-                    <div class="CKWD_side_news_meta">新闻网讯 (记者赵冀帆 通讯员史然) 12月16日</div>
-                </div>
-            </div>
-            <div class="CKWD_side_news_item">
-                <img src="https://placehold.co/300x200" alt="A group of people sitting around a table in a meeting room">
-                <div class="CKWD_side_news_content">
-                    <div class="CKWD_side_news_title">武汉大学2024年第六次院长联...</div>
-                    <div class="CKWD_side_news_meta">新闻网讯 (记者赵冀帆) 12月5日下午</div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <ul id="Left_navigation_bar_menu">
+        <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title" id="Left_navigation_bar_menu_item_id1">一、基本信息</div>
+            <ul class="Left_navigation_bar_submenu">
+                <li class="Left_navigation_bar_submenu_item">
+                    <a href="list.html">1. 学校概况</a>
+                </li>
+                <li class="Left_navigation_bar_submenu_item">2. 学校章程</li>
+                <li class="Left_navigation_bar_submenu_item">3. 规章制度</li>
+                <li class="Left_navigation_bar_submenu_item">4. 发展规划年度计划</li>
+                <li class="Left_navigation_bar_submenu_item">5. 教职工代表大会</li>
+                <li class="Left_navigation_bar_submenu_item">6. 学术委员会</li>
+            </ul>
+        </li>
+        <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title" id="Left_navigation_bar_menu_item_id2">二、招生考试信息</div>
+            <ul class="Left_navigation_bar_submenu">
+                <li class="Left_navigation_bar_submenu_item">1. 本科生招生章程</li>
+                <li class="Left_navigation_bar_submenu_item">2. 特殊类型招生</li>
+                <li class="Left_navigation_bar_submenu_item">3. 录取信息查询</li>
+                <li class="Left_navigation_bar_submenu_item">4. 本科生招生咨询及申诉</li>
+                <li class="Left_navigation_bar_submenu_item">5. 研究生招生简章</li>
+                <li class="Left_navigation_bar_submenu_item">6. 研究生复试</li>
+                <li class="Left_navigation_bar_submenu_item">7. 拟录取研究生名单</li>
+                <li class="Left_navigation_bar_submenu_item">8. 研究生招生咨询及申诉</li>
+            </ul>
+        </li>
+        <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title" id="Left_navigation_bar_menu_item_id3">三、财务资产及收费信息</div>
+            <ul class="Left_navigation_bar_submenu">
+                <li class="Left_navigation_bar_submenu_item">1. 财务资产管理制度</li>
+                <li class="Left_navigation_bar_submenu_item">2. 受捐赠资产管理</li>
+                <li class="Left_navigation_bar_submenu_item">3. 校办企业资产管理</li>
+                <li class="Left_navigation_bar_submenu_item">4. 招投标情况</li>
+                <li class="Left_navigation_bar_submenu_item">5. 收支预算</li>
+                <li class="Left_navigation_bar_submenu_item">6. 收支决算</li>
+                <li class="Left_navigation_bar_submenu_item">7. 收费管理</li>
+            </ul>
+        </li>
+        <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title" id="Left_navigation_bar_menu_item_id4">四、人事师资信息</div>
+            <ul class="Left_navigation_bar_submenu">
+                <li class="Left_navigation_bar_submenu_item">1. 校级领导社会兼职</li>
+                <li class="Left_navigation_bar_submenu_item">2. 校级领导因公出国（境）</li>
+                <li class="Left_navigation_bar_submenu_item">3. 岗位设置管理</li>
+                <li class="Left_navigation_bar_submenu_item">4. 干部任免与人员招聘</li>
+                <li class="Left_navigation_bar_submenu_item">5. 教职工争议处理</li>
+            </ul>
+        </li>
+        <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title" id="Left_navigation_bar_menu_item_id5">五、教学质量信息</div>
+            <ul class="Left_navigation_bar_submenu">
+                <li class="Left_navigation_bar_submenu_item">1. 师生结构</li>
+                <li class="Left_navigation_bar_submenu_item">2. 专业设置</li>
+                <li class="Left_navigation_bar_submenu_item">3. 课程设置</li>
+                <li class="Left_navigation_bar_submenu_item">4. 就业指导政策</li>
+                <li class="Left_navigation_bar_submenu_item">5. 就业质量报告</li>
+                <li class="Left_navigation_bar_submenu_item">6. 本科教学质量报告</li>
+                <li class="Left_navigation_bar_submenu_item">7. 艺术教育发展报告</li>
+            </ul>
+        </li>
+        <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title" id="Left_navigation_bar_menu_item_id6">六、学生管理服务信息</div>
+            <ul class="Left_navigation_bar_submenu">
+                <li class="Left_navigation_bar_submenu_item">1. 学籍管理</li>
+                <li class="Left_navigation_bar_submenu_item">2. 学生资助</li>
+                <li class="Left_navigation_bar_submenu_item">3. 学生奖惩处罚</li>
+                <li class="Left_navigation_bar_submenu_item">4. 学生申诉办法</li>
+            </ul>
+        </li>
+        <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title" id="Left_navigation_bar_menu_item_id7">七、学风建设信息</div>
+            <ul class="Left_navigation_bar_submenu">
+                <li class="Left_navigation_bar_submenu_item">1. 学风建设机构</li>
+                <li class="Left_navigation_bar_submenu_item">2. 学术规范制度</li>
+                <li class="Left_navigation_bar_submenu_item">3. 学术不端行为查处机制</li>
+            </ul>
+        </li>
+        <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title" id="Left_navigation_bar_menu_item_id8">八、学位学科信息</div>
+            <ul class="Left_navigation_bar_submenu">
+                <li class="Left_navigation_bar_submenu_item">1. 学位授予要求</li>
+                <li class="Left_navigation_bar_submenu_item">2. 同等学力学位授予</li>
+                <li class="Left_navigation_bar_submenu_item">3. 新增授权点审核</li>
+                <li class="Left_navigation_bar_submenu_item">4. 拟增授权点申报</li>
+            </ul>
+        </li>
+        <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title" id="Left_navigation_bar_menu_item_id9">九、对外交流合作信息</div>
+            <ul class="Left_navigation_bar_submenu">
+                <li class="Left_navigation_bar_submenu_item">1. 中外合作办学</li>
+                <li class="Left_navigation_bar_submenu_item">2. 国际学生管理</li>
+            </ul>
+        </li>
+        <li class="Left_navigation_bar_item">
+            <div class="Left_navigation_bar_title" id="Left_navigation_bar_menu_item_id10">十、其他</div>
+            <ul class="Left_navigation_bar_submenu">
+                <li class="Left_navigation_bar_submenu_item">1. 巡视组反馈意见及整改</li>
+                <li class="Left_navigation_bar_submenu_item">2. 突发重大事件</li>
+            </ul>
+        </li>
+    </ul>
 </div>
-<script>
-    const CKWD_carousel = document.querySelector('.CKWD_carousel');
-    const CKWD_dots = document.querySelectorAll('.CKWD_dot');
-    const CKWD_items = document.querySelectorAll('.CKWD_carousel_item');
 
-    CKWD_dots.forEach((dot, index) => {
-        dot.addEventListener('mouseover', () => {
-            CKWD_items.forEach(item => item.classList.remove('active'));
-            CKWD_items[index].classList.add('active');
-            CKWD_dots.forEach(d => d.classList.remove('active'));
-            dot.classList.add('active');
+
+
+
+<script>
+    // 当文档内容完全加载和解析完成时执行以下函数
+    document.addEventListener("DOMContentLoaded", function () {
+        // 获取所有具有类名 "Left_navigation_bar_item" 的元素，并存储在 menuItems 变量中
+        const menuItems = document.querySelectorAll(".Left_navigation_bar_item");
+        // 遍历每一个菜单项
+        menuItems.forEach(item => {
+            // 获取当前菜单项中的具有类名 "Left_navigation_bar_title" 的元素，并存储在 title 变量中
+            const title = item.querySelector(".Left_navigation_bar_title");
+            // 为 title 元素添加点击事件监听器
+            title.addEventListener("click", function () {
+                // 再次遍历所有菜单项
+                menuItems.forEach(otherItem => {
+                    // 如果当前遍历的菜单项不是被点击的菜单项
+                    if (otherItem !== item) {
+                        // 移除该菜单项的 "active" 类
+                        otherItem.classList.remove("active");
+                    }
+                });
+                // 切换被点击菜单项的 "active" 类（如果已有则移除，如果没有则添加）
+                item.classList.toggle("active");
+            });
         });
     });
 </script>

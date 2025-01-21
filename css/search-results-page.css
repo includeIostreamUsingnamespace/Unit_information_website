@@ -1,3 +1,5 @@
+
+
 /*!* 主色调与背景色 *!*/
 /*#search-results-page {*/
 /*    padding: 20px;*/
@@ -17,7 +19,7 @@
 /*#search-keyword,*/
 /*#search-count {*/
 /*    font-size: 1em;*/
-/*    color: #1e1e1e; !* 次要黑灰色 *!*/
+/*    color: #575757; !* 次要黑灰色 *!*/
 /*    margin-bottom: 10px;*/
 /*    text-align: center; !* 居中对齐 *!*/
 /*    margin-left: auto;*/
@@ -35,30 +37,36 @@
 /*!* 每个搜索结果项 *!*/
 /*.search-result-item {*/
 /*    background-color: #ffffff; !* 白色背景 *!*/
-/*    border: 1px solid #ddd; !* 边框色 *!*/
-/*    !*border-radius: 5px;*!*/
+/*    border: 0.5px solid rgba(221, 221, 221, 0.5); !* 更细的半透明边框 *!*/
+/*    border-radius: 4px; !* 轻微圆角 *!*/
 /*    margin-bottom: 10px;*/
 /*    padding: 10px;*/
 /*    transition: all 0.3s ease; !* 添加过渡效果 *!*/
+/*    overflow: hidden; !* 隐藏超出部分 *!*/
+/*    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); !* 轻盈的阴影效果 *!*/
 /*}*/
 
 /*!* 鼠标悬停效果 *!*/
 /*.search-result-item:hover {*/
-/*    background-color: #f1faff; !* 背景变为淡蓝色 *!*/
-/*    border-color: #0a5cad; !* 悬停时边框颜色为主题蓝色 *!*/
+/*    background-color: #f6f7ff; !* 淡蓝背景色 *!*/
+/*    border-color: rgba(10, 92, 173, 0.5); !* 悬停时边框颜色为主题蓝色（半透明） *!*/
+/*    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); !* 悬停时阴影加深 *!*/
 /*}*/
 
 /*.result-link {*/
 /*    text-decoration: none;*/
 /*    color: #0a5cad; !* 主题蓝色 *!*/
 /*    font-weight: bold;*/
-/*    font-size: 1.1em;*/
+/*    font-size: 16px;*/
 /*    display: block; !* 使整个区域可点击 *!*/
+/*    white-space: nowrap; !* 不允许换行 *!*/
+/*    overflow: hidden; !* 隐藏超出部分 *!*/
+/*    text-overflow: ellipsis; !* 超出部分显示省略号 *!*/
 /*}*/
 
 /*!* 鼠标悬停时链接颜色变化 *!*/
 /*.result-link:hover {*/
-/*    color: #0068b7; !* 鼠标悬停时改变颜色 *!*/
+/*    color: #0068b7; !* 主要黑色字体 hover *!*/
 /*}*/
 
 /*@media (max-width: 768px) {*/
@@ -69,10 +77,13 @@
 
 /*    .search-result-item {*/
 /*        padding: 8px;*/
+/*        border: 0.5px solid rgba(221, 221, 221, 0.5); !* 移动端更细的半透明边框 *!*/
+/*        border-radius: 4px; !* 轻微圆角 *!*/
+/*        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); !* 移动端轻盈的阴影效果 *!*/
 /*    }*/
 
 /*    .result-link {*/
-/*        font-size: 1em;*/
+/*        font-size: 16px;*/
 /*    }*/
 /*}*/
 
@@ -86,23 +97,55 @@
     margin: 0 auto;
 }
 
+/* 搜索结果标题 */
 #search-results-title {
-    font-size: 1.8em;
+    font-size: 24px; /* 调整为20px */
     color: #0a5cad; /* 主题蓝色 */
     margin-bottom: 15px;
+    font-weight: 600; /* 加粗 */
+    text-align: left; /* 居中对齐 */
+    padding-left: 20px;
 }
 
-/* 搜索关键词和共找到多少条结果居中 */
+/*!* 搜索关键词和共找到多少条结果 *!*/
+/*#search-keyword,*/
+/*#search-count {*/
+/*    font-size: 14px; !* 调整为14px *!*/
+/*    color: #575757; !* 次要黑灰色 *!*/
+/*    margin-bottom: 10px;*/
+/*    text-align: center; !* 居中对齐 *!*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    max-width: 90%; !* 限制最大宽度，防止过宽 *!*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    gap: 8px; !* 关键词和结果数之间的间距 *!*/
+/*}*/
+/* 搜索关键词和共找到多少条结果 */
 #search-keyword,
 #search-count {
-    font-size: 1em;
+    font-size: 14px; /* 调整为14px */
     color: #575757; /* 次要黑灰色 */
     margin-bottom: 10px;
     text-align: center; /* 居中对齐 */
     margin-left: auto;
     margin-right: auto;
     max-width: 90%; /* 限制最大宽度，防止过宽 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* 关键词和结果数之间的间距 */
 }
+
+/* 数字部分加粗 */
+.search_results-count {
+    font-weight: bold; /* 加粗 */
+    color: #0a5cad; /* 主题蓝色 */
+}
+
+
+
 
 /* 搜索结果列表 */
 #search-result-list {
@@ -114,25 +157,31 @@
 /* 每个搜索结果项 */
 .search-result-item {
     background-color: #ffffff; /* 白色背景 */
-    border: 1px solid #ddd; /* 边框色 */
-    /*border-radius: 5px;*/
+    border: 0.5px solid rgba(221, 221, 221, 0.3); /* 更细的半透明边框 */
+    border-radius: 6px; /* 圆角 */
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 12px;
     transition: all 0.3s ease; /* 添加过渡效果 */
+    overflow: hidden; /* 隐藏超出部分 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* 轻盈的阴影效果 */
 }
 
 /* 鼠标悬停效果 */
 .search-result-item:hover {
     background-color: #f6f7ff; /* 淡蓝背景色 */
-    border-color: #0a5cad; /* 悬停时边框颜色为主题蓝色 */
+    border-color: rgba(10, 92, 173, 0.3); /* 悬停时边框颜色为主题蓝色（半透明） */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 悬停时阴影加深 */
 }
 
 .result-link {
     text-decoration: none;
     color: #0a5cad; /* 主题蓝色 */
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 16px;
     display: block; /* 使整个区域可点击 */
+    white-space: nowrap; /* 不允许换行 */
+    overflow: hidden; /* 隐藏超出部分 */
+    text-overflow: ellipsis; /* 超出部分显示省略号 */
 }
 
 /* 鼠标悬停时链接颜色变化 */
@@ -143,14 +192,17 @@
 @media (max-width: 768px) {
     /* 在小屏幕上调整标题字体大小 */
     #search-results-title {
-        font-size: 1.5em;
+        font-size: 20px; /* 移动端也保持20px */
     }
 
     .search-result-item {
-        padding: 8px;
+        padding: 10px;
+        border: 0.5px solid rgba(221, 221, 221, 0.3); /* 移动端更细的半透明边框 */
+        border-radius: 6px; /* 圆角 */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* 移动端轻盈的阴影效果 */
     }
 
     .result-link {
-        font-size: 1em;
+        font-size: 16px;
     }
 }

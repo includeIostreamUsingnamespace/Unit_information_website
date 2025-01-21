@@ -2,6 +2,181 @@
 
 
 
+/*#content_core-breadcrumb {*/
+/*    color: #575757; !* 次要黑灰色 *!*/
+/*    font-size: 14px;*/
+/*    margin-top: 20px;*/
+/*    margin-bottom: 20px;*/
+/*    text-align: left;*/
+/*}*/
+
+/*#content_core-breadcrumb a {*/
+/*    color: #0a5cad; !* 主题蓝色 *!*/
+/*    text-decoration: none;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*#content_core-breadcrumb a:hover {*/
+/*    color: #0068b7; !* 主要黑色字体 hover *!*/
+/*}*/
+
+/*#content_core-title {*/
+/*    color: #0a5cad; !* 主题蓝色 *!*/
+/*    font-size: 28px;*/
+/*    font-weight: 700;*/
+/*    margin-bottom: 30px;*/
+/*    padding-bottom: 15px;*/
+/*    border-bottom: 2px solid #0a5cad; !* 主题蓝色 *!*/
+/*}*/
+
+/*#content_core-content-list {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*    !*background-color: #f6f7ff; !* 淡蓝背景色 *!*!*/
+/*    background-color: #FFFFFF;*/
+/*    !*border-radius: 8px;*!*/
+/*    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*.content_core-content-item {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 15px 20px;*/
+/*    border-bottom: 1px solid #e0e0e0;*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
+
+/*.content_core-content-item:last-child {*/
+/*    border-bottom: none;*/
+/*}*/
+
+/*#content_core-content-item-1:hover,*/
+/*#content_core-content-item-2:hover {*/
+/*    background-color: #e8eaff;*/
+/*}*/
+
+/*.content_core-content-link {*/
+/*    color: #1e1e1e; !* 主要黑色 *!*/
+/*    text-decoration: none;*/
+/*    font-size: 16px;*/
+/*    font-weight: 500;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*.content_core-content-link:hover {*/
+/*    color: #0068b7; !* 主要黑色字体 hover *!*/
+/*}*/
+
+/*.content_core-content-link:before {*/
+/*    content: "•";*/
+/*    color: #0a5cad; !* 主题蓝色 *!*/
+/*    margin-right: 10px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*#content_core-date-1,*/
+/*#content_core-date-2 {*/
+/*    color: #575757; !* 次要黑灰色 *!*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*!* 定义一个ID为content_core-pagination的元素的样式 *!*/
+/*#content_core-pagination {*/
+/*    !* 设置元素的上外边距为30像素 *!*/
+/*    margin-top: 40px;*/
+/*    !* 使用flex布局 *!*/
+/*    display: flex;*/
+/*    !* 垂直居中对齐子元素 *!*/
+/*    align-items: center;*/
+/*    !* 水平居中对齐子元素 *!*/
+/*    justify-content: center;*/
+/*    !* 设置子元素之间的间隔为15像素 *!*/
+/*    gap: 15px;*/
+/*}*/
+
+/*#content_core-first-page,*/
+/*#content_core-prev-page,*/
+/*#content_core-next-page,*/
+/*#content_core-last-page,*/
+/*#content_core-jump-btn {*/
+/*    padding: 8px 15px;*/
+/*    border: 1px solid #0a5cad; !* 主题蓝色 *!*/
+/*    background: white;*/
+/*    cursor: pointer;*/
+/*    color: #0a5cad; !* 主题蓝色 *!*/
+/*    !*border-radius: 4px;*!*/
+/*    transition: all 0.3s ease;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*#content_core-first-page:hover,*/
+/*#content_core-prev-page:hover,*/
+/*#content_core-next-page:hover,*/
+/*#content_core-last-page:hover,*/
+/*#content_core-jump-btn:hover {*/
+/*    background-color: #0a5cad; !* 主题蓝色 *!*/
+/*    color: white;*/
+/*}*/
+
+/*#content_core-page-info {*/
+/*    color: #575757; !* 次要黑灰色 *!*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*#content_core-jump-input {*/
+/*    width: 50px;*/
+/*    padding: 7px;*/
+/*    border: 1px solid #ccc;*/
+/*    !*border-radius: 4px;*!*/
+/*    text-align: center;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*#content_core-jump-btn {*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*@media (max-width: 768px) {*/
+/*    #content_core-pagination {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        gap: 10px; !* 调整按钮之间的间距 *!*/
+/*    }*/
+
+/*    #content_core-first-page,*/
+/*    #content_core-prev-page,*/
+/*    #content_core-next-page,*/
+/*    #content_core-last-page {*/
+/*        width: 100%; !* 调整按钮宽度以适应移动端 *!*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    #content_core-jump-btn {*/
+/*        width: 100%; !* 调整按钮宽度以适应移动端 *!*/
+/*        text-align: center;*/
+/*        padding: 8px 0px;*/
+/*        margin: 0;*/
+/*    }*/
+
+/*    #content_core-page-info {*/
+/*        margin-top: 10px;*/
+/*        font-size: 12px; !* 调整字体大小以适应移动端 *!*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    #content_core-jump-input {*/
+/*        width: 100%; !* 调整输入框宽度 *!*/
+/*        !*margin-top: 5px; !* 增加输入框的上边距 *!*!*/
+/*        padding: 8px 0px;*/
+/*    }*/
+/*}*/
+
+
+
+
+
 #content_core-breadcrumb {
     color: #575757; /* 次要黑灰色 */
     font-size: 14px;
@@ -32,9 +207,7 @@
 #content_core-content-list {
     list-style: none;
     padding: 0;
-    /*background-color: #f6f7ff; !* 淡蓝背景色 *!*/
     background-color: #FFFFFF;
-    /*border-radius: 8px;*/
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,7 +215,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 10px;
     border-bottom: 1px solid #e0e0e0;
     transition: background-color 0.3s ease;
 }
@@ -62,6 +235,11 @@
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease;
+    white-space: nowrap; /* 不允许换行 */
+    overflow: hidden; /* 隐藏超出部分 */
+    text-overflow: ellipsis; /* 超出部分显示省略号 */
+    flex: 1; /* 占据剩余空间 */
+    margin-right: 20px; /* 与日期保持间距 */
 }
 
 .content_core-content-link:hover {
@@ -75,23 +253,19 @@
     font-weight: bold;
 }
 
-#content_core-date-1,
-#content_core-date-2 {
+.content_core-date {
     color: #575757; /* 次要黑灰色 */
     font-size: 14px;
+    white-space: nowrap; /* 不允许换行 */
+    flex-shrink: 0; /* 禁止日期缩小 */
+    text-align: right; /* 日期右对齐 */
 }
 
-/* 定义一个ID为content_core-pagination的元素的样式 */
 #content_core-pagination {
-    /* 设置元素的上外边距为30像素 */
     margin-top: 40px;
-    /* 使用flex布局 */
     display: flex;
-    /* 垂直居中对齐子元素 */
     align-items: center;
-    /* 水平居中对齐子元素 */
     justify-content: center;
-    /* 设置子元素之间的间隔为15像素 */
     gap: 15px;
 }
 
@@ -105,7 +279,6 @@
     background: white;
     cursor: pointer;
     color: #0a5cad; /* 主题蓝色 */
-    /*border-radius: 4px;*/
     transition: all 0.3s ease;
     font-size: 14px;
 }
@@ -128,7 +301,6 @@
     width: 50px;
     padding: 7px;
     border: 1px solid #ccc;
-    /*border-radius: 4px;*/
     text-align: center;
     font-size: 14px;
 }
@@ -138,23 +310,26 @@
 }
 
 @media (max-width: 768px) {
+    #content_core-title{
+        font-size: 20px;
+    }
     #content_core-pagination {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* 调整按钮之间的间距 */
+        gap: 10px;
     }
 
     #content_core-first-page,
     #content_core-prev-page,
     #content_core-next-page,
     #content_core-last-page {
-        width: 100%; /* 调整按钮宽度以适应移动端 */
+        width: 100%;
         text-align: center;
     }
 
     #content_core-jump-btn {
-        width: 100%; /* 调整按钮宽度以适应移动端 */
+        width: 100%;
         text-align: center;
         padding: 8px 0px;
         margin: 0;
@@ -162,13 +337,29 @@
 
     #content_core-page-info {
         margin-top: 10px;
-        font-size: 12px; /* 调整字体大小以适应移动端 */
+        font-size: 12px;
         text-align: center;
     }
 
     #content_core-jump-input {
-        width: 100%; /* 调整输入框宽度 */
-        /*margin-top: 5px; !* 增加输入框的上边距 *!*/
+        width: 100%;
         padding: 8px 0px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
