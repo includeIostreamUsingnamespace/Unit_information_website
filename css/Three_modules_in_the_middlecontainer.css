@@ -130,4 +130,9 @@
     .main-content {
         padding: 0; /* 移动端去除额外的内边距 */
     }
+
+
+    .right-box{
+        font-size: 15px;
+    }
 }
