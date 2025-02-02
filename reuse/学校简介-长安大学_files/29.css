@@ -1,0 +1,10 @@
+.wp_articlecontent, .wp_articlecontent p { text-indent: 0em; font-size: 14px; line-height: 1.7em; color: rgb(51, 51, 51);}.wp_articlecontent table { margin-bottom: 10px; border-collapse: collapse; display: table;}.wp_articlecontent table td {  /* background: white; */ padding: 5px 10px;  /* border: 1px solid rgb(221, 221, 221); */}.wp_articlecontent a { text-decoration: none; color: rgb(51, 51, 51);}.wp_articlecontent a:hover { text-decoration: underline; color: rgb(204, 0, 0);}.wp_articlecontent a:visited {}@media screen and (max-width: 550px){table.wp_editor_art_table.d6 .td1 {width: 30%;}}@media screen and (max-width: 550px){table.wp_editor_art_table.d6 .td2 {width: 70%;}}table.wp_editor_art_table.d1 td{width: 30%;border: none;white-space: nowrap;}table.wp_editor_art_table td{padding: 5px 0;}
+@media screen and (max-width: 767px){.wp_articlecontent, .wp_articlecontent p {
+    overflow-x: scroll;
+}
+#vsb_content p img, #vsb_content p video{
+    
+width: 100%;
+}
+
+}

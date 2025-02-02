@@ -1,0 +1,53 @@
+/*页面最顶部建筑水印的图片*/
+
+
+
+
+
+
+
+
+
+
+#top-background {
+    position: absolute;  /* 让它浮在页面上，不占空间 */
+    top: 0;              /* 贴紧顶部 */
+    right: 0;            /* 贴紧右侧 */
+
+    /*clip-path: inset(0 0 0 70px); !* 裁剪掉左边50px的部分 *!*/
+
+    height:95px; /* 保持图片比例 */
+    z-index: 1;         /* 让它在最底层 */
+}
+
+
+@media (max-width: 768px) {
+
+    #top-background {
+
+
+
+
+        height:80px;
+        z-index: 0;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
