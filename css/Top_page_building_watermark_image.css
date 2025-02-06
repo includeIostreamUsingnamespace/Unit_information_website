@@ -12,7 +12,7 @@
 #top-background {
     position: absolute;  /* 让它浮在页面上，不占空间 */
     top: 0;              /* 贴紧顶部 */
-    right: 0;            /* 贴紧右侧 */
+    right: 575px;            /* 贴紧右侧 */
 
     /*clip-path: inset(0 0 0 70px); !* 裁剪掉左边50px的部分 *!*/
 
@@ -27,7 +27,7 @@
 
 
 
-
+        right: 0;            /* 贴紧右侧 */
         height:80px;
         z-index: 0;
 
