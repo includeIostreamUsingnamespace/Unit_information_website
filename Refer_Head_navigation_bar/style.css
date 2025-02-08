@@ -98,8 +98,14 @@ a:hover { color:#0068b7; /* 主要黑色字体 hover */ }
 .headtop .top-right{float:right;}
 /*head开始*/
 .header {border-bottom:none;height:auto;line-height:inherit;}
-.header .inner{height: 140px;position:relative;background: url('images/by.png') no-repeat right 47px;}
-.header .sitelogo{float:left;margin-top: 41px;}
+.header .inner{
+    height: 140px;
+    position:relative;
+    background: url('images/by.png') no-repeat right 47px;}
+.header .sitelogo {
+    float:left;
+    margin-top: 41px;
+}
 .header .sitelogo span{position:relative;font-size:inherit; font-weight:normal;}
 .header .sitelogo span a{ color:transparent; margin:0;}
 .header .sitelogo h1{font-size:inherit; font-weight:normal; background:none; padding-left:0px;}
@@ -126,27 +132,33 @@ a:hover { color:#0068b7; /* 主要黑色字体 hover */ }
 .site-lang ul li.links a:hover{color:#fff;}
 
 
+
+
+
+
+
+
+
+
 /*默认主导航样式*/
 #nav{background: #0a5cad; /* 主题蓝色 */}
 #nav .inner{}
 #nav .inner .wp-panel{}/*导航*/
 #nav .inner .wp-panel .wp-window{
-
 }
 
-
 #nav .inner .wp-panel .navbg{position:absolute; z-index:-1;left:0;right:0;top:0;bottom:0; width:auto; height:100%;background:#fff;opacity:.7;filter:alpha(opacity=70);}
-
-
-
-
 
 /*导航样式：后台绑定时也可以定义配置*/
 .nav .wp-menu {margin:0 auto}
 
 .nav .wp-menu .menu-item {display: inline-block; float: left; position: relative;}
 .nav .wp-menu .menu-item.i1 { background:none;}
-.nav .wp-menu .menu-item a > .menu-switch-arrow{display: none;width:20px;height:20px;background:url(images/nav_j.png) no-repeat center center;vertical-align:middle;}
+.nav .wp-menu .menu-item a > .menu-switch-arrow{display: none;width:20px;height:20px;vertical-align:middle;}
+
+
+
+
 
 /*首页导航条一级标题字体大小调整位置*/
 /* 选择器解释：
@@ -162,11 +174,71 @@ a:hover { color:#0068b7; /* 主要黑色字体 hover */ }
    font-size: 16px;: 设置 <a> 元素的字体大小为 16px。
 */
 .nav .wp-menu .menu-item a.menu-link {display: inline-block;padding: 0 42px;line-height: 50px;color: #ffffff;font-size: 16px;}
-
-
-
 .nav .wp-menu .menu-item.hover a.menu-link,
 .nav .wp-menu .menu-item a.hover{background-color:#0068b7; /* 主要黑色字体 hover */ text-decoration: none; color: #eee;}
+
+/*尝试解决去掉JQuery以后鼠标事件的二级菜单START*/
+/* 隐藏所有二级和三级菜单 */
+.sub-menu {
+    display: none;
+}
+
+/*!* 一级菜单项的样式 *!*/
+/*.menu-item {*/
+/*    position: relative;*/
+/*}*/
+
+/*!* 二级菜单的样式 *!*/
+/*.sub-menu {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 100%;*/
+/*    background-color: #f9f9f9;*/
+/*    border: 1px solid #ccc;*/
+/*    min-width: 200px;*/
+/*    display: none;*/
+/*    z-index: 1;*/
+/*}*/
+
+/*!* 三级菜单的样式 *!*/
+/*.sub-menu .sub-menu {*/
+/*    left: 100%;*/
+/*    top: 0;*/
+/*}*/
+
+/* 鼠标悬停时显示二级菜单 */
+.menu-item:hover > .sub-menu {
+    display: block;
+}
+
+/* 鼠标悬停时显示三级菜单 */
+.sub-item:hover > .sub-menu {
+    display: block;
+}
+
+/*移动端处理START*/
+
+
+/*!* 默认隐藏菜单 *!*/
+/*.col_menu_con {*/
+/*    display: none;*/
+/*}*/
+
+/*!* 添加样式：显示菜单时 *!*/
+/*.col_menu_con.active {*/
+/*    display: block;*/
+/*}*/
+
+
+
+/*移动端处理END*/
+
+/*尝试解决去掉JQuery以后鼠标事件的二级菜单END*/
+
+
+
+
+
 
 /*尝试固定宽度*/
 a.menu-link{
@@ -175,6 +247,12 @@ a.menu-link{
 
 a.menu-link.parent{
     padding: 0 42px;
+}
+
+#nav {
+    zoom: 1 !important;       /* 取消缩放，恢复为默认大小 */
+    transform: none !important; /* 取消任何变换 */
+    min-width: 320px;
 }
 
 
@@ -248,6 +326,9 @@ a.menu-link.parent{
 .news_list li.news .news_text {line-height:22px; color:#575757; /* 次要黑灰色 */}/*默认简介*/
 .news_list li.news .news_bg {position:absolute; left:0px;bottom:0px; right:0px; height:30px; background:#000; opacity:.7; filter:Alpha(opacity=70);}
 .news_list li.news p {line-height:34px;}
+
+
+
 
 /*日历新闻样式1*/
 .rili{}
@@ -568,6 +649,10 @@ span.all_count {
 .post-11 .focus .focus-navigation:hover {opacity: 1; filter:alpha(opacity=100);}
 .post-11 .focus .focus-navigation:active {opacity: 1; filter:alpha(opacity=100);}
 /*************************************************************
+
+
+
+
  * 特殊页面
  */
 /*二级页面*/
