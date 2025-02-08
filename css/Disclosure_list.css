@@ -212,7 +212,7 @@
     background-color: #0a5cad; /* 主题蓝色 */
     color: white;
     padding: 15px;
-    margin-bottom: 20px;
+
     text-align: center;
 }
 
@@ -229,7 +229,6 @@
         background-color: #0a5cad; /* 主题蓝色 */
         color: white;
         padding: 15px 15px 15px 20px;
-        margin-bottom: 20px;
         text-align: left;
     }
 }

@@ -1,18 +1,154 @@
 
 
+/*!* 导航条上方样式 *!*/
+/*#header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 10px 20px;*/
+/*    !*background-color: #ffffff; !* 整体页面背景 *!*!*/
+
+/*    !*background-color: #0a5cad;*!*/
+/*    background-color: #0068b7;*/
+
+/*    grid-area: header;*/
+/*    width: 1200px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*#Header_color{*/
+/*    background-color: #0068b7;*/
+/*    z-index: -1;*/
+/*    height: auto;*/
+/*}*/
+
+
+/*#logo{*/
+/*    z-index: 2;*/
+/*}*/
+
+
+/*#logo-img {*/
+/*    width: auto; !* 确保图片宽度与盒子宽度相同 *!*/
+/*    height: 100%; !* 确保图片高度与盒子高度相同 *!*/
+/*    object-fit: cover; !* 确保图片覆盖整个元素 *!*/
+/*    padding: 0; !* 确保没有内边距 *!*/
+
+/*}*/
+
+/*#search-box {*/
+/*    display: flex;*/
+/*}*/
+
+/*#search-box input {*/
+/*    padding: 5px 10px;*/
+/*    border: 1px solid #cccccc;*/
+/*    !*border-radius: 5px 0 0 5px;*!*/
+/*    border-right: none;*/
+/*    color: #1e1e1e; !* 主要黑色 *!*/
+/*}*/
+
+/*#search-box{*/
+/*    background-color: #ffffff; !* 整体页面背景 *!*/
+/*    border: 1px solid #cccccc;*/
+/*    !*border-radius: 0 5px 5px 0;*!*/
+/*    border-left: none;*/
+/*    color: #1e1e1e; !* 主要黑色 *!*/
+/*    z-index: 2;*/
+/*}*/
+
+/*button {*/
+/*    background-color: #ffffff; !* 整体页面背景 *!*/
+/*    border: 1px solid #cccccc;*/
+/*    !*border-radius: 0 5px 5px 0;*!*/
+/*    border-left: none;*/
+/*    color: #1e1e1e; !* 主要黑色 *!*/
+
+/*}*/
+
+/*.icon {*/
+/*    stroke: #0a5cad; !* 主题蓝色 *!*/
+/*    width: 20px; !* 改变图标宽度 *!*/
+/*    height: 25px; !* 改变图标高度 *!*/
+
+/*}*/
+
+/*!* 移动端适配 - 小于768px屏幕 *!*/
+/*@media (max-width: 768px) {*/
+/*    #logo-img {*/
+/*        width: auto; !* 确保图片宽度与盒子宽度相同 *!*/
+/*        height: 90%; !* 确保图片高度与盒子高度相同 *!*/
+/*        object-fit: cover; !* 确保图片覆盖整个元素 *!*/
+/*        margin-left: 15px;*/
+
+/*    }*/
+
+/*    #header {*/
+/*        flex-direction: column; !* 切换为垂直布局 *!*/
+/*        align-items: flex-start; !* 左对齐 *!*/
+/*        !*padding: 5px; !* 增加内边距 *!*!*/
+/*        width: 100%;*/
+/*        margin: 0 auto;*/
+/*        padding: 0;*/
+/*    }*/
+
+/*    #search-box {*/
+/*        width: 95%; !* 使搜索框宽度占满 *!*/
+/*        margin: 10px;*/
+/*        !*justify-content: space-between; !* 使输入框和按钮在一行内有间距 *!*!*/
+
+/*    }*/
+
+/*    #search-box input {*/
+/*        width: 85%; !* 输入框占大部分宽度 *!*/
+/*        !*margin-right: 5px; !* 增加右侧间距 *!*!*/
+/*    }*/
+
+/*    #search-box button {*/
+/*        width: 15%; !* 按钮占一定宽度 *!*/
+/*    }*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*这一版是把那个水印借助放在搜索康固定左面的。 */
+
+
+
 /* 导航条上方样式 */
 #header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    /*background-color: #ffffff; !* 整体页面背景 *!*/
-
-    /*background-color: #0a5cad;*/
+    padding: 0 20px;
     background-color: #0068b7;
-
-
-
     grid-area: header;
     width: 1200px;
     margin: 0 auto;
@@ -24,18 +160,21 @@
     height: auto;
 }
 
-
 #logo{
     z-index: 2;
 }
-
 
 #logo-img {
     width: auto; /* 确保图片宽度与盒子宽度相同 */
     height: 100%; /* 确保图片高度与盒子高度相同 */
     object-fit: cover; /* 确保图片覆盖整个元素 */
-    padding: 0; /* 确保没有内边距 */
+    padding: 0;
+}
 
+/* 新增的搜索容器，将水印图片和搜索框并排 */
+#search-container {
+    display: flex;
+    align-items: center;
 }
 
 #search-box {
@@ -45,68 +184,67 @@
 #search-box input {
     padding: 5px 10px;
     border: 1px solid #cccccc;
-    /*border-radius: 5px 0 0 5px;*/
     border-right: none;
     color: #1e1e1e; /* 主要黑色 */
 }
 
-#search-box{
+#search-box {
     background-color: #ffffff; /* 整体页面背景 */
     border: 1px solid #cccccc;
-    /*border-radius: 0 5px 5px 0;*/
     border-left: none;
     color: #1e1e1e; /* 主要黑色 */
     z-index: 2;
-
 }
+
 button {
     background-color: #ffffff; /* 整体页面背景 */
     border: 1px solid #cccccc;
-    /*border-radius: 0 5px 5px 0;*/
     border-left: none;
     color: #1e1e1e; /* 主要黑色 */
-
 }
 
 .icon {
     stroke: #0a5cad; /* 主题蓝色 */
     width: 20px; /* 改变图标宽度 */
     height: 25px; /* 改变图标高度 */
-
 }
 
 /* 移动端适配 - 小于768px屏幕 */
 @media (max-width: 768px) {
     #logo-img {
-        width: auto; /* 确保图片宽度与盒子宽度相同 */
-        height: 90%; /* 确保图片高度与盒子高度相同 */
-        object-fit: cover; /* 确保图片覆盖整个元素 */
+        width: auto;
+        height: 90%;
+        object-fit: cover;
         margin-left: 15px;
-
     }
 
     #header {
-        flex-direction: column; /* 切换为垂直布局 */
-        align-items: flex-start; /* 左对齐 */
-        /*padding: 5px; !* 增加内边距 *!*/
+        flex-direction: column;
+        align-items: flex-start;
         width: 100%;
         margin: 0 auto;
         padding: 0;
     }
 
-    #search-box {
-        width: 95%; /* 使搜索框宽度占满 */
-        margin: 10px;
-        /*justify-content: space-between; !* 使输入框和按钮在一行内有间距 *!*/
+    #search-container {
+        width: 100%;
+    }
 
+    #search-box {
+        width: 95%;
+
+        margin: 10px;
     }
 
     #search-box input {
-        width: 85%; /* 输入框占大部分宽度 */
-        /*margin-right: 5px; !* 增加右侧间距 *!*/
+        width: 85%;
     }
 
     #search-box button {
-        width: 15%; /* 按钮占一定宽度 */
+        width: 15%;
     }
 }
+
+
+
+
