@@ -108,7 +108,7 @@
 .wp-navi-slide .sub-menu .sub-item a:hover{ text-decoration: none; color: #000; background-color: #eee; }
 .wp-navi-slide .sub-menu {display: none;position:relative;left: 0;bottom: 0px;top: 0px;min-width: 0px;z-index: 100;background: #fff;opacity: 0.8;}
 .wp-navi-slide .sub-menu .sub-item {position: relative;white-space: nowrap;vertical-align: top;border-bottom: 1px solid #eee;}
-.wp-navi-slide .sub-menu .sub-item a {display: block;color: #000;height: auto;line-height: 40px;padding: 0 36px;font-size: 14px;background:none;}
+.wp-navi-slide .sub-menu .sub-item a {display: block;color: #1e1e1e;height: auto;line-height: 40px;padding: 0 36px;font-size: 14px;background:none;}
 .wp-navi-slide .sub-menu .sub-item a:hover { color: #000; background-color:#eee; display: block; }
 .wp-navi-slide .sub-menu .sub-menu {left:0;top: 0;}
 .wp-navi-slide .sub-menu .sub-menu .sub-item a {padding: 0 52px;}
