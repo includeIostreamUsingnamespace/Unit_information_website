@@ -211,6 +211,9 @@ a:hover { color:#0068b7; /* 主要黑色字体 hover */ }
     display: block;
 }
 
+.menu-link:hover{
+    background-color: #0068b7; /* 主要黑色字体 hover */
+}
 /* 鼠标悬停时显示三级菜单 */
 .sub-item:hover > .sub-menu {
     display: block;

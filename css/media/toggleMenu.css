@@ -1,0 +1,60 @@
+/* 面板容器 */
+.col_menu_con {
+    display: none;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* 面板显示时 */
+.col_menu_con.show {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+/* 导航栏头部 */
+.col_menu_head {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px 10px; /* 调整高度 */
+    background-color: #0a5cad; /* 主题蓝色 */
+    border: none; /* 去除圆角 */
+    transition: background-color 0.3s ease;
+}
+
+/* 鼠标悬停时 */
+.col_menu_head:hover {
+    background-color: #0068b7; /* 主要黑色字体 hover */
+}
+
+/*!* 三个横杠图标 *!*/
+/*.col_name_text .Column_Anchor {*/
+/*    margin-right: 10px;*/
+/*    font-size: 20px;*/
+/*    color: #ffffff;*/
+/*}*/
+
+/* 面板项 */
+.col_list .wp_column {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.col_list .wp_column a {
+    display: block;
+    /*padding: 5px 10px; !* 调整高度 *!*/
+    color: #1e1e1e; /* 主要黑色 */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 面板项悬停时 */
+.col_list .wp_column a:hover {
+    background-color: #f6f7ff; /* 淡蓝背景色 */
+    color: #0068b7; /* 主要黑色字体 hover */
+}
+
